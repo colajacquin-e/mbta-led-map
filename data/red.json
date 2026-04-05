@@ -332,7 +332,7 @@
     "direction_id": 0,
     "type": "station",
     "adjacent_stops": null,
-    "x": 285,
+    "x": 286,
     "y": 268
   },
   {
@@ -854,7 +854,7 @@
     "direction_id": 1,
     "type": "station",
     "adjacent_stops": null,
-    "x": 288,
+    "x": 289,
     "y": 268
   },
   {
