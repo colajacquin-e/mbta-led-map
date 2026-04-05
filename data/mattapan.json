@@ -68,7 +68,7 @@
     "adjacent_stops": null,
     "x": 269,
     "y": 355,
-    "label_position": "below"
+    "label_position": "below-left"
   },
   {
     "index": 5,
@@ -97,7 +97,7 @@
     "adjacent_stops": null,
     "x": 262,
     "y": 355,
-    "label_position": "below"
+    "label_position": "below-left"
   },
   {
     "index": 7,
@@ -126,7 +126,7 @@
     "adjacent_stops": null,
     "x": 253,
     "y": 355,
-    "label_position": "below"
+    "label_position": "below-left"
   },
   {
     "index": 9,
@@ -155,7 +155,7 @@
     "adjacent_stops": null,
     "x": 245,
     "y": 355,
-    "label_position": "below"
+    "label_position": "below-left"
   },
   {
     "index": 11,
@@ -184,7 +184,7 @@
     "adjacent_stops": null,
     "x": 236,
     "y": 355,
-    "label_position": "below"
+    "label_position": "below-left"
   },
   {
     "index": 13,
@@ -213,7 +213,7 @@
     "adjacent_stops": null,
     "x": 228,
     "y": 355,
-    "label_position": "below"
+    "label_position": "below-left"
   },
   {
     "index": 15,
