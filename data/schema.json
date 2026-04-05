@@ -11,7 +11,7 @@
       "description": "Per-line metadata for rendering and hardware configuration.",
       "type": "object",
       "patternProperties": {
-        "^(red|orange|blue|green)$": {
+        "^(red|orange|blue|green|mattapan)$": {
           "type": "object",
           "required": ["name", "color_hex", "led_count", "chain_gpio"],
           "additionalProperties": false,
@@ -27,7 +27,7 @@
             },
             "led_count": {
               "type": "integer",
-              "minimum": 1,
+              "minimum": 0,
               "description": "Total number of LEDs on this chain."
             },
             "chain_gpio": {
@@ -59,7 +59,7 @@
           },
           "line": {
             "type": "string",
-            "enum": ["red", "orange", "blue", "green"],
+            "enum": ["red", "orange", "blue", "green", "mattapan"],
             "description": "Which subway line this LED belongs to."
           },
 "stop_id": {
