@@ -87,8 +87,12 @@ def draw_leds(draw, img, leds, color, font, line_name):
         # Offset co-located LEDs perpendicular to the line direction
         if has_pair:
             offset = -OFFSET_PX // 2 if led["direction_id"] == 0 else OFFSET_PX // 2
-            if line_name == "mattapan":
-                # Horizontal line: offset vertically
+            if line_name == "mattapan" and led["stop_name"] not in (
+                "Ashmont", "Cedar Grove", "Ashmont – Cedar Grove",
+                "Cedar Grove – Ashmont", "Cedar Grove – Butler",
+                "Butler – Cedar Grove",
+            ):
+                # Horizontal section: offset vertically
                 px = base_px
                 py = base_py + offset
             else:
