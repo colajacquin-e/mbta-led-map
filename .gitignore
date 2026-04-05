@@ -1,0 +1,60 @@
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.venv/
+venv/
+env/
+.python-version
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Node (frontend dev tooling)
+node_modules/
+
+# PlatformIO (firmware)
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# KiCad (hardware)
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_prl
+*-backups/
+fp-info-cache
+_autosave-*
+
+# KiCad fabrication outputs (regenerate, don't commit)
+hardware/gerbers/
+hardware/bom/
+hardware/pos/
+
+# OS
+Thumbs.db
