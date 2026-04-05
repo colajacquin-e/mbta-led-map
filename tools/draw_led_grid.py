@@ -65,9 +65,10 @@ def draw_grid_labels(draw, font):
         draw.text((2, px + 2), f"{mm}", fill=(80, 80, 80), font=font)
 
 
-def draw_leds(draw, leds, color, font):
+def draw_leds(draw, img, leds, color, font, line_name):
     # Offset distance in pixels between direction_id 0 and 1 LEDs
-    OFFSET_PX = int(3 * MM)  # 3mm apart
+    OFFSET_PX = int(5 * MM)  # 5mm apart
+    LABEL_GAP = int(4 * MM)  # gap between LED pair and label
 
     # Group LEDs by (stop_name, x, y) to detect co-located pairs
     from collections import Counter
@@ -75,6 +76,8 @@ def draw_leds(draw, leds, color, font):
 
     # Track which locations we've already labeled
     labeled = set()
+
+    rotate_labels = line_name == "mattapan"
 
     for led in leds:
         base_px, base_py = mm2px(led["x"], led["y"])
@@ -101,11 +104,23 @@ def draw_leds(draw, leds, color, font):
                 labeled.add(loc_key)
                 stop = led["stop_id"] or "?"
                 name = led["stop_name"]
-                dir_label = "SB" if led["direction_id"] == 0 else "NB"
                 label = f"{name} [{stop}]"
-                draw.text((base_px + OFFSET_PX, base_py - 6), label,
-                          fill="white", font=font,
-                          stroke_width=1, stroke_fill=(30, 30, 30))
+
+                if rotate_labels:
+                    # Draw rotated text for Mattapan trolley
+                    txt_img = Image.new("RGBA", (300, 20), (0, 0, 0, 0))
+                    txt_draw = ImageDraw.Draw(txt_img)
+                    txt_draw.text((0, 0), label, fill="white", font=font,
+                                  stroke_width=1, stroke_fill=(30, 30, 30))
+                    txt_img = txt_img.rotate(90, expand=True)
+                    label_x = base_px - txt_img.width // 2
+                    label_y = base_py - OFFSET_PX - LABEL_GAP - txt_img.height
+                    img.paste(txt_img, (label_x, label_y), txt_img)
+                else:
+                    label_x = base_px + OFFSET_PX // 2 + LABEL_GAP
+                    draw.text((label_x, base_py - 6), label,
+                              fill="white", font=font,
+                              stroke_width=1, stroke_fill=(30, 30, 30))
         else:
             r = 2
             draw.ellipse([(px - r, py - r), (px + r, py + r)],
@@ -134,7 +149,7 @@ def main():
         leds = load_line(filepath)
         if leds:
             color = LINE_COLORS.get(line_name, (200, 200, 200))
-            draw_leds(draw, leds, color, font)
+            draw_leds(draw, img, leds, color, font, line_name)
             print(f"  {line_name}: {len(leds)} LEDs")
 
     img.save(args.output)
