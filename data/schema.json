@@ -112,7 +112,7 @@
         },
         "label_position": {
           "type": "string",
-          "enum": ["left", "right", "below", "none"],
+          "enum": ["left", "right", "below", "above-right", "below-left", "none"],
           "description": "Where to render the station label. Stations: left, right, or below. Midpoints and duplicates: none."
         }
       },

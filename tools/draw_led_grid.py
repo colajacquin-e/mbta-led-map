@@ -103,6 +103,24 @@ def draw_leds(draw, img, leds, color, font, simple=False, all_station_leds=None)
                 img.paste(txt_img,
                           (px - txt_img.width // 2, py + gap_px),
                           txt_img)
+            elif pos == "above-right":
+                txt_img = Image.new("RGBA", (300, 20), (0, 0, 0, 0))
+                txt_draw = ImageDraw.Draw(txt_img)
+                txt_draw.text((0, 0), label, fill="white", font=font,
+                              stroke_width=1, stroke_fill=(30, 30, 30))
+                txt_img = txt_img.rotate(45, expand=True)
+                img.paste(txt_img,
+                          (px + gap_px // 2, py - gap_px - txt_img.height),
+                          txt_img)
+            elif pos == "below-left":
+                txt_img = Image.new("RGBA", (300, 20), (0, 0, 0, 0))
+                txt_draw = ImageDraw.Draw(txt_img)
+                txt_draw.text((0, 0), label, fill="white", font=font,
+                              stroke_width=1, stroke_fill=(30, 30, 30))
+                txt_img = txt_img.rotate(-45, expand=True)
+                img.paste(txt_img,
+                          (px - gap_px // 2 - txt_img.width, py + gap_px // 2),
+                          txt_img)
             elif pos == "left":
                 # Anchor label 5mm to the left of the leftmost LED for this station
                 min_x = min(l["x"] for l in all_station_leds.get(led["stop_name"], [led]))
