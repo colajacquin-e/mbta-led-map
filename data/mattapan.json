@@ -62,8 +62,8 @@
     "direction_id": 0,
     "type": "station",
     "adjacent_stops": null,
-    "x": 267,
-    "y": 357
+    "x": 269,
+    "y": 355
   },
   {
     "index": 5,
@@ -344,8 +344,8 @@
     "direction_id": 1,
     "type": "station",
     "adjacent_stops": null,
-    "x": 270,
-    "y": 354
+    "x": 274,
+    "y": 358
   },
   {
     "index": 26,
