@@ -138,14 +138,14 @@ def draw_leds(draw, img, leds, color, font, simple=False, all_station_leds=None)
                 anchor_px = int(min_x * MM)
                 bbox = draw.textbbox((0, 0), label, font=font)
                 tw = bbox[2] - bbox[0]
-                draw.text((anchor_px - gap_px - tw, py - 6), label,
+                draw.text((anchor_px - gap_px - tw, py - 3), label,
                           fill="white", font=font,
                           stroke_width=1, stroke_fill=(30, 30, 30))
             elif pos == "right":
                 # Anchor label 5mm to the right of the rightmost LED for this station
                 max_x = max(l["x"] for l in all_station_leds.get(led["stop_name"], [led]))
                 anchor_px = int(max_x * MM)
-                draw.text((anchor_px + gap_px, py - 6), label,
+                draw.text((anchor_px + gap_px, py - 3), label,
                           fill="white", font=font,
                           stroke_width=1, stroke_fill=(30, 30, 30))
         else:
