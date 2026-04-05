@@ -108,6 +108,9 @@ def draw_leds(draw, img, leds, color, font, simple=False, all_station_leds=None)
                 txt_draw = ImageDraw.Draw(txt_img)
                 txt_draw.text((0, 0), label, fill="white", font=font,
                               stroke_width=1, stroke_fill=(30, 30, 30))
+                bbox = txt_img.getbbox()
+                if bbox:
+                    txt_img = txt_img.crop(bbox)
                 txt_img = txt_img.rotate(45, expand=True)
                 img.paste(txt_img,
                           (px, py - txt_img.height),
@@ -117,6 +120,10 @@ def draw_leds(draw, img, leds, color, font, simple=False, all_station_leds=None)
                 txt_draw = ImageDraw.Draw(txt_img)
                 txt_draw.text((0, 0), label, fill="white", font=font,
                               stroke_width=1, stroke_fill=(30, 30, 30))
+                # Crop to actual text size before rotating
+                bbox = txt_img.getbbox()
+                if bbox:
+                    txt_img = txt_img.crop(bbox)
                 txt_img = txt_img.rotate(45, expand=True)
                 img.paste(txt_img,
                           (px - txt_img.width, py),
