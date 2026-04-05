@@ -72,7 +72,6 @@ def draw_grid_labels(draw, font):
 
 
 def draw_leds(draw, img, leds, color, font):
-    labeled = set()
     gap_px = int(LABEL_GAP * MM)
 
     for led in leds:
@@ -84,25 +83,30 @@ def draw_leds(draw, img, leds, color, font):
             draw.ellipse([(px - r, py - r), (px + r, py + r)],
                          fill=color, outline="white", width=1)
 
-            loc_key = (led["stop_name"], led["x"], led["y"])
-            if loc_key not in labeled:
-                labeled.add(loc_key)
-                stop = led["stop_id"] or "?"
-                label = f"{led['stop_name']} [{stop}]"
+            stop = led["stop_id"] or "?"
+            label = f"{led['stop_name']} [{stop}]"
 
-                if led["stop_name"] in ROTATED_LABELS:
-                    txt_img = Image.new("RGBA", (300, 20), (0, 0, 0, 0))
-                    txt_draw = ImageDraw.Draw(txt_img)
-                    txt_draw.text((0, 0), label, fill="white", font=font,
-                                  stroke_width=1, stroke_fill=(30, 30, 30))
-                    txt_img = txt_img.rotate(270, expand=True)
-                    img.paste(txt_img,
-                              (px - txt_img.width // 2, py + gap_px),
-                              txt_img)
-                else:
-                    draw.text((px + gap_px, py - 6), label,
-                              fill="white", font=font,
+            if led["stop_name"] in ROTATED_LABELS:
+                txt_img = Image.new("RGBA", (300, 20), (0, 0, 0, 0))
+                txt_draw = ImageDraw.Draw(txt_img)
+                txt_draw.text((0, 0), label, fill="white", font=font,
                               stroke_width=1, stroke_fill=(30, 30, 30))
+                txt_img = txt_img.rotate(270, expand=True)
+                img.paste(txt_img,
+                          (px - txt_img.width // 2, py + gap_px),
+                          txt_img)
+            elif led["direction_id"] == 0:
+                # Southbound/outbound: label to the left
+                bbox = font.getbbox(label)
+                tw = bbox[2] - bbox[0]
+                draw.text((px - gap_px - tw, py - 6), label,
+                          fill="white", font=font,
+                          stroke_width=1, stroke_fill=(30, 30, 30))
+            else:
+                # Northbound/inbound: label to the right
+                draw.text((px + gap_px, py - 6), label,
+                          fill="white", font=font,
+                          stroke_width=1, stroke_fill=(30, 30, 30))
         else:
             r = 2
             draw.ellipse([(px - r, py - r), (px + r, py + r)],
