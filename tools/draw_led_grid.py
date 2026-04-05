@@ -87,10 +87,23 @@ def draw_leds(draw, img, leds, color, font, line_name):
         # Offset co-located LEDs perpendicular to the line direction
         if has_pair:
             offset = -OFFSET_PX // 2 if led["direction_id"] == 0 else OFFSET_PX // 2
-            if line_name == "mattapan" and led["stop_name"] not in (
+            is_cedar_butler_mid = (
+                led["type"] == "midpoint" and
+                ("Cedar Grove" in led["stop_name"] and "Butler" in led["stop_name"])
+            )
+            if is_cedar_butler_mid:
+                # 45 degree diagonal: keep left dot, rotate right dot
+                if led["direction_id"] == 0:
+                    px = base_px + offset
+                    py = base_py
+                else:
+                    import math
+                    diag = abs(offset)
+                    px = base_px + int(diag * math.cos(math.radians(45)))
+                    py = base_py + int(diag * math.sin(math.radians(45)))
+            elif line_name == "mattapan" and led["stop_name"] not in (
                 "Ashmont", "Cedar Grove", "Ashmont – Cedar Grove",
-                "Cedar Grove – Ashmont", "Cedar Grove – Butler",
-                "Butler – Cedar Grove",
+                "Cedar Grove – Ashmont",
             ):
                 # Horizontal section: offset vertically
                 px = base_px
