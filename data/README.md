@@ -81,7 +81,11 @@ with open("data/schema.json") as f:
     schema = json.load(f)
 
 def validate_def(instance, def_name):
-    wrapper = {"$ref": f"#/$defs/{def_name}", "$defs": schema["$defs"]}
+    wrapper = {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$ref": f"#/$defs/{def_name}",
+        "$defs": schema["$defs"],
+    }
     jsonschema.validate(instance, wrapper)
 
 # Validate line metadata
@@ -93,4 +97,4 @@ with open("data/red.json") as f:
     validate_def(json.load(f), "led_file")
 ```
 
-A full validation script is at `tests/validate_stations.py` (see issue #8).
+A full validation script will be added in issue #8.

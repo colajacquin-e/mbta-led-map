@@ -1,8 +1,12 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/colajacquin-e/mbta-led-map/data/schema.json",
-  "title": "MBTA LED Map Station Definitions",
-  "description": "Schemas for line metadata and per-line LED definition files.",
+  "title": "MBTA LED Map Data Schemas",
+  "description": "Reusable schemas for line metadata and per-line LED definition files.",
+  "oneOf": [
+    { "$ref": "#/$defs/line_metadata" },
+    { "$ref": "#/$defs/led_file" }
+  ],
   "$defs": {
     "line_metadata": {
       "title": "Line Metadata (lines.json)",

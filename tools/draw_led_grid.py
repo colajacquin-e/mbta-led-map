@@ -97,7 +97,7 @@ def draw_leds(draw, img, leds, color, font):
                           txt_img)
             elif led["direction_id"] == 0:
                 # Southbound/outbound: label to the left
-                bbox = font.getbbox(label)
+                bbox = draw.textbbox((0, 0), label, font=font)
                 tw = bbox[2] - bbox[0]
                 draw.text((px - gap_px - tw, py - 6), label,
                           fill="white", font=font,
@@ -122,11 +122,19 @@ def main():
     img = Image.new("RGB", (PX, PX), (20, 20, 20))
     draw = ImageDraw.Draw(img)
 
-    try:
-        font = ImageFont.truetype("/System/Library/Fonts/Helvetica.ttc", 9)
-        grid_font = ImageFont.truetype("/System/Library/Fonts/Helvetica.ttc", 11)
-    except OSError:
-        font = grid_font = ImageFont.load_default()
+    font_candidates = [
+        "/System/Library/Fonts/Helvetica.ttc",        # macOS
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",  # Linux
+        "C:\\Windows\\Fonts\\arial.ttf",               # Windows
+    ]
+    font = grid_font = ImageFont.load_default()
+    for path in font_candidates:
+        try:
+            font = ImageFont.truetype(path, 9)
+            grid_font = ImageFont.truetype(path, 11)
+            break
+        except OSError:
+            continue
 
     draw_grid(draw)
     draw_grid_labels(draw, grid_font)
