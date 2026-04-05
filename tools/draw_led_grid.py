@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Draw all LED positions on a 400x400mm grid.
 
-Reads per-line JSON files from data/ and renders stations (large dots with
-labels) and midpoints (small dots) on a dark background with mm gridlines.
+Reads per-line JSON files from data/ and renders each LED as a dot at its
+exact (x, y) coordinate. Stations get larger dots with labels, midpoints
+get smaller dots. No position adjustments — the JSON is the source of truth.
 
 Usage:
     python tools/draw_led_grid.py                 # output to data/led-grid.png
@@ -33,6 +34,11 @@ LINE_FILES = {
     "green":    "data/green.json",
     "mattapan": "data/mattapan.json",
 }
+
+# Stations whose labels should be rotated 270 degrees (vertical text below dots)
+ROTATED_LABELS = {"Butler", "Milton", "Central Ave", "Valley Rd", "Capen St", "Mattapan"}
+
+LABEL_GAP = 4  # mm between LED and label
 
 
 def mm2px(x, y):
@@ -65,82 +71,36 @@ def draw_grid_labels(draw, font):
         draw.text((2, px + 2), f"{mm}", fill=(80, 80, 80), font=font)
 
 
-def draw_leds(draw, img, leds, color, font, line_name):
-    # Offset distance in pixels between direction_id 0 and 1 LEDs
-    OFFSET_PX = int(5 * MM)  # 5mm apart
-    LABEL_GAP = int(4 * MM)  # gap between LED pair and label
-
-    # Group LEDs by (stop_name, x, y) to detect co-located pairs
-    from collections import Counter
-    loc_counts = Counter((led["x"], led["y"]) for led in leds)
-
-    # Track which locations we've already labeled
+def draw_leds(draw, img, leds, color, font):
     labeled = set()
-
-    rotate_labels = line_name == "mattapan"
+    gap_px = int(LABEL_GAP * MM)
 
     for led in leds:
-        base_px, base_py = mm2px(led["x"], led["y"])
+        px, py = mm2px(led["x"], led["y"])
         is_station = led["type"] == "station"
-        has_pair = loc_counts[(led["x"], led["y"])] > 1
-
-        # Offset co-located LEDs perpendicular to the line direction
-        if has_pair:
-            offset = -OFFSET_PX // 2 if led["direction_id"] == 0 else OFFSET_PX // 2
-            is_cedar_butler_mid = (
-                led["type"] == "midpoint" and
-                ("Cedar Grove" in led["stop_name"] and "Butler" in led["stop_name"])
-            )
-            if is_cedar_butler_mid:
-                # 45 degree diagonal: keep left dot, rotate right dot
-                if led["direction_id"] == 0:
-                    px = base_px + offset
-                    py = base_py
-                else:
-                    import math
-                    diag = abs(offset)
-                    px = base_px + int(diag * math.cos(math.radians(45)))
-                    py = base_py + int(diag * math.sin(math.radians(45)))
-            elif line_name == "mattapan" and led["stop_name"] not in (
-                "Ashmont", "Cedar Grove", "Ashmont – Cedar Grove",
-                "Cedar Grove – Ashmont",
-            ):
-                # Horizontal section: offset vertically
-                px = base_px
-                py = base_py + offset
-            else:
-                # Diagonal/vertical lines: offset horizontally
-                px = base_px + offset
-                py = base_py
-        else:
-            px, py = base_px, base_py
 
         if is_station:
             r = 4
             draw.ellipse([(px - r, py - r), (px + r, py + r)],
                          fill=color, outline="white", width=1)
 
-            # Label once per location (not twice for each direction)
-            loc_key = (led["x"], led["y"], led["stop_name"])
+            loc_key = (led["stop_name"], led["x"], led["y"])
             if loc_key not in labeled:
                 labeled.add(loc_key)
                 stop = led["stop_id"] or "?"
-                name = led["stop_name"]
-                label = f"{name} [{stop}]"
+                label = f"{led['stop_name']} [{stop}]"
 
-                if rotate_labels and led["stop_name"] not in ("Ashmont", "Cedar Grove"):
-                    # Draw rotated text for Mattapan trolley
+                if led["stop_name"] in ROTATED_LABELS:
                     txt_img = Image.new("RGBA", (300, 20), (0, 0, 0, 0))
                     txt_draw = ImageDraw.Draw(txt_img)
                     txt_draw.text((0, 0), label, fill="white", font=font,
                                   stroke_width=1, stroke_fill=(30, 30, 30))
                     txt_img = txt_img.rotate(270, expand=True)
-                    label_x = base_px - txt_img.width // 2
-                    label_y = base_py + OFFSET_PX // 2 + LABEL_GAP
-                    img.paste(txt_img, (label_x, label_y), txt_img)
+                    img.paste(txt_img,
+                              (px - txt_img.width // 2, py + gap_px),
+                              txt_img)
                 else:
-                    label_x = base_px + OFFSET_PX // 2 + LABEL_GAP
-                    draw.text((label_x, base_py - 6), label,
+                    draw.text((px + gap_px, py - 6), label,
                               fill="white", font=font,
                               stroke_width=1, stroke_fill=(30, 30, 30))
         else:
@@ -171,7 +131,7 @@ def main():
         leds = load_line(filepath)
         if leds:
             color = LINE_COLORS.get(line_name, (200, 200, 200))
-            draw_leds(draw, img, leds, color, font, line_name)
+            draw_leds(draw, img, leds, color, font)
             print(f"  {line_name}: {len(leds)} LEDs")
 
     img.save(args.output)
