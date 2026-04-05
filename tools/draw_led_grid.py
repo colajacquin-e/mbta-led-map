@@ -37,7 +37,8 @@ LINE_FILES = {
 }
 
 # Stations whose labels should be rotated 270 degrees (vertical text below dots)
-ROTATED_LABELS = {"Butler", "Milton", "Central Ave", "Valley Rd", "Capen St", "Mattapan"}
+ROTATED_LABELS = {"Butler", "Milton", "Central Ave", "Valley Rd", "Capen St", "Mattapan",
+                  "Boylston", "Arlington", "Copley"}
 
 LABEL_GAP = 4  # mm between LED and label
 
