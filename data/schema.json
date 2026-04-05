@@ -62,7 +62,7 @@
             "enum": ["red", "orange", "blue", "green", "mattapan"],
             "description": "Which subway line this LED belongs to."
           },
-"stop_id": {
+          "stop_id": {
             "description": "MBTA V3 API stop ID for station LEDs; null for midpoints.",
             "oneOf": [
               { "type": "string", "minLength": 1 },
