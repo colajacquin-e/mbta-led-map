@@ -1,0 +1,72 @@
+{
+  "lines": {
+    "red": {
+      "name": "Red Line",
+      "color_hex": "#DA291C",
+      "led_count": 90,
+      "chain_gpio": 4
+    },
+    "orange": {
+      "name": "Orange Line",
+      "color_hex": "#ED8B00",
+      "led_count": 78,
+      "chain_gpio": 5
+    },
+    "blue": {
+      "name": "Blue Line",
+      "color_hex": "#003DA5",
+      "led_count": 46,
+      "chain_gpio": 6
+    },
+    "green": {
+      "name": "Green Line",
+      "color_hex": "#00843D",
+      "led_count": 280,
+      "chain_gpio": 7
+    },
+    "mattapan": {
+      "name": "Mattapan Trolley",
+      "color_hex": "#DA291C",
+      "led_count": 0,
+      "chain_gpio": 8
+    }
+  },
+  "leds": [
+    {
+      "index": 0,
+      "line": "red",
+      "stop_id": "70061",
+      "stop_name": "Alewife",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 220,
+      "y": 50
+    },
+    {
+      "index": 1,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Alewife – Davis",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "midpoint",
+      "adjacent_stops": ["70061", "70063"],
+      "x": 250,
+      "y": 65
+    },
+    {
+      "index": 2,
+      "line": "red",
+      "stop_id": "70063",
+      "stop_name": "Davis",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 280,
+      "y": 80
+    }
+  ]
+}
