@@ -1,17 +1,22 @@
 # Station Data Schema
 
-`stations.json` is the **single source of truth** for every LED in the MBTA LED Map. Both the backend (vehicle → LED mapper) and the frontend (SVG renderer) read this file.
+The `data/` directory is the **single source of truth** for every LED in the MBTA LED Map. Both the backend (vehicle → LED mapper) and the frontend (SVG renderer) read these files.
 
-## File Structure
+## File Layout
 
-```json
-{
-  "lines": { ... },
-  "leds": [ ... ]
-}
+```
+data/
+├── lines.json          # Line metadata (all lines)
+├── red.json            # Red Line LED entries
+├── mattapan.json       # Mattapan Trolley LED entries
+├── orange.json         # (future) Orange Line LED entries
+├── blue.json           # (future) Blue Line LED entries
+├── green.json          # (future) Green Line LED entries
+├── schema.json         # JSON Schema definitions
+└── README.md
 ```
 
-### `lines` — Per-Line Metadata
+### `lines.json` — Per-Line Metadata
 
 Each key is a line identifier (`red`, `orange`, `blue`, `green`, `mattapan`).
 
@@ -22,9 +27,9 @@ Each key is a line identifier (`red`, `orange`, `blue`, `green`, `mattapan`).
 | `led_count` | integer | Total LEDs on this line's chain |
 | `chain_gpio` | integer | ESP32 GPIO pin for this chain's DIN signal |
 
-### `leds` — LED Entry Array
+### `<line>.json` — Per-Line LED Arrays
 
-Each object in the array represents one physical LED.
+Each file is a JSON array of LED entry objects. One file per line.
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -59,7 +64,7 @@ Each object in the array represents one physical LED.
 
 | Line | Stations | LEDs/Station | Midpoint Gaps | Total LEDs |
 |------|----------|-------------|---------------|------------|
-| Red | 22 (4-track at JFK/UMass) | 2 (4 at JFK) | 21 × 2 dir | ~90 |
+| Red | 22 (4-track at JFK/UMass) | 2 (4 at JFK) | 21 × 2 dir | 88 |
 | Orange | 20 | 2 | 19 × 2 dir | ~78 |
 | Blue | 12 | 2 | 11 × 2 dir | ~46 |
 | Green | ~66 (4-track at Kenmore) | 2 (4 at Kenmore) | ~68 × 2 dir | ~280 |
@@ -67,17 +72,25 @@ Each object in the array represents one physical LED.
 
 ## Validation
 
-Validate with the JSON Schema in `schema.json`:
+Validate with the JSON Schema definitions in `schema.json`:
 
-```bash
-# Python (requires jsonschema package)
-python -c "
+```python
 import json, jsonschema
-schema = json.load(open('data/schema.json'))
-data = json.load(open('data/stations.json'))
-jsonschema.validate(data, schema)
-print('Valid')
-"
+
+with open("data/schema.json") as f:
+    schema = json.load(f)
+
+def validate_def(instance, def_name):
+    wrapper = {"$ref": f"#/$defs/{def_name}", "$defs": schema["$defs"]}
+    jsonschema.validate(instance, wrapper)
+
+# Validate line metadata
+with open("data/lines.json") as f:
+    validate_def(json.load(f), "line_metadata")
+
+# Validate a per-line LED file
+with open("data/red.json") as f:
+    validate_def(json.load(f), "led_file")
 ```
 
 A full validation script is at `tests/validate_stations.py` (see issue #8).
