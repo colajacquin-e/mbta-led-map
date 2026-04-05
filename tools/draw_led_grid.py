@@ -84,12 +84,17 @@ def draw_leds(draw, img, leds, color, font, line_name):
         is_station = led["type"] == "station"
         has_pair = loc_counts[(led["x"], led["y"])] > 1
 
-        # Offset co-located LEDs perpendicular to avoid overlap
+        # Offset co-located LEDs perpendicular to the line direction
         if has_pair:
-            # direction_id 0 shifts left, 1 shifts right
             offset = -OFFSET_PX // 2 if led["direction_id"] == 0 else OFFSET_PX // 2
-            px = base_px + offset
-            py = base_py
+            if line_name == "mattapan":
+                # Horizontal line: offset vertically
+                px = base_px
+                py = base_py + offset
+            else:
+                # Diagonal/vertical lines: offset horizontally
+                px = base_px + offset
+                py = base_py
         else:
             px, py = base_px, base_py
 
