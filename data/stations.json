@@ -3,7 +3,7 @@
     "red": {
       "name": "Red Line",
       "color_hex": "#DA291C",
-      "led_count": 90,
+      "led_count": 88,
       "chain_gpio": 4
     },
     "orange": {
@@ -41,20 +41,23 @@
       "direction_id": 0,
       "type": "station",
       "adjacent_stops": null,
-      "x": 220,
-      "y": 50
+      "x": 50.0,
+      "y": 53.4
     },
     {
       "index": 1,
       "line": "red",
       "stop_id": null,
-      "stop_name": "Alewife – Davis",
+      "stop_name": "Alewife \u2013 Davis",
       "direction": "southbound",
       "direction_id": 0,
       "type": "midpoint",
-      "adjacent_stops": ["70061", "70063"],
-      "x": 250,
-      "y": 65
+      "adjacent_stops": [
+        "70061",
+        "70063"
+      ],
+      "x": 112.5,
+      "y": 51.7
     },
     {
       "index": 2,
@@ -65,8 +68,1151 @@
       "direction_id": 0,
       "type": "station",
       "adjacent_stops": null,
-      "x": 280,
-      "y": 80
+      "x": 175.0,
+      "y": 50.0
+    },
+    {
+      "index": 3,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Davis \u2013 Porter",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70063",
+        "70065"
+      ],
+      "x": 183.6,
+      "y": 65.5
+    },
+    {
+      "index": 4,
+      "line": "red",
+      "stop_id": "70065",
+      "stop_name": "Porter",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 192.2,
+      "y": 80.9
+    },
+    {
+      "index": 5,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Porter \u2013 Harvard",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70065",
+        "70067"
+      ],
+      "x": 192.8,
+      "y": 108.8
+    },
+    {
+      "index": 6,
+      "line": "red",
+      "stop_id": "70067",
+      "stop_name": "Harvard",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 193.4,
+      "y": 136.6
+    },
+    {
+      "index": 7,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Harvard \u2013 Central",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70067",
+        "70069"
+      ],
+      "x": 242.1,
+      "y": 151.2
+    },
+    {
+      "index": 8,
+      "line": "red",
+      "stop_id": "70069",
+      "stop_name": "Central",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 290.7,
+      "y": 165.8
+    },
+    {
+      "index": 9,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Central \u2013 Kendall/MIT",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70069",
+        "70071"
+      ],
+      "x": 347.3,
+      "y": 171.4
+    },
+    {
+      "index": 10,
+      "line": "red",
+      "stop_id": "70071",
+      "stop_name": "Kendall/MIT",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 403.9,
+      "y": 176.9
+    },
+    {
+      "index": 11,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Kendall/MIT \u2013 Charles/MGH",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70071",
+        "70073"
+      ],
+      "x": 453.8,
+      "y": 179.4
+    },
+    {
+      "index": 12,
+      "line": "red",
+      "stop_id": "70073",
+      "stop_name": "Charles/MGH",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 503.8,
+      "y": 181.8
+    },
+    {
+      "index": 13,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Charles/MGH \u2013 Park Street",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70073",
+        "70075"
+      ],
+      "x": 530.1,
+      "y": 190.7
+    },
+    {
+      "index": 14,
+      "line": "red",
+      "stop_id": "70075",
+      "stop_name": "Park Street",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 556.4,
+      "y": 199.5
+    },
+    {
+      "index": 15,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Park Street \u2013 Downtown Crossing",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70075",
+        "70077"
+      ],
+      "x": 563.5,
+      "y": 201.1
+    },
+    {
+      "index": 16,
+      "line": "red",
+      "stop_id": "70077",
+      "stop_name": "Downtown Crossing",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 570.6,
+      "y": 202.8
+    },
+    {
+      "index": 17,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Downtown Crossing \u2013 South Station",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70077",
+        "70079"
+      ],
+      "x": 586.6,
+      "y": 208.8
+    },
+    {
+      "index": 18,
+      "line": "red",
+      "stop_id": "70079",
+      "stop_name": "South Station",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 602.6,
+      "y": 214.8
+    },
+    {
+      "index": 19,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "South Station \u2013 Broadway",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70079",
+        "70081"
+      ],
+      "x": 597.0,
+      "y": 232.7
+    },
+    {
+      "index": 20,
+      "line": "red",
+      "stop_id": "70081",
+      "stop_name": "Broadway",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 591.5,
+      "y": 250.6
+    },
+    {
+      "index": 21,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Broadway \u2013 Andrew",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70081",
+        "70083"
+      ],
+      "x": 589.3,
+      "y": 273.7
+    },
+    {
+      "index": 22,
+      "line": "red",
+      "stop_id": "70083",
+      "stop_name": "Andrew",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 587.1,
+      "y": 296.8
+    },
+    {
+      "index": 23,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Andrew \u2013 JFK/UMass",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70083",
+        "70085"
+      ],
+      "x": 604.0,
+      "y": 314.3
+    },
+    {
+      "index": 24,
+      "line": "red",
+      "stop_id": "70085",
+      "stop_name": "JFK/UMass",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 620.9,
+      "y": 331.9
+    },
+    {
+      "index": 25,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "JFK/UMass \u2013 Savin Hill",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70085",
+        "70087"
+      ],
+      "x": 617.9,
+      "y": 349.3
+    },
+    {
+      "index": 26,
+      "line": "red",
+      "stop_id": "70087",
+      "stop_name": "Savin Hill",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 614.8,
+      "y": 366.7
+    },
+    {
+      "index": 27,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Savin Hill \u2013 Fields Corner",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70087",
+        "70089"
+      ],
+      "x": 588.1,
+      "y": 387.4
+    },
+    {
+      "index": 28,
+      "line": "red",
+      "stop_id": "70089",
+      "stop_name": "Fields Corner",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 561.3,
+      "y": 408.2
+    },
+    {
+      "index": 29,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Fields Corner \u2013 Shawmut",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70089",
+        "70091"
+      ],
+      "x": 548.2,
+      "y": 421.1
+    },
+    {
+      "index": 30,
+      "line": "red",
+      "stop_id": "70091",
+      "stop_name": "Shawmut",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 535.2,
+      "y": 434.0
+    },
+    {
+      "index": 31,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Shawmut \u2013 Ashmont",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70091",
+        "70093"
+      ],
+      "x": 541.5,
+      "y": 449.9
+    },
+    {
+      "index": 32,
+      "line": "red",
+      "stop_id": "70093",
+      "stop_name": "Ashmont",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 547.8,
+      "y": 465.9
+    },
+    {
+      "index": 33,
+      "line": "red",
+      "stop_id": "70095",
+      "stop_name": "JFK/UMass",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 620.9,
+      "y": 331.9
+    },
+    {
+      "index": 34,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "JFK/UMass \u2013 North Quincy",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70095",
+        "70097"
+      ],
+      "x": 694.1,
+      "y": 416.0
+    },
+    {
+      "index": 35,
+      "line": "red",
+      "stop_id": "70097",
+      "stop_name": "North Quincy",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 767.3,
+      "y": 500.1
+    },
+    {
+      "index": 36,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "North Quincy \u2013 Wollaston",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70097",
+        "70099"
+      ],
+      "x": 797.0,
+      "y": 516.4
+    },
+    {
+      "index": 37,
+      "line": "red",
+      "stop_id": "70099",
+      "stop_name": "Wollaston",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 826.7,
+      "y": 532.6
+    },
+    {
+      "index": 38,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Wollaston \u2013 Quincy Center",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70099",
+        "70101"
+      ],
+      "x": 874.6,
+      "y": 559.9
+    },
+    {
+      "index": 39,
+      "line": "red",
+      "stop_id": "70101",
+      "stop_name": "Quincy Center",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 922.6,
+      "y": 587.1
+    },
+    {
+      "index": 40,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Quincy Center \u2013 Quincy Adams",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70101",
+        "70103"
+      ],
+      "x": 917.0,
+      "y": 621.2
+    },
+    {
+      "index": 41,
+      "line": "red",
+      "stop_id": "70103",
+      "stop_name": "Quincy Adams",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 911.4,
+      "y": 655.4
+    },
+    {
+      "index": 42,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Quincy Adams \u2013 Braintree",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70103",
+        "70105"
+      ],
+      "x": 930.7,
+      "y": 702.7
+    },
+    {
+      "index": 43,
+      "line": "red",
+      "stop_id": "70105",
+      "stop_name": "Braintree",
+      "direction": "southbound",
+      "direction_id": 0,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 950.0,
+      "y": 750.0
+    },
+    {
+      "index": 44,
+      "line": "red",
+      "stop_id": "70105",
+      "stop_name": "Braintree",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 950.0,
+      "y": 750.0
+    },
+    {
+      "index": 45,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Braintree \u2013 Quincy Adams",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70105",
+        "70104"
+      ],
+      "x": 930.7,
+      "y": 702.7
+    },
+    {
+      "index": 46,
+      "line": "red",
+      "stop_id": "70104",
+      "stop_name": "Quincy Adams",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 911.4,
+      "y": 655.4
+    },
+    {
+      "index": 47,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Quincy Adams \u2013 Quincy Center",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70104",
+        "70102"
+      ],
+      "x": 917.0,
+      "y": 621.2
+    },
+    {
+      "index": 48,
+      "line": "red",
+      "stop_id": "70102",
+      "stop_name": "Quincy Center",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 922.6,
+      "y": 587.1
+    },
+    {
+      "index": 49,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Quincy Center \u2013 Wollaston",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70102",
+        "70100"
+      ],
+      "x": 874.6,
+      "y": 559.9
+    },
+    {
+      "index": 50,
+      "line": "red",
+      "stop_id": "70100",
+      "stop_name": "Wollaston",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 826.7,
+      "y": 532.6
+    },
+    {
+      "index": 51,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Wollaston \u2013 North Quincy",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70100",
+        "70098"
+      ],
+      "x": 797.0,
+      "y": 516.4
+    },
+    {
+      "index": 52,
+      "line": "red",
+      "stop_id": "70098",
+      "stop_name": "North Quincy",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 767.3,
+      "y": 500.1
+    },
+    {
+      "index": 53,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "North Quincy \u2013 JFK/UMass",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70098",
+        "70096"
+      ],
+      "x": 694.1,
+      "y": 416.0
+    },
+    {
+      "index": 54,
+      "line": "red",
+      "stop_id": "70096",
+      "stop_name": "JFK/UMass",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 620.9,
+      "y": 331.9
+    },
+    {
+      "index": 55,
+      "line": "red",
+      "stop_id": "70094",
+      "stop_name": "Ashmont",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 547.8,
+      "y": 465.9
+    },
+    {
+      "index": 56,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Ashmont \u2013 Shawmut",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70094",
+        "70092"
+      ],
+      "x": 541.5,
+      "y": 449.9
+    },
+    {
+      "index": 57,
+      "line": "red",
+      "stop_id": "70092",
+      "stop_name": "Shawmut",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 535.2,
+      "y": 434.0
+    },
+    {
+      "index": 58,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Shawmut \u2013 Fields Corner",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70092",
+        "70090"
+      ],
+      "x": 548.2,
+      "y": 421.1
+    },
+    {
+      "index": 59,
+      "line": "red",
+      "stop_id": "70090",
+      "stop_name": "Fields Corner",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 561.3,
+      "y": 408.2
+    },
+    {
+      "index": 60,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Fields Corner \u2013 Savin Hill",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70090",
+        "70088"
+      ],
+      "x": 588.1,
+      "y": 387.4
+    },
+    {
+      "index": 61,
+      "line": "red",
+      "stop_id": "70088",
+      "stop_name": "Savin Hill",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 614.8,
+      "y": 366.7
+    },
+    {
+      "index": 62,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Savin Hill \u2013 JFK/UMass",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70088",
+        "70086"
+      ],
+      "x": 617.9,
+      "y": 349.3
+    },
+    {
+      "index": 63,
+      "line": "red",
+      "stop_id": "70086",
+      "stop_name": "JFK/UMass",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 620.9,
+      "y": 331.9
+    },
+    {
+      "index": 64,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "JFK/UMass \u2013 Andrew",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70086",
+        "70084"
+      ],
+      "x": 604.0,
+      "y": 314.3
+    },
+    {
+      "index": 65,
+      "line": "red",
+      "stop_id": "70084",
+      "stop_name": "Andrew",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 587.1,
+      "y": 296.8
+    },
+    {
+      "index": 66,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Andrew \u2013 Broadway",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70084",
+        "70082"
+      ],
+      "x": 589.3,
+      "y": 273.7
+    },
+    {
+      "index": 67,
+      "line": "red",
+      "stop_id": "70082",
+      "stop_name": "Broadway",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 591.5,
+      "y": 250.6
+    },
+    {
+      "index": 68,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Broadway \u2013 South Station",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70082",
+        "70080"
+      ],
+      "x": 597.0,
+      "y": 232.7
+    },
+    {
+      "index": 69,
+      "line": "red",
+      "stop_id": "70080",
+      "stop_name": "South Station",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 602.6,
+      "y": 214.8
+    },
+    {
+      "index": 70,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "South Station \u2013 Downtown Crossing",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70080",
+        "70078"
+      ],
+      "x": 586.6,
+      "y": 208.8
+    },
+    {
+      "index": 71,
+      "line": "red",
+      "stop_id": "70078",
+      "stop_name": "Downtown Crossing",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 570.6,
+      "y": 202.8
+    },
+    {
+      "index": 72,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Downtown Crossing \u2013 Park Street",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70078",
+        "70076"
+      ],
+      "x": 563.5,
+      "y": 201.1
+    },
+    {
+      "index": 73,
+      "line": "red",
+      "stop_id": "70076",
+      "stop_name": "Park Street",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 556.4,
+      "y": 199.5
+    },
+    {
+      "index": 74,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Park Street \u2013 Charles/MGH",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70076",
+        "70074"
+      ],
+      "x": 530.1,
+      "y": 190.7
+    },
+    {
+      "index": 75,
+      "line": "red",
+      "stop_id": "70074",
+      "stop_name": "Charles/MGH",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 503.8,
+      "y": 181.8
+    },
+    {
+      "index": 76,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Charles/MGH \u2013 Kendall/MIT",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70074",
+        "70072"
+      ],
+      "x": 453.8,
+      "y": 179.4
+    },
+    {
+      "index": 77,
+      "line": "red",
+      "stop_id": "70072",
+      "stop_name": "Kendall/MIT",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 403.9,
+      "y": 176.9
+    },
+    {
+      "index": 78,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Kendall/MIT \u2013 Central",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70072",
+        "70070"
+      ],
+      "x": 347.3,
+      "y": 171.4
+    },
+    {
+      "index": 79,
+      "line": "red",
+      "stop_id": "70070",
+      "stop_name": "Central",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 290.7,
+      "y": 165.8
+    },
+    {
+      "index": 80,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Central \u2013 Harvard",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70070",
+        "70068"
+      ],
+      "x": 242.1,
+      "y": 151.2
+    },
+    {
+      "index": 81,
+      "line": "red",
+      "stop_id": "70068",
+      "stop_name": "Harvard",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 193.4,
+      "y": 136.6
+    },
+    {
+      "index": 82,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Harvard \u2013 Porter",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70068",
+        "70066"
+      ],
+      "x": 192.8,
+      "y": 108.8
+    },
+    {
+      "index": 83,
+      "line": "red",
+      "stop_id": "70066",
+      "stop_name": "Porter",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 192.2,
+      "y": 80.9
+    },
+    {
+      "index": 84,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Porter \u2013 Davis",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70066",
+        "70064"
+      ],
+      "x": 183.6,
+      "y": 65.5
+    },
+    {
+      "index": 85,
+      "line": "red",
+      "stop_id": "70064",
+      "stop_name": "Davis",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 175.0,
+      "y": 50.0
+    },
+    {
+      "index": 86,
+      "line": "red",
+      "stop_id": null,
+      "stop_name": "Davis \u2013 Alewife",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "midpoint",
+      "adjacent_stops": [
+        "70064",
+        "70061"
+      ],
+      "x": 112.5,
+      "y": 51.7
+    },
+    {
+      "index": 87,
+      "line": "red",
+      "stop_id": "70061",
+      "stop_name": "Alewife",
+      "direction": "northbound",
+      "direction_id": 1,
+      "type": "station",
+      "adjacent_stops": null,
+      "x": 50.0,
+      "y": 53.4
     }
   ]
 }
