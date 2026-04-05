@@ -887,7 +887,7 @@
     "direction_id": 0,
     "type": "station",
     "adjacent_stops": null,
-    "x": 175,
+    "x": 174,
     "y": 199,
     "label_position": "left",
     "index": 61
@@ -1480,7 +1480,7 @@
     "direction_id": 1,
     "type": "station",
     "adjacent_stops": null,
-    "x": 181,
+    "x": 180,
     "y": 199,
     "label_position": "none",
     "index": 102
