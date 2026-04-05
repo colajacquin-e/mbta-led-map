@@ -1,0 +1,620 @@
+[
+  {
+    "index": 0,
+    "line": "blue",
+    "stop_id": "70059",
+    "stop_name": "Wonderland",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 383,
+    "y": 51
+  },
+  {
+    "index": 1,
+    "line": "blue",
+    "stop_id": null,
+    "stop_name": "Wonderland \u2013 Revere Beach",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70059",
+      "70057"
+    ],
+    "x": 378,
+    "y": 57
+  },
+  {
+    "index": 2,
+    "line": "blue",
+    "stop_id": "70057",
+    "stop_name": "Revere Beach",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 372,
+    "y": 62
+  },
+  {
+    "index": 3,
+    "line": "blue",
+    "stop_id": null,
+    "stop_name": "Revere Beach \u2013 Beachmont",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70057",
+      "70055"
+    ],
+    "x": 367,
+    "y": 68
+  },
+  {
+    "index": 4,
+    "line": "blue",
+    "stop_id": "70055",
+    "stop_name": "Beachmont",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 361,
+    "y": 73
+  },
+  {
+    "index": 5,
+    "line": "blue",
+    "stop_id": null,
+    "stop_name": "Beachmont \u2013 Suffolk Downs",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70055",
+      "70053"
+    ],
+    "x": 356,
+    "y": 78
+  },
+  {
+    "index": 6,
+    "line": "blue",
+    "stop_id": "70053",
+    "stop_name": "Suffolk Downs",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 351,
+    "y": 84
+  },
+  {
+    "index": 7,
+    "line": "blue",
+    "stop_id": null,
+    "stop_name": "Suffolk Downs \u2013 Orient Heights",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70053",
+      "70051"
+    ],
+    "x": 345,
+    "y": 89
+  },
+  {
+    "index": 8,
+    "line": "blue",
+    "stop_id": "70051",
+    "stop_name": "Orient Heights",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 340,
+    "y": 95
+  },
+  {
+    "index": 9,
+    "line": "blue",
+    "stop_id": null,
+    "stop_name": "Orient Heights \u2013 Wood Island",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70051",
+      "70049"
+    ],
+    "x": 334,
+    "y": 100
+  },
+  {
+    "index": 10,
+    "line": "blue",
+    "stop_id": "70049",
+    "stop_name": "Wood Island",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 329,
+    "y": 106
+  },
+  {
+    "index": 11,
+    "line": "blue",
+    "stop_id": null,
+    "stop_name": "Wood Island \u2013 Airport",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70049",
+      "70047"
+    ],
+    "x": 323,
+    "y": 111
+  },
+  {
+    "index": 12,
+    "line": "blue",
+    "stop_id": "70047",
+    "stop_name": "Airport",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 318,
+    "y": 117
+  },
+  {
+    "index": 13,
+    "line": "blue",
+    "stop_id": null,
+    "stop_name": "Airport \u2013 Maverick",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70047",
+      "70045"
+    ],
+    "x": 312,
+    "y": 122
+  },
+  {
+    "index": 14,
+    "line": "blue",
+    "stop_id": "70045",
+    "stop_name": "Maverick",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 307,
+    "y": 127
+  },
+  {
+    "index": 15,
+    "line": "blue",
+    "stop_id": null,
+    "stop_name": "Maverick \u2013 Aquarium",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70045",
+      "70043"
+    ],
+    "x": 296,
+    "y": 138
+  },
+  {
+    "index": 16,
+    "line": "blue",
+    "stop_id": "70043",
+    "stop_name": "Aquarium",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 286,
+    "y": 149
+  },
+  {
+    "index": 17,
+    "line": "blue",
+    "stop_id": null,
+    "stop_name": "Aquarium \u2013 State",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70043",
+      "70041"
+    ],
+    "x": 278,
+    "y": 155
+  },
+  {
+    "index": 18,
+    "line": "blue",
+    "stop_id": "70041",
+    "stop_name": "State",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 270,
+    "y": 162
+  },
+  {
+    "index": 19,
+    "line": "blue",
+    "stop_id": null,
+    "stop_name": "State \u2013 Government Center",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70041",
+      "70039"
+    ],
+    "x": 262,
+    "y": 155
+  },
+  {
+    "index": 20,
+    "line": "blue",
+    "stop_id": "70039",
+    "stop_name": "Government Center",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 254,
+    "y": 149
+  },
+  {
+    "index": 21,
+    "line": "blue",
+    "stop_id": null,
+    "stop_name": "Government Center \u2013 Bowdoin",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70039",
+      "70038"
+    ],
+    "x": 249,
+    "y": 144
+  },
+  {
+    "index": 22,
+    "line": "blue",
+    "stop_id": "70038",
+    "stop_name": "Bowdoin",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 244,
+    "y": 139
+  },
+  {
+    "index": 23,
+    "line": "blue",
+    "stop_id": "70838",
+    "stop_name": "Bowdoin",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 253,
+    "y": 136
+  },
+  {
+    "index": 24,
+    "line": "blue",
+    "stop_id": null,
+    "stop_name": "Bowdoin \u2013 Government Center",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70838",
+      "70040"
+    ],
+    "x": 255,
+    "y": 144
+  },
+  {
+    "index": 25,
+    "line": "blue",
+    "stop_id": "70040",
+    "stop_name": "Government Center",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 260,
+    "y": 149
+  },
+  {
+    "index": 26,
+    "line": "blue",
+    "stop_id": null,
+    "stop_name": "Government Center \u2013 State",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70040",
+      "70042"
+    ],
+    "x": 268,
+    "y": 155
+  },
+  {
+    "index": 27,
+    "line": "blue",
+    "stop_id": "70042",
+    "stop_name": "State",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 276,
+    "y": 162
+  },
+  {
+    "index": 28,
+    "line": "blue",
+    "stop_id": null,
+    "stop_name": "State \u2013 Aquarium",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70042",
+      "70044"
+    ],
+    "x": 284,
+    "y": 155
+  },
+  {
+    "index": 29,
+    "line": "blue",
+    "stop_id": "70044",
+    "stop_name": "Aquarium",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 292,
+    "y": 149
+  },
+  {
+    "index": 30,
+    "line": "blue",
+    "stop_id": null,
+    "stop_name": "Aquarium \u2013 Maverick",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70044",
+      "70046"
+    ],
+    "x": 302,
+    "y": 138
+  },
+  {
+    "index": 31,
+    "line": "blue",
+    "stop_id": "70046",
+    "stop_name": "Maverick",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 310,
+    "y": 130
+  },
+  {
+    "index": 32,
+    "line": "blue",
+    "stop_id": null,
+    "stop_name": "Maverick \u2013 Airport",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70046",
+      "70048"
+    ],
+    "x": 318,
+    "y": 122
+  },
+  {
+    "index": 33,
+    "line": "blue",
+    "stop_id": "70048",
+    "stop_name": "Airport",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 324,
+    "y": 117
+  },
+  {
+    "index": 34,
+    "line": "blue",
+    "stop_id": null,
+    "stop_name": "Airport \u2013 Wood Island",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70048",
+      "70050"
+    ],
+    "x": 329,
+    "y": 111
+  },
+  {
+    "index": 35,
+    "line": "blue",
+    "stop_id": "70050",
+    "stop_name": "Wood Island",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 335,
+    "y": 106
+  },
+  {
+    "index": 36,
+    "line": "blue",
+    "stop_id": null,
+    "stop_name": "Wood Island \u2013 Orient Heights",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70050",
+      "70052"
+    ],
+    "x": 340,
+    "y": 100
+  },
+  {
+    "index": 37,
+    "line": "blue",
+    "stop_id": "70052",
+    "stop_name": "Orient Heights",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 346,
+    "y": 95
+  },
+  {
+    "index": 38,
+    "line": "blue",
+    "stop_id": null,
+    "stop_name": "Orient Heights \u2013 Suffolk Downs",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70052",
+      "70054"
+    ],
+    "x": 351,
+    "y": 89
+  },
+  {
+    "index": 39,
+    "line": "blue",
+    "stop_id": "70054",
+    "stop_name": "Suffolk Downs",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 357,
+    "y": 84
+  },
+  {
+    "index": 40,
+    "line": "blue",
+    "stop_id": null,
+    "stop_name": "Suffolk Downs \u2013 Beachmont",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70054",
+      "70056"
+    ],
+    "x": 362,
+    "y": 78
+  },
+  {
+    "index": 41,
+    "line": "blue",
+    "stop_id": "70056",
+    "stop_name": "Beachmont",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 367,
+    "y": 73
+  },
+  {
+    "index": 42,
+    "line": "blue",
+    "stop_id": null,
+    "stop_name": "Beachmont \u2013 Revere Beach",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70056",
+      "70058"
+    ],
+    "x": 373,
+    "y": 68
+  },
+  {
+    "index": 43,
+    "line": "blue",
+    "stop_id": "70058",
+    "stop_name": "Revere Beach",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 378,
+    "y": 62
+  },
+  {
+    "index": 44,
+    "line": "blue",
+    "stop_id": null,
+    "stop_name": "Revere Beach \u2013 Wonderland",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70058",
+      "70060"
+    ],
+    "x": 384,
+    "y": 57
+  },
+  {
+    "index": 45,
+    "line": "blue",
+    "stop_id": "70060",
+    "stop_name": "Wonderland",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 389,
+    "y": 51
+  }
+]
