@@ -1500,5 +1500,875 @@
     "y": 187,
     "label_position": "none",
     "index": 103
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Copley \u2013 Hynes Convention Center",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70155",
+      "70153"
+    ],
+    "x": 181,
+    "y": 179,
+    "label_position": "none",
+    "index": 104
+  },
+  {
+    "line": "green",
+    "stop_id": "70153",
+    "stop_name": "Hynes Convention Center",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 173,
+    "y": 179,
+    "label_position": "below",
+    "index": 105
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Hynes Convention Center \u2013 Kenmore",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70153",
+      "70151"
+    ],
+    "x": 164,
+    "y": 179,
+    "label_position": "none",
+    "index": 106
+  },
+  {
+    "line": "green",
+    "stop_id": "70151",
+    "stop_name": "Kenmore",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 155,
+    "y": 179,
+    "label_position": "below",
+    "index": 107
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Kenmore \u2013 Fenway",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70151",
+      "70187"
+    ],
+    "x": 143,
+    "y": 185,
+    "label_position": "none",
+    "index": 108
+  },
+  {
+    "line": "green",
+    "stop_id": "70187",
+    "stop_name": "Fenway",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 136,
+    "y": 192,
+    "label_position": "left",
+    "index": 109
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Fenway \u2013 Longwood",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70187",
+      "70183"
+    ],
+    "x": 133,
+    "y": 195,
+    "label_position": "none",
+    "index": 110
+  },
+  {
+    "line": "green",
+    "stop_id": "70183",
+    "stop_name": "Longwood",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 130,
+    "y": 198,
+    "label_position": "left",
+    "index": 111
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Longwood \u2013 Brookline Village",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70183",
+      "70181"
+    ],
+    "x": 126,
+    "y": 201,
+    "label_position": "none",
+    "index": 112
+  },
+  {
+    "line": "green",
+    "stop_id": "70181",
+    "stop_name": "Brookline Village",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 123,
+    "y": 205,
+    "label_position": "left",
+    "index": 113
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Brookline Village \u2013 Brookline Hills",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70181",
+      "70179"
+    ],
+    "x": 120,
+    "y": 208,
+    "label_position": "none",
+    "index": 114
+  },
+  {
+    "line": "green",
+    "stop_id": "70179",
+    "stop_name": "Brookline Hills",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 117,
+    "y": 211,
+    "label_position": "left",
+    "index": 115
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Brookline Hills \u2013 Beaconsfield",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70179",
+      "70177"
+    ],
+    "x": 114,
+    "y": 214,
+    "label_position": "none",
+    "index": 116
+  },
+  {
+    "line": "green",
+    "stop_id": "70177",
+    "stop_name": "Beaconsfield",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 110,
+    "y": 217,
+    "label_position": "left",
+    "index": 117
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Beaconsfield \u2013 Reservoir",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70177",
+      "70175"
+    ],
+    "x": 107,
+    "y": 220,
+    "label_position": "none",
+    "index": 118
+  },
+  {
+    "line": "green",
+    "stop_id": "70175",
+    "stop_name": "Reservoir",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 104,
+    "y": 224,
+    "label_position": "left",
+    "index": 119
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Reservoir \u2013 Chestnut Hill",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70175",
+      "70173"
+    ],
+    "x": 101,
+    "y": 227,
+    "label_position": "none",
+    "index": 120
+  },
+  {
+    "line": "green",
+    "stop_id": "70173",
+    "stop_name": "Chestnut Hill",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 98,
+    "y": 230,
+    "label_position": "left",
+    "index": 121
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Chestnut Hill \u2013 Newton Centre",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70173",
+      "70171"
+    ],
+    "x": 95,
+    "y": 233,
+    "label_position": "none",
+    "index": 122
+  },
+  {
+    "line": "green",
+    "stop_id": "70171",
+    "stop_name": "Newton Centre",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 92,
+    "y": 236,
+    "label_position": "left",
+    "index": 123
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Newton Centre \u2013 Newton Highlands",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70171",
+      "70169"
+    ],
+    "x": 88,
+    "y": 240,
+    "label_position": "none",
+    "index": 124
+  },
+  {
+    "line": "green",
+    "stop_id": "70169",
+    "stop_name": "Newton Highlands",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 85,
+    "y": 243,
+    "label_position": "left",
+    "index": 125
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Newton Highlands \u2013 Eliot",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70169",
+      "70167"
+    ],
+    "x": 82,
+    "y": 246,
+    "label_position": "none",
+    "index": 126
+  },
+  {
+    "line": "green",
+    "stop_id": "70167",
+    "stop_name": "Eliot",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 79,
+    "y": 249,
+    "label_position": "left",
+    "index": 127
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Eliot \u2013 Waban",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70167",
+      "70165"
+    ],
+    "x": 76,
+    "y": 252,
+    "label_position": "none",
+    "index": 128
+  },
+  {
+    "line": "green",
+    "stop_id": "70165",
+    "stop_name": "Waban",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 72,
+    "y": 255,
+    "label_position": "left",
+    "index": 129
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Waban \u2013 Woodland",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70165",
+      "70163"
+    ],
+    "x": 69,
+    "y": 259,
+    "label_position": "none",
+    "index": 130
+  },
+  {
+    "line": "green",
+    "stop_id": "70163",
+    "stop_name": "Woodland",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 66,
+    "y": 262,
+    "label_position": "left",
+    "index": 131
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Woodland \u2013 Riverside",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70163",
+      "70161"
+    ],
+    "x": 63,
+    "y": 265,
+    "label_position": "none",
+    "index": 132
+  },
+  {
+    "line": "green",
+    "stop_id": "70161",
+    "stop_name": "Riverside",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 59,
+    "y": 268,
+    "label_position": "left",
+    "index": 133
+  },
+  {
+    "line": "green",
+    "stop_id": "70160",
+    "stop_name": "Riverside",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 65,
+    "y": 268,
+    "label_position": "none",
+    "index": 134
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Riverside \u2013 Woodland",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70160",
+      "70162"
+    ],
+    "x": 69,
+    "y": 265,
+    "label_position": "none",
+    "index": 135
+  },
+  {
+    "line": "green",
+    "stop_id": "70162",
+    "stop_name": "Woodland",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 72,
+    "y": 262,
+    "label_position": "none",
+    "index": 136
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Woodland \u2013 Waban",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70162",
+      "70164"
+    ],
+    "x": 75,
+    "y": 259,
+    "label_position": "none",
+    "index": 137
+  },
+  {
+    "line": "green",
+    "stop_id": "70164",
+    "stop_name": "Waban",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 78,
+    "y": 255,
+    "label_position": "none",
+    "index": 138
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Waban \u2013 Eliot",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70164",
+      "70166"
+    ],
+    "x": 82,
+    "y": 252,
+    "label_position": "none",
+    "index": 139
+  },
+  {
+    "line": "green",
+    "stop_id": "70166",
+    "stop_name": "Eliot",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 85,
+    "y": 249,
+    "label_position": "none",
+    "index": 140
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Eliot \u2013 Newton Highlands",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70166",
+      "70168"
+    ],
+    "x": 88,
+    "y": 246,
+    "label_position": "none",
+    "index": 141
+  },
+  {
+    "line": "green",
+    "stop_id": "70168",
+    "stop_name": "Newton Highlands",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 91,
+    "y": 243,
+    "label_position": "none",
+    "index": 142
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Newton Highlands \u2013 Newton Centre",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70168",
+      "70170"
+    ],
+    "x": 94,
+    "y": 240,
+    "label_position": "none",
+    "index": 143
+  },
+  {
+    "line": "green",
+    "stop_id": "70170",
+    "stop_name": "Newton Centre",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 98,
+    "y": 236,
+    "label_position": "none",
+    "index": 144
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Newton Centre \u2013 Chestnut Hill",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70170",
+      "70172"
+    ],
+    "x": 101,
+    "y": 233,
+    "label_position": "none",
+    "index": 145
+  },
+  {
+    "line": "green",
+    "stop_id": "70172",
+    "stop_name": "Chestnut Hill",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 104,
+    "y": 230,
+    "label_position": "none",
+    "index": 146
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Chestnut Hill \u2013 Reservoir",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70172",
+      "70174"
+    ],
+    "x": 107,
+    "y": 227,
+    "label_position": "none",
+    "index": 147
+  },
+  {
+    "line": "green",
+    "stop_id": "70174",
+    "stop_name": "Reservoir",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 110,
+    "y": 224,
+    "label_position": "none",
+    "index": 148
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Reservoir \u2013 Beaconsfield",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70174",
+      "70176"
+    ],
+    "x": 113,
+    "y": 220,
+    "label_position": "none",
+    "index": 149
+  },
+  {
+    "line": "green",
+    "stop_id": "70176",
+    "stop_name": "Beaconsfield",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 116,
+    "y": 217,
+    "label_position": "none",
+    "index": 150
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Beaconsfield \u2013 Brookline Hills",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70176",
+      "70178"
+    ],
+    "x": 120,
+    "y": 214,
+    "label_position": "none",
+    "index": 151
+  },
+  {
+    "line": "green",
+    "stop_id": "70178",
+    "stop_name": "Brookline Hills",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 123,
+    "y": 211,
+    "label_position": "none",
+    "index": 152
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Brookline Hills \u2013 Brookline Village",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70178",
+      "70180"
+    ],
+    "x": 126,
+    "y": 208,
+    "label_position": "none",
+    "index": 153
+  },
+  {
+    "line": "green",
+    "stop_id": "70180",
+    "stop_name": "Brookline Village",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 129,
+    "y": 205,
+    "label_position": "none",
+    "index": 154
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Brookline Village \u2013 Longwood",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70180",
+      "70182"
+    ],
+    "x": 132,
+    "y": 201,
+    "label_position": "none",
+    "index": 155
+  },
+  {
+    "line": "green",
+    "stop_id": "70182",
+    "stop_name": "Longwood",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 136,
+    "y": 198,
+    "label_position": "none",
+    "index": 156
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Longwood \u2013 Fenway",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70182",
+      "70186"
+    ],
+    "x": 139,
+    "y": 195,
+    "label_position": "none",
+    "index": 157
+  },
+  {
+    "line": "green",
+    "stop_id": "70186",
+    "stop_name": "Fenway",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 142,
+    "y": 192,
+    "label_position": "none",
+    "index": 158
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Fenway \u2013 Kenmore",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70186",
+      "70150"
+    ],
+    "x": 149,
+    "y": 185,
+    "label_position": "none",
+    "index": 159
+  },
+  {
+    "line": "green",
+    "stop_id": "70150",
+    "stop_name": "Kenmore",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 155,
+    "y": 185,
+    "label_position": "none",
+    "index": 160
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Kenmore \u2013 Hynes Convention Center",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70150",
+      "70152"
+    ],
+    "x": 164,
+    "y": 185,
+    "label_position": "none",
+    "index": 161
+  },
+  {
+    "line": "green",
+    "stop_id": "70152",
+    "stop_name": "Hynes Convention Center",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 173,
+    "y": 185,
+    "label_position": "none",
+    "index": 162
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Hynes Convention Center \u2013 Copley",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70152",
+      "70154"
+    ],
+    "x": 181,
+    "y": 185,
+    "label_position": "none",
+    "index": 163
   }
 ]
