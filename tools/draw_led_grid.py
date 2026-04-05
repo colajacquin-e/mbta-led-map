@@ -70,8 +70,10 @@ def draw_grid_labels(draw, font):
         draw.text((2, px + 2), f"{mm}", fill=(80, 80, 80), font=font)
 
 
-def draw_leds(draw, img, leds, color, font, simple=False):
+def draw_leds(draw, img, leds, color, font, simple=False, all_station_leds=None):
     gap_px = int(LABEL_GAP * MM)
+    if all_station_leds is None:
+        all_station_leds = {}
 
     for led in leds:
         px, py = mm2px(led["x"], led["y"])
@@ -102,13 +104,19 @@ def draw_leds(draw, img, leds, color, font, simple=False):
                           (px - txt_img.width // 2, py + gap_px),
                           txt_img)
             elif pos == "left":
+                # Anchor label 5mm to the left of the leftmost LED for this station
+                min_x = min(l["x"] for l in all_station_leds.get(led["stop_name"], [led]))
+                anchor_px = int(min_x * MM)
                 bbox = draw.textbbox((0, 0), label, font=font)
                 tw = bbox[2] - bbox[0]
-                draw.text((px - gap_px - tw, py - 6), label,
+                draw.text((anchor_px - gap_px - tw, py - 6), label,
                           fill="white", font=font,
                           stroke_width=1, stroke_fill=(30, 30, 30))
-            else:  # "right"
-                draw.text((px + gap_px, py - 6), label,
+            elif pos == "right":
+                # Anchor label 5mm to the right of the rightmost LED for this station
+                max_x = max(l["x"] for l in all_station_leds.get(led["stop_name"], [led]))
+                anchor_px = int(max_x * MM)
+                draw.text((anchor_px + gap_px, py - 6), label,
                           fill="white", font=font,
                           stroke_width=1, stroke_fill=(30, 30, 30))
         else:
@@ -148,12 +156,22 @@ def main():
     draw_grid(draw)
     draw_grid_labels(draw, grid_font)
 
+    # Build lookup of all station LEDs by name (across all lines) for label anchoring
+    all_station_leds = {}
+    all_line_data = []
     for line_name, filepath in LINE_FILES.items():
         leds = load_line(filepath)
         if leds:
-            color = LINE_COLORS.get(line_name, (200, 200, 200))
-            draw_leds(draw, img, leds, color, font, simple=args.simple)
-            print(f"  {line_name}: {len(leds)} LEDs")
+            all_line_data.append((line_name, leds))
+            for led in leds:
+                if led["type"] == "station":
+                    all_station_leds.setdefault(led["stop_name"], []).append(led)
+
+    for line_name, leds in all_line_data:
+        color = LINE_COLORS.get(line_name, (200, 200, 200))
+        draw_leds(draw, img, leds, color, font, simple=args.simple,
+                  all_station_leds=all_station_leds)
+        print(f"  {line_name}: {len(leds)} LEDs")
 
     img.save(args.output)
     print(f"Saved: {args.output}")
