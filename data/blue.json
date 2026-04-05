@@ -68,7 +68,7 @@
     "adjacent_stops": null,
     "x": 361,
     "y": 73,
-    "label_position": "left"
+    "label_position": "right"
   },
   {
     "index": 5,
@@ -97,7 +97,7 @@
     "adjacent_stops": null,
     "x": 351,
     "y": 84,
-    "label_position": "left"
+    "label_position": "right"
   },
   {
     "index": 7,
@@ -126,7 +126,7 @@
     "adjacent_stops": null,
     "x": 340,
     "y": 95,
-    "label_position": "left"
+    "label_position": "right"
   },
   {
     "index": 9,
@@ -155,7 +155,7 @@
     "adjacent_stops": null,
     "x": 329,
     "y": 106,
-    "label_position": "left"
+    "label_position": "right"
   },
   {
     "index": 11,
@@ -184,7 +184,7 @@
     "adjacent_stops": null,
     "x": 318,
     "y": 117,
-    "label_position": "left"
+    "label_position": "right"
   },
   {
     "index": 13,
@@ -213,7 +213,7 @@
     "adjacent_stops": null,
     "x": 307,
     "y": 128,
-    "label_position": "left"
+    "label_position": "right"
   },
   {
     "index": 15,
@@ -242,7 +242,7 @@
     "adjacent_stops": null,
     "x": 286,
     "y": 149,
-    "label_position": "left"
+    "label_position": "right"
   },
   {
     "index": 17,
