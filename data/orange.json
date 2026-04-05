@@ -1,0 +1,1052 @@
+[
+  {
+    "index": 0,
+    "line": "orange",
+    "stop_id": "70036",
+    "stop_name": "Oak Grove",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 270,
+    "y": 35
+  },
+  {
+    "index": 1,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Oak Grove \u2013 Malden Center",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70036",
+      "70034"
+    ],
+    "x": 270,
+    "y": 41
+  },
+  {
+    "index": 2,
+    "line": "orange",
+    "stop_id": "70034",
+    "stop_name": "Malden Center",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 270,
+    "y": 46
+  },
+  {
+    "index": 3,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Malden Center \u2013 Wellington",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70034",
+      "70032"
+    ],
+    "x": 270,
+    "y": 52
+  },
+  {
+    "index": 4,
+    "line": "orange",
+    "stop_id": "70032",
+    "stop_name": "Wellington",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 270,
+    "y": 58
+  },
+  {
+    "index": 5,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Wellington \u2013 Sullivan Square",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70032",
+      "70030"
+    ],
+    "x": 270,
+    "y": 63
+  },
+  {
+    "index": 6,
+    "line": "orange",
+    "stop_id": "70030",
+    "stop_name": "Sullivan Square",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 270,
+    "y": 69
+  },
+  {
+    "index": 7,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Sullivan Square \u2013 Assembly",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70030",
+      "70278"
+    ],
+    "x": 270,
+    "y": 74
+  },
+  {
+    "index": 8,
+    "line": "orange",
+    "stop_id": "70278",
+    "stop_name": "Assembly",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 270,
+    "y": 80
+  },
+  {
+    "index": 9,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Assembly \u2013 Community College",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70278",
+      "70028"
+    ],
+    "x": 270,
+    "y": 86
+  },
+  {
+    "index": 10,
+    "line": "orange",
+    "stop_id": "70028",
+    "stop_name": "Community College",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 270,
+    "y": 91
+  },
+  {
+    "index": 11,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Community College \u2013 North Station",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70028",
+      "70026"
+    ],
+    "x": 270,
+    "y": 107
+  },
+  {
+    "index": 12,
+    "line": "orange",
+    "stop_id": "70026",
+    "stop_name": "North Station",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 270,
+    "y": 123
+  },
+  {
+    "index": 13,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "North Station \u2013 Haymarket",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70026",
+      "70024"
+    ],
+    "x": 270,
+    "y": 129
+  },
+  {
+    "index": 14,
+    "line": "orange",
+    "stop_id": "70024",
+    "stop_name": "Haymarket",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 270,
+    "y": 134
+  },
+  {
+    "index": 15,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Haymarket \u2013 State",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70024",
+      "70022"
+    ],
+    "x": 270,
+    "y": 148
+  },
+  {
+    "index": 16,
+    "line": "orange",
+    "stop_id": "70022",
+    "stop_name": "State",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 270,
+    "y": 165
+  },
+  {
+    "index": 17,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "State \u2013 Downtown Crossing",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70022",
+      "70020"
+    ],
+    "x": 265,
+    "y": 173
+  },
+  {
+    "index": 18,
+    "line": "orange",
+    "stop_id": "70020",
+    "stop_name": "Downtown Crossing",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 257,
+    "y": 184
+  },
+  {
+    "index": 19,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Downtown Crossing \u2013 Chinatown",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70020",
+      "70018"
+    ],
+    "x": 249,
+    "y": 190
+  },
+  {
+    "index": 20,
+    "line": "orange",
+    "stop_id": "70018",
+    "stop_name": "Chinatown",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 241,
+    "y": 197
+  },
+  {
+    "index": 21,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Chinatown \u2013 Tufts Medical Center",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70018",
+      "70016"
+    ],
+    "x": 233,
+    "y": 205
+  },
+  {
+    "index": 22,
+    "line": "orange",
+    "stop_id": "70016",
+    "stop_name": "Tufts Medical Center",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 225,
+    "y": 213
+  },
+  {
+    "index": 23,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Tufts Medical Center \u2013 Back Bay",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70016",
+      "70014"
+    ],
+    "x": 217,
+    "y": 221
+  },
+  {
+    "index": 24,
+    "line": "orange",
+    "stop_id": "70014",
+    "stop_name": "Back Bay",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 209,
+    "y": 229
+  },
+  {
+    "index": 25,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Back Bay \u2013 Massachusetts Avenue",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70014",
+      "70012"
+    ],
+    "x": 204,
+    "y": 234
+  },
+  {
+    "index": 26,
+    "line": "orange",
+    "stop_id": "70012",
+    "stop_name": "Massachusetts Avenue",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 199,
+    "y": 239
+  },
+  {
+    "index": 27,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Massachusetts Avenue \u2013 Ruggles",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70012",
+      "70010"
+    ],
+    "x": 194,
+    "y": 244
+  },
+  {
+    "index": 28,
+    "line": "orange",
+    "stop_id": "70010",
+    "stop_name": "Ruggles",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 189,
+    "y": 250
+  },
+  {
+    "index": 29,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Ruggles \u2013 Roxbury Crossing",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70010",
+      "70008"
+    ],
+    "x": 184,
+    "y": 255
+  },
+  {
+    "index": 30,
+    "line": "orange",
+    "stop_id": "70008",
+    "stop_name": "Roxbury Crossing",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 178,
+    "y": 260
+  },
+  {
+    "index": 31,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Roxbury Crossing \u2013 Jackson Square",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70008",
+      "70006"
+    ],
+    "x": 172,
+    "y": 266
+  },
+  {
+    "index": 32,
+    "line": "orange",
+    "stop_id": "70006",
+    "stop_name": "Jackson Square",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 165,
+    "y": 273
+  },
+  {
+    "index": 33,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Jackson Square \u2013 Stony Brook",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70006",
+      "70004"
+    ],
+    "x": 159,
+    "y": 279
+  },
+  {
+    "index": 34,
+    "line": "orange",
+    "stop_id": "70004",
+    "stop_name": "Stony Brook",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 152,
+    "y": 286
+  },
+  {
+    "index": 35,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Stony Brook \u2013 Green Street",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70004",
+      "70002"
+    ],
+    "x": 146,
+    "y": 292
+  },
+  {
+    "index": 36,
+    "line": "orange",
+    "stop_id": "70002",
+    "stop_name": "Green Street",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 139,
+    "y": 299
+  },
+  {
+    "index": 37,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Green Street \u2013 Forest Hills",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70002",
+      "70001"
+    ],
+    "x": 133,
+    "y": 306
+  },
+  {
+    "index": 38,
+    "line": "orange",
+    "stop_id": "70001",
+    "stop_name": "Forest Hills",
+    "direction": "southbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 126,
+    "y": 312
+  },
+  {
+    "index": 39,
+    "line": "orange",
+    "stop_id": "70001",
+    "stop_name": "Forest Hills",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 132,
+    "y": 312
+  },
+  {
+    "index": 40,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Forest Hills \u2013 Green Street",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70001",
+      "70003"
+    ],
+    "x": 139,
+    "y": 306
+  },
+  {
+    "index": 41,
+    "line": "orange",
+    "stop_id": "70003",
+    "stop_name": "Green Street",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 145,
+    "y": 299
+  },
+  {
+    "index": 42,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Green Street \u2013 Stony Brook",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70003",
+      "70005"
+    ],
+    "x": 152,
+    "y": 292
+  },
+  {
+    "index": 43,
+    "line": "orange",
+    "stop_id": "70005",
+    "stop_name": "Stony Brook",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 158,
+    "y": 286
+  },
+  {
+    "index": 44,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Stony Brook \u2013 Jackson Square",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70005",
+      "70007"
+    ],
+    "x": 165,
+    "y": 279
+  },
+  {
+    "index": 45,
+    "line": "orange",
+    "stop_id": "70007",
+    "stop_name": "Jackson Square",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 171,
+    "y": 273
+  },
+  {
+    "index": 46,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Jackson Square \u2013 Roxbury Crossing",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70007",
+      "70009"
+    ],
+    "x": 178,
+    "y": 266
+  },
+  {
+    "index": 47,
+    "line": "orange",
+    "stop_id": "70009",
+    "stop_name": "Roxbury Crossing",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 184,
+    "y": 260
+  },
+  {
+    "index": 48,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Roxbury Crossing \u2013 Ruggles",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70009",
+      "70011"
+    ],
+    "x": 190,
+    "y": 255
+  },
+  {
+    "index": 49,
+    "line": "orange",
+    "stop_id": "70011",
+    "stop_name": "Ruggles",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 195,
+    "y": 250
+  },
+  {
+    "index": 50,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Ruggles \u2013 Massachusetts Avenue",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70011",
+      "70013"
+    ],
+    "x": 200,
+    "y": 244
+  },
+  {
+    "index": 51,
+    "line": "orange",
+    "stop_id": "70013",
+    "stop_name": "Massachusetts Avenue",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 205,
+    "y": 239
+  },
+  {
+    "index": 52,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Massachusetts Avenue \u2013 Back Bay",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70013",
+      "70015"
+    ],
+    "x": 210,
+    "y": 234
+  },
+  {
+    "index": 53,
+    "line": "orange",
+    "stop_id": "70015",
+    "stop_name": "Back Bay",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 215,
+    "y": 229
+  },
+  {
+    "index": 54,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Back Bay \u2013 Tufts Medical Center",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70015",
+      "70017"
+    ],
+    "x": 223,
+    "y": 221
+  },
+  {
+    "index": 55,
+    "line": "orange",
+    "stop_id": "70017",
+    "stop_name": "Tufts Medical Center",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 231,
+    "y": 213
+  },
+  {
+    "index": 56,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Tufts Medical Center \u2013 Chinatown",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70017",
+      "70019"
+    ],
+    "x": 239,
+    "y": 205
+  },
+  {
+    "index": 57,
+    "line": "orange",
+    "stop_id": "70019",
+    "stop_name": "Chinatown",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 247,
+    "y": 197
+  },
+  {
+    "index": 58,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Chinatown \u2013 Downtown Crossing",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70019",
+      "70021"
+    ],
+    "x": 255,
+    "y": 190
+  },
+  {
+    "index": 59,
+    "line": "orange",
+    "stop_id": "70021",
+    "stop_name": "Downtown Crossing",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 263,
+    "y": 184
+  },
+  {
+    "index": 60,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Downtown Crossing \u2013 State",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70021",
+      "70023"
+    ],
+    "x": 271,
+    "y": 173
+  },
+  {
+    "index": 61,
+    "line": "orange",
+    "stop_id": "70023",
+    "stop_name": "State",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 276,
+    "y": 165
+  },
+  {
+    "index": 62,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "State \u2013 Haymarket",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70023",
+      "70025"
+    ],
+    "x": 276,
+    "y": 148
+  },
+  {
+    "index": 63,
+    "line": "orange",
+    "stop_id": "70025",
+    "stop_name": "Haymarket",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 276,
+    "y": 134
+  },
+  {
+    "index": 64,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Haymarket \u2013 North Station",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70025",
+      "70027"
+    ],
+    "x": 276,
+    "y": 129
+  },
+  {
+    "index": 65,
+    "line": "orange",
+    "stop_id": "70027",
+    "stop_name": "North Station",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 276,
+    "y": 123
+  },
+  {
+    "index": 66,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "North Station \u2013 Community College",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70027",
+      "70029"
+    ],
+    "x": 276,
+    "y": 107
+  },
+  {
+    "index": 67,
+    "line": "orange",
+    "stop_id": "70029",
+    "stop_name": "Community College",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 276,
+    "y": 91
+  },
+  {
+    "index": 68,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Community College \u2013 Assembly",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70029",
+      "70279"
+    ],
+    "x": 276,
+    "y": 86
+  },
+  {
+    "index": 69,
+    "line": "orange",
+    "stop_id": "70279",
+    "stop_name": "Assembly",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 276,
+    "y": 80
+  },
+  {
+    "index": 70,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Assembly \u2013 Sullivan Square",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70279",
+      "70031"
+    ],
+    "x": 276,
+    "y": 74
+  },
+  {
+    "index": 71,
+    "line": "orange",
+    "stop_id": "70031",
+    "stop_name": "Sullivan Square",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 276,
+    "y": 69
+  },
+  {
+    "index": 72,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Sullivan Square \u2013 Wellington",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70031",
+      "70033"
+    ],
+    "x": 276,
+    "y": 63
+  },
+  {
+    "index": 73,
+    "line": "orange",
+    "stop_id": "70033",
+    "stop_name": "Wellington",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 276,
+    "y": 58
+  },
+  {
+    "index": 74,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Wellington \u2013 Malden Center",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70033",
+      "70035"
+    ],
+    "x": 276,
+    "y": 52
+  },
+  {
+    "index": 75,
+    "line": "orange",
+    "stop_id": "70035",
+    "stop_name": "Malden Center",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 276,
+    "y": 46
+  },
+  {
+    "index": 76,
+    "line": "orange",
+    "stop_id": null,
+    "stop_name": "Malden Center \u2013 Oak Grove",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70035",
+      "70036"
+    ],
+    "x": 276,
+    "y": 41
+  },
+  {
+    "index": 77,
+    "line": "orange",
+    "stop_id": "70036",
+    "stop_name": "Oak Grove",
+    "direction": "northbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 276,
+    "y": 35
+  }
+]
