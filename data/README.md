@@ -41,10 +41,19 @@ Each object in the array represents one physical LED.
 
 ## Constraints
 
+### Enforced by JSON Schema (`schema.json`)
+
 - **Stations** must have a non-null `stop_id` and `adjacent_stops` must be `null`.
-- **Midpoints** must have `stop_id` as `null` and `adjacent_stops` as a 2-element array of valid stop IDs.
-- Indices must be sequential per line (0, 1, 2, ...) with no gaps.
-- `direction_id` must match what the MBTA API returns for that route and direction. The mapping between `direction` and `direction_id` is route-specific.
+- **Midpoints** must have `stop_id` as `null` and `adjacent_stops` as a 2-element array.
+- All required fields must be present with correct types.
+- `line`, `direction`, `type`, and `direction_id` values must be from their allowed enums.
+
+### Require additional validation (`tests/validate_stations.py`, issue #8)
+
+- Indices must be sequential per line (0, 1, 2, ...) with no gaps or duplicates.
+- `adjacent_stops` entries must reference `stop_id` values that exist elsewhere in the file.
+- `led_count` per line must match the actual number of LED entries for that line.
+- `direction_id` must match what the MBTA API returns for that route and direction.
 
 ## LED Count Breakdown
 
