@@ -112,8 +112,10 @@ def draw_leds(draw, img, leds, color, font, simple=False, all_station_leds=None)
                 if bbox:
                     txt_img = txt_img.crop(bbox)
                 txt_img = txt_img.rotate(45, expand=True)
+                max_x = max(l["x"] for l in all_station_leds.get(led["stop_name"], [led]))
+                anchor_px = int(max_x * MM)
                 img.paste(txt_img,
-                          (px, py - txt_img.height),
+                          (anchor_px + gap_px, py - txt_img.height),
                           txt_img)
             elif pos == "below-left":
                 txt_img = Image.new("RGBA", (300, 20), (0, 0, 0, 0))
