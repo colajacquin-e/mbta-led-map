@@ -1,0 +1,404 @@
+[
+  {
+    "index": 0,
+    "line": "mattapan",
+    "stop_id": "70261",
+    "stop_name": "Ashmont",
+    "direction": "outbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 269,
+    "y": 340
+  },
+  {
+    "index": 1,
+    "line": "mattapan",
+    "stop_id": null,
+    "stop_name": "Ashmont \u2013 Cedar Grove",
+    "direction": "outbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70261",
+      "70263"
+    ],
+    "x": 269,
+    "y": 344
+  },
+  {
+    "index": 2,
+    "line": "mattapan",
+    "stop_id": "70263",
+    "stop_name": "Cedar Grove",
+    "direction": "outbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 269,
+    "y": 348
+  },
+  {
+    "index": 3,
+    "line": "mattapan",
+    "stop_id": null,
+    "stop_name": "Cedar Grove \u2013 Butler",
+    "direction": "outbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70263",
+      "70265"
+    ],
+    "x": 268,
+    "y": 352
+  },
+  {
+    "index": 4,
+    "line": "mattapan",
+    "stop_id": "70265",
+    "stop_name": "Butler",
+    "direction": "outbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 269,
+    "y": 355
+  },
+  {
+    "index": 5,
+    "line": "mattapan",
+    "stop_id": null,
+    "stop_name": "Butler \u2013 Milton",
+    "direction": "outbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70265",
+      "70267"
+    ],
+    "x": 266,
+    "y": 355
+  },
+  {
+    "index": 6,
+    "line": "mattapan",
+    "stop_id": "70267",
+    "stop_name": "Milton",
+    "direction": "outbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 262,
+    "y": 355
+  },
+  {
+    "index": 7,
+    "line": "mattapan",
+    "stop_id": null,
+    "stop_name": "Milton \u2013 Central Ave",
+    "direction": "outbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70267",
+      "70269"
+    ],
+    "x": 258,
+    "y": 355
+  },
+  {
+    "index": 8,
+    "line": "mattapan",
+    "stop_id": "70269",
+    "stop_name": "Central Ave",
+    "direction": "outbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 253,
+    "y": 355
+  },
+  {
+    "index": 9,
+    "line": "mattapan",
+    "stop_id": null,
+    "stop_name": "Central Ave \u2013 Valley Rd",
+    "direction": "outbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70269",
+      "70271"
+    ],
+    "x": 249,
+    "y": 355
+  },
+  {
+    "index": 10,
+    "line": "mattapan",
+    "stop_id": "70271",
+    "stop_name": "Valley Rd",
+    "direction": "outbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 245,
+    "y": 355
+  },
+  {
+    "index": 11,
+    "line": "mattapan",
+    "stop_id": null,
+    "stop_name": "Valley Rd \u2013 Capen St",
+    "direction": "outbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70271",
+      "70273"
+    ],
+    "x": 240,
+    "y": 355
+  },
+  {
+    "index": 12,
+    "line": "mattapan",
+    "stop_id": "70273",
+    "stop_name": "Capen St",
+    "direction": "outbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 236,
+    "y": 355
+  },
+  {
+    "index": 13,
+    "line": "mattapan",
+    "stop_id": null,
+    "stop_name": "Capen St \u2013 Mattapan",
+    "direction": "outbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70273",
+      "70275"
+    ],
+    "x": 232,
+    "y": 355
+  },
+  {
+    "index": 14,
+    "line": "mattapan",
+    "stop_id": "70275",
+    "stop_name": "Mattapan",
+    "direction": "outbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 228,
+    "y": 355
+  },
+  {
+    "index": 15,
+    "line": "mattapan",
+    "stop_id": "70276",
+    "stop_name": "Mattapan",
+    "direction": "inbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 228,
+    "y": 361
+  },
+  {
+    "index": 16,
+    "line": "mattapan",
+    "stop_id": null,
+    "stop_name": "Mattapan \u2013 Capen St",
+    "direction": "inbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70276",
+      "70274"
+    ],
+    "x": 232,
+    "y": 361
+  },
+  {
+    "index": 17,
+    "line": "mattapan",
+    "stop_id": "70274",
+    "stop_name": "Capen St",
+    "direction": "inbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 236,
+    "y": 361
+  },
+  {
+    "index": 18,
+    "line": "mattapan",
+    "stop_id": null,
+    "stop_name": "Capen St \u2013 Valley Rd",
+    "direction": "inbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70274",
+      "70272"
+    ],
+    "x": 240,
+    "y": 361
+  },
+  {
+    "index": 19,
+    "line": "mattapan",
+    "stop_id": "70272",
+    "stop_name": "Valley Rd",
+    "direction": "inbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 245,
+    "y": 361
+  },
+  {
+    "index": 20,
+    "line": "mattapan",
+    "stop_id": null,
+    "stop_name": "Valley Rd \u2013 Central Ave",
+    "direction": "inbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70272",
+      "70270"
+    ],
+    "x": 249,
+    "y": 361
+  },
+  {
+    "index": 21,
+    "line": "mattapan",
+    "stop_id": "70270",
+    "stop_name": "Central Ave",
+    "direction": "inbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 253,
+    "y": 361
+  },
+  {
+    "index": 22,
+    "line": "mattapan",
+    "stop_id": null,
+    "stop_name": "Central Ave \u2013 Milton",
+    "direction": "inbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70270",
+      "70268"
+    ],
+    "x": 258,
+    "y": 361
+  },
+  {
+    "index": 23,
+    "line": "mattapan",
+    "stop_id": "70268",
+    "stop_name": "Milton",
+    "direction": "inbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 262,
+    "y": 361
+  },
+  {
+    "index": 24,
+    "line": "mattapan",
+    "stop_id": null,
+    "stop_name": "Milton \u2013 Butler",
+    "direction": "inbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70268",
+      "70266"
+    ],
+    "x": 266,
+    "y": 361
+  },
+  {
+    "index": 25,
+    "line": "mattapan",
+    "stop_id": "70266",
+    "stop_name": "Butler",
+    "direction": "inbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 274,
+    "y": 358
+  },
+  {
+    "index": 26,
+    "line": "mattapan",
+    "stop_id": null,
+    "stop_name": "Butler \u2013 Cedar Grove",
+    "direction": "inbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70266",
+      "70264"
+    ],
+    "x": 274,
+    "y": 352
+  },
+  {
+    "index": 27,
+    "line": "mattapan",
+    "stop_id": "70264",
+    "stop_name": "Cedar Grove",
+    "direction": "inbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 275,
+    "y": 348
+  },
+  {
+    "index": 28,
+    "line": "mattapan",
+    "stop_id": null,
+    "stop_name": "Cedar Grove \u2013 Ashmont",
+    "direction": "inbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70264",
+      "70262"
+    ],
+    "x": 275,
+    "y": 344
+  },
+  {
+    "index": 29,
+    "line": "mattapan",
+    "stop_id": "70262",
+    "stop_name": "Ashmont",
+    "direction": "inbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 275,
+    "y": 340
+  }
+]
