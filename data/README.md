@@ -30,7 +30,7 @@ Each object in the array represents one physical LED.
 |-------|------|-------------|
 | `index` | integer | Zero-based position in this line's daisy chain |
 | `line` | enum | `"red"`, `"orange"`, `"blue"`, `"green"`, `"mattapan"` |
-|`stop_id` | string \| null | MBTA V3 API stop ID; `null` for midpoints |
+| `stop_id` | string \| null | MBTA V3 API stop ID; `null` for midpoints |
 | `stop_name` | string | Human name; midpoints use `"StopA – StopB"` format |
 | `direction` | enum | `"southbound"`, `"northbound"`, `"westbound"`, `"eastbound"`, `"inbound"`, `"outbound"` |
 | `direction_id` | integer | MBTA API direction_id (`0` or `1`); meaning is route-specific |
@@ -48,7 +48,7 @@ Each object in the array represents one physical LED.
 - All required fields must be present with correct types.
 - `line`, `direction`, `type`, and `direction_id` values must be from their allowed enums.
 
-### Require additional validation (`tests/validate_stations.py`, issue #8)
+### Requires additional validation (`tests/validate_stations.py`, issue #8)
 
 - Indices must be sequential per line (0, 1, 2, ...) with no gaps or duplicates.
 - `adjacent_stops` entries must reference `stop_id` values that exist elsewhere in the file.
