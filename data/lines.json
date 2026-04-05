@@ -20,7 +20,7 @@
   "green": {
     "name": "Green Line",
     "color_hex": "#00843D",
-    "led_count": 58,
+    "led_count": 104,
     "chain_gpio": 7
   },
   "mattapan": {

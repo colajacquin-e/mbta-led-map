@@ -862,5 +862,643 @@
     "x": 228,
     "y": 98,
     "label_position": "none"
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Copley \u2013 Prudential",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70155",
+      "70239"
+    ],
+    "x": 175,
+    "y": 196,
+    "label_position": "none",
+    "index": 60
+  },
+  {
+    "line": "green",
+    "stop_id": "70239",
+    "stop_name": "Prudential",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 175,
+    "y": 199,
+    "label_position": "left",
+    "index": 61
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Prudential \u2013 Symphony",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70239",
+      "70241"
+    ],
+    "x": 174,
+    "y": 206,
+    "label_position": "none",
+    "index": 62
+  },
+  {
+    "line": "green",
+    "stop_id": "70241",
+    "stop_name": "Symphony",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 174,
+    "y": 214,
+    "label_position": "none",
+    "index": 63
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Symphony \u2013 Northeastern University",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70241",
+      "70243"
+    ],
+    "x": 172,
+    "y": 216,
+    "label_position": "none",
+    "index": 64
+  },
+  {
+    "line": "green",
+    "stop_id": "70243",
+    "stop_name": "Northeastern University",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 170,
+    "y": 219,
+    "label_position": "none",
+    "index": 65
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Northeastern University \u2013 Museum of Fine Arts",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70243",
+      "70245"
+    ],
+    "x": 167,
+    "y": 222,
+    "label_position": "none",
+    "index": 66
+  },
+  {
+    "line": "green",
+    "stop_id": "70245",
+    "stop_name": "Museum of Fine Arts",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 164,
+    "y": 225,
+    "label_position": "none",
+    "index": 67
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Museum of Fine Arts \u2013 Longwood Medical Area",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70245",
+      "70247"
+    ],
+    "x": 162,
+    "y": 227,
+    "label_position": "none",
+    "index": 68
+  },
+  {
+    "line": "green",
+    "stop_id": "70247",
+    "stop_name": "Longwood Medical Area",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 159,
+    "y": 230,
+    "label_position": "none",
+    "index": 69
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Longwood Medical Area \u2013 Brigham Circle",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70247",
+      "70249"
+    ],
+    "x": 156,
+    "y": 232,
+    "label_position": "none",
+    "index": 70
+  },
+  {
+    "line": "green",
+    "stop_id": "70249",
+    "stop_name": "Brigham Circle",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 154,
+    "y": 235,
+    "label_position": "none",
+    "index": 71
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Brigham Circle \u2013 Fenwood Road",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70249",
+      "70251"
+    ],
+    "x": 151,
+    "y": 238,
+    "label_position": "none",
+    "index": 72
+  },
+  {
+    "line": "green",
+    "stop_id": "70251",
+    "stop_name": "Fenwood Road",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 148,
+    "y": 241,
+    "label_position": "none",
+    "index": 73
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Fenwood Road \u2013 Mission Park",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70251",
+      "70253"
+    ],
+    "x": 146,
+    "y": 243,
+    "label_position": "none",
+    "index": 74
+  },
+  {
+    "line": "green",
+    "stop_id": "70253",
+    "stop_name": "Mission Park",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 143,
+    "y": 246,
+    "label_position": "none",
+    "index": 75
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Mission Park \u2013 Riverway",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70253",
+      "70255"
+    ],
+    "x": 140,
+    "y": 249,
+    "label_position": "none",
+    "index": 76
+  },
+  {
+    "line": "green",
+    "stop_id": "70255",
+    "stop_name": "Riverway",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 138,
+    "y": 251,
+    "label_position": "none",
+    "index": 77
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Riverway \u2013 Back of the Hill",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70255",
+      "70257"
+    ],
+    "x": 135,
+    "y": 254,
+    "label_position": "none",
+    "index": 78
+  },
+  {
+    "line": "green",
+    "stop_id": "70257",
+    "stop_name": "Back of the Hill",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 132,
+    "y": 257,
+    "label_position": "none",
+    "index": 79
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Back of the Hill \u2013 Heath Street",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70257",
+      "70260"
+    ],
+    "x": 129,
+    "y": 260,
+    "label_position": "none",
+    "index": 80
+  },
+  {
+    "line": "green",
+    "stop_id": "70260",
+    "stop_name": "Heath Street",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 126,
+    "y": 263,
+    "label_position": "none",
+    "index": 81
+  },
+  {
+    "line": "green",
+    "stop_id": "70260",
+    "stop_name": "Heath Street",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 132,
+    "y": 263,
+    "label_position": "right",
+    "index": 82
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Heath Street \u2013 Back of the Hill",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70260",
+      "70258"
+    ],
+    "x": 135,
+    "y": 260,
+    "label_position": "none",
+    "index": 83
+  },
+  {
+    "line": "green",
+    "stop_id": "70258",
+    "stop_name": "Back of the Hill",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 138,
+    "y": 257,
+    "label_position": "none",
+    "index": 84
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Back of the Hill \u2013 Riverway",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70258",
+      "70256"
+    ],
+    "x": 141,
+    "y": 254,
+    "label_position": "none",
+    "index": 85
+  },
+  {
+    "line": "green",
+    "stop_id": "70256",
+    "stop_name": "Riverway",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 144,
+    "y": 251,
+    "label_position": "none",
+    "index": 86
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Riverway \u2013 Mission Park",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70256",
+      "70254"
+    ],
+    "x": 146,
+    "y": 249,
+    "label_position": "none",
+    "index": 87
+  },
+  {
+    "line": "green",
+    "stop_id": "70254",
+    "stop_name": "Mission Park",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 149,
+    "y": 246,
+    "label_position": "none",
+    "index": 88
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Mission Park \u2013 Fenwood Road",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70254",
+      "70252"
+    ],
+    "x": 152,
+    "y": 243,
+    "label_position": "none",
+    "index": 89
+  },
+  {
+    "line": "green",
+    "stop_id": "70252",
+    "stop_name": "Fenwood Road",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 154,
+    "y": 241,
+    "label_position": "none",
+    "index": 90
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Fenwood Road \u2013 Brigham Circle",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70252",
+      "70250"
+    ],
+    "x": 157,
+    "y": 238,
+    "label_position": "none",
+    "index": 91
+  },
+  {
+    "line": "green",
+    "stop_id": "70250",
+    "stop_name": "Brigham Circle",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 160,
+    "y": 235,
+    "label_position": "none",
+    "index": 92
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Brigham Circle \u2013 Longwood Medical Area",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70250",
+      "70248"
+    ],
+    "x": 162,
+    "y": 232,
+    "label_position": "none",
+    "index": 93
+  },
+  {
+    "line": "green",
+    "stop_id": "70248",
+    "stop_name": "Longwood Medical Area",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 165,
+    "y": 230,
+    "label_position": "none",
+    "index": 94
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Longwood Medical Area \u2013 Museum of Fine Arts",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70248",
+      "70246"
+    ],
+    "x": 168,
+    "y": 227,
+    "label_position": "none",
+    "index": 95
+  },
+  {
+    "line": "green",
+    "stop_id": "70246",
+    "stop_name": "Museum of Fine Arts",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 170,
+    "y": 225,
+    "label_position": "none",
+    "index": 96
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Museum of Fine Arts \u2013 Northeastern University",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70246",
+      "70244"
+    ],
+    "x": 173,
+    "y": 222,
+    "label_position": "none",
+    "index": 97
+  },
+  {
+    "line": "green",
+    "stop_id": "70244",
+    "stop_name": "Northeastern University",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 176,
+    "y": 219,
+    "label_position": "none",
+    "index": 98
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Northeastern University \u2013 Symphony",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70244",
+      "70242"
+    ],
+    "x": 178,
+    "y": 216,
+    "label_position": "none",
+    "index": 99
+  },
+  {
+    "line": "green",
+    "stop_id": "70242",
+    "stop_name": "Symphony",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 180,
+    "y": 214,
+    "label_position": "none",
+    "index": 100
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Symphony \u2013 Prudential",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70242",
+      "70240"
+    ],
+    "x": 180,
+    "y": 206,
+    "label_position": "none",
+    "index": 101
+  },
+  {
+    "line": "green",
+    "stop_id": "70240",
+    "stop_name": "Prudential",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 181,
+    "y": 199,
+    "label_position": "none",
+    "index": 102
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Prudential \u2013 Copley",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70240",
+      "70154"
+    ],
+    "x": 181,
+    "y": 196,
+    "label_position": "none",
+    "index": 103
   }
 ]
