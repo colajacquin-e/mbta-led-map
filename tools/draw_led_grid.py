@@ -42,6 +42,11 @@ ROTATED_LABELS = {"Butler", "Milton", "Central Ave", "Valley Rd", "Capen St", "M
 
 LABEL_GAP = 4  # mm between LED and label
 
+# Southbound stations that should have labels on the right instead of the default left
+RIGHT_LABEL_SB = {"South Station", "Broadway", "Andrew", "JFK/UMass",
+                  "Savin Hill", "Fields Corner", "Shawmut", "Ashmont",
+                  "North Quincy", "Wollaston", "Quincy Center", "Quincy Adams", "Braintree"}
+
 
 def mm2px(x, y):
     return int(x * MM), int(y * MM)
@@ -106,7 +111,7 @@ def draw_leds(draw, img, leds, color, font, simple=False, global_labeled=None):
                 img.paste(txt_img,
                           (px - txt_img.width // 2, py + gap_px),
                           txt_img)
-            elif led["direction_id"] == 0:
+            elif led["direction_id"] == 0 and led["stop_name"] not in RIGHT_LABEL_SB:
                 # Southbound/outbound: label to the left
                 bbox = draw.textbbox((0, 0), label, font=font)
                 tw = bbox[2] - bbox[0]
@@ -114,7 +119,7 @@ def draw_leds(draw, img, leds, color, font, simple=False, global_labeled=None):
                           fill="white", font=font,
                           stroke_width=1, stroke_fill=(30, 30, 30))
             else:
-                # Northbound/inbound: label to the right
+                # Northbound/inbound or overridden SB: label to the right
                 draw.text((px + gap_px, py - 6), label,
                           fill="white", font=font,
                           stroke_width=1, stroke_fill=(30, 30, 30))
