@@ -33,7 +33,7 @@ Each object in the array represents one physical LED.
 |`stop_id` | string \| null | MBTA V3 API stop ID; `null` for midpoints |
 | `stop_name` | string | Human name; midpoints use `"StopA – StopB"` format |
 | `direction` | enum | `"southbound"`, `"northbound"`, `"westbound"`, `"eastbound"`, `"inbound"`, `"outbound"` |
-| `direction_id` | integer | `0` = outbound (away from downtown), `1` = inbound (toward downtown) |
+| `direction_id` | integer | MBTA API direction_id (`0` or `1`); meaning is route-specific |
 | `type` | enum | `"station"` or `"midpoint"` |
 | `adjacent_stops` | [string, string] \| null | For midpoints: the two stop IDs flanking this LED. `null` for stations |
 | `x` | number | Visual x-coordinate for map rendering |
@@ -44,7 +44,7 @@ Each object in the array represents one physical LED.
 - **Stations** must have a non-null `stop_id` and `adjacent_stops` must be `null`.
 - **Midpoints** must have `stop_id` as `null` and `adjacent_stops` as a 2-element array of valid stop IDs.
 - Indices must be sequential per line (0, 1, 2, ...) with no gaps.
-- `direction_id` must be consistent with `direction` (e.g., southbound = 0 for Red Line).
+- `direction_id` must match what the MBTA API returns for that route and direction. The mapping between `direction` and `direction_id` is route-specific.
 
 ## LED Count Breakdown
 

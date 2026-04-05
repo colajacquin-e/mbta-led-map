@@ -82,7 +82,7 @@
           "direction_id": {
             "type": "integer",
             "enum": [0, 1],
-            "description": "MBTA API direction_id. 0 = outbound (away from downtown), 1 = inbound (toward downtown)."
+            "description": "MBTA API direction_id (0 or 1) as provided by the API; meaning is route-specific."
           },
           "type": {
             "type": "string",
