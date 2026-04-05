@@ -115,7 +115,7 @@ def draw_leds(draw, img, leds, color, font, line_name):
                 name = led["stop_name"]
                 label = f"{name} [{stop}]"
 
-                if rotate_labels:
+                if rotate_labels and led["stop_name"] not in ("Ashmont", "Cedar Grove"):
                     # Draw rotated text for Mattapan trolley
                     txt_img = Image.new("RGBA", (300, 20), (0, 0, 0, 0))
                     txt_draw = ImageDraw.Draw(txt_img)
