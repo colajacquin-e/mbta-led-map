@@ -66,23 +66,50 @@ def draw_grid_labels(draw, font):
 
 
 def draw_leds(draw, leds, color, font):
+    # Offset distance in pixels between direction_id 0 and 1 LEDs
+    OFFSET_PX = int(3 * MM)  # 3mm apart
+
+    # Group LEDs by (stop_name, x, y) to detect co-located pairs
+    from collections import Counter
+    loc_counts = Counter((led["x"], led["y"]) for led in leds)
+
+    # Track which locations we've already labeled
+    labeled = set()
+
     for led in leds:
-        px, py = mm2px(led["x"], led["y"])
+        base_px, base_py = mm2px(led["x"], led["y"])
         is_station = led["type"] == "station"
+        has_pair = loc_counts[(led["x"], led["y"])] > 1
+
+        # Offset co-located LEDs perpendicular to avoid overlap
+        if has_pair:
+            # direction_id 0 shifts left, 1 shifts right
+            offset = -OFFSET_PX // 2 if led["direction_id"] == 0 else OFFSET_PX // 2
+            px = base_px + offset
+            py = base_py
+        else:
+            px, py = base_px, base_py
 
         if is_station:
-            r = 5
+            r = 4
             draw.ellipse([(px - r, py - r), (px + r, py + r)],
-                         fill=color, outline="white", width=2)
-            stop = led["stop_id"] or "?"
-            name = led["stop_name"]
-            label = f"{name} [{stop}]"
-            draw.text((px + 9, py - 6), label, fill="white", font=font,
-                      stroke_width=1, stroke_fill=(30, 30, 30))
+                         fill=color, outline="white", width=1)
+
+            # Label once per location (not twice for each direction)
+            loc_key = (led["x"], led["y"], led["stop_name"])
+            if loc_key not in labeled:
+                labeled.add(loc_key)
+                stop = led["stop_id"] or "?"
+                name = led["stop_name"]
+                dir_label = "SB" if led["direction_id"] == 0 else "NB"
+                label = f"{name} [{stop}]"
+                draw.text((base_px + OFFSET_PX, base_py - 6), label,
+                          fill="white", font=font,
+                          stroke_width=1, stroke_fill=(30, 30, 30))
         else:
             r = 2
             draw.ellipse([(px - r, py - r), (px + r, py + r)],
-                         fill=color, outline=(150, 150, 150))
+                         fill=color, outline=(100, 100, 100))
 
 
 def main():
