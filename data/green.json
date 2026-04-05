@@ -1555,7 +1555,7 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 155,
-    "y": 179,
+    "y": 174,
     "label_position": "below",
     "index": 107
   },
@@ -2322,7 +2322,7 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 155,
-    "y": 185,
+    "y": 190,
     "label_position": "none",
     "index": 160
   },
@@ -2370,5 +2370,31 @@
     "y": 185,
     "label_position": "none",
     "index": 163
+  },
+  {
+    "index": 164,
+    "line": "green",
+    "stop_id": "71151",
+    "stop_name": "Kenmore",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 155,
+    "y": 179,
+    "label_position": "none"
+  },
+  {
+    "index": 165,
+    "line": "green",
+    "stop_id": "71150",
+    "stop_name": "Kenmore",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 155,
+    "y": 185,
+    "label_position": "none"
   }
 ]
