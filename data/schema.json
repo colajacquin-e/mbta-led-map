@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/colajacquin-e/mbta-led-map/data/schema.json",
+  "title": "MBTA LED Map Station Definitions",
+  "description": "Single source of truth for all LED positions, stop mappings, and visual coordinates.",
+  "type": "object",
+  "required": ["lines", "leds"],
+  "additionalProperties": false,
+  "properties": {
+    "lines": {
+      "description": "Per-line metadata for rendering and hardware configuration.",
+      "type": "object",
+      "patternProperties": {
+        "^(red|orange|blue|green)$": {
+          "type": "object",
+          "required": ["name", "color_hex", "led_count", "chain_gpio"],
+          "additionalProperties": false,
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Human-readable display name (e.g., \"Red Line\")."
+            },
+            "color_hex": {
+              "type": "string",
+              "pattern": "^#[0-9A-Fa-f]{6}$",
+              "description": "CSS hex color for this line."
+            },
+            "led_count": {
+              "type": "integer",
+              "minimum": 1,
+              "description": "Total number of LEDs on this chain."
+            },
+            "chain_gpio": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "ESP32 GPIO pin number for this chain's DIN signal."
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "leds": {
+      "description": "Array of every LED in the system. Each entry maps one LED to a stop or midpoint.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "index", "line", "chain", "stop_id", "stop_name",
+          "direction", "direction_id", "type", "adjacent_stops",
+          "x", "y"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "index": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Zero-based position in this line's LED daisy chain."
+          },
+          "line": {
+            "type": "string",
+            "enum": ["red", "orange", "blue", "green"],
+            "description": "Which subway line this LED belongs to."
+          },
+          "chain": {
+            "type": "string",
+            "description": "Physical LED chain identifier. Matches line name for single-chain lines."
+          },
+          "stop_id": {
+            "description": "MBTA V3 API stop ID for station LEDs; null for midpoints.",
+            "oneOf": [
+              { "type": "string", "minLength": 1 },
+              { "type": "null" }
+            ]
+          },
+          "stop_name": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Human-readable name. Stations: stop name. Midpoints: \"StopA – StopB\"."
+          },
+          "direction": {
+            "type": "string",
+            "enum": ["southbound", "northbound", "westbound", "eastbound", "inbound", "outbound"],
+            "description": "Human-readable travel direction."
+          },
+          "direction_id": {
+            "type": "integer",
+            "enum": [0, 1],
+            "description": "MBTA API direction_id. 0 = outbound (away from downtown), 1 = inbound (toward downtown)."
+          },
+          "type": {
+            "type": "string",
+            "enum": ["station", "midpoint"],
+            "description": "Whether this LED represents a station platform or a midpoint between stations."
+          },
+          "adjacent_stops": {
+            "description": "For midpoints: the two MBTA stop IDs on either side. Null for stations.",
+            "oneOf": [
+              {
+                "type": "array",
+                "items": { "type": "string", "minLength": 1 },
+                "minItems": 2,
+                "maxItems": 2
+              },
+              { "type": "null" }
+            ]
+          },
+          "x": {
+            "type": "number",
+            "description": "Visual x-coordinate for map rendering."
+          },
+          "y": {
+            "type": "number",
+            "description": "Visual y-coordinate for map rendering."
+          }
+        },
+        "allOf": [
+          {
+            "if": { "properties": { "type": { "const": "station" } } },
+            "then": {
+              "properties": {
+                "stop_id": { "type": "string" },
+                "adjacent_stops": { "type": "null" }
+              }
+            }
+          },
+          {
+            "if": { "properties": { "type": { "const": "midpoint" } } },
+            "then": {
+              "properties": {
+                "stop_id": { "type": "null" },
+                "adjacent_stops": { "type": "array" }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
