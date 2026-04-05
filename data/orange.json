@@ -171,7 +171,7 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 270,
-    "y": 123
+    "y": 120
   },
   {
     "index": 13,
@@ -185,7 +185,7 @@
       "70026",
       "70024"
     ],
-    "x": 270,
+    "x": 267,
     "y": 129
   },
   {
@@ -198,7 +198,7 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 270,
-    "y": 134
+    "y": 131
   },
   {
     "index": 15,
@@ -858,7 +858,7 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 276,
-    "y": 134
+    "y": 131
   },
   {
     "index": 64,
@@ -872,7 +872,7 @@
       "70025",
       "70027"
     ],
-    "x": 276,
+    "x": 272,
     "y": 129
   },
   {
@@ -885,7 +885,7 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 276,
-    "y": 123
+    "y": 120
   },
   {
     "index": 66,

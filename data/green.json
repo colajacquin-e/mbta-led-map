@@ -1,0 +1,782 @@
+[
+  {
+    "index": 0,
+    "line": "green",
+    "stop_id": "70512",
+    "stop_name": "Medford/Tufts",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 193,
+    "y": 47
+  },
+  {
+    "index": 1,
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Medford/Tufts \u2013 Ball Square",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70512",
+      "70510"
+    ],
+    "x": 198,
+    "y": 51
+  },
+  {
+    "index": 2,
+    "line": "green",
+    "stop_id": "70510",
+    "stop_name": "Ball Square",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 202,
+    "y": 56
+  },
+  {
+    "index": 3,
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Ball Square \u2013 Magoun Square",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70510",
+      "70508"
+    ],
+    "x": 207,
+    "y": 60
+  },
+  {
+    "index": 4,
+    "line": "green",
+    "stop_id": "70508",
+    "stop_name": "Magoun Square",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 212,
+    "y": 65
+  },
+  {
+    "index": 5,
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Magoun Square \u2013 Gilman Square",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70508",
+      "70506"
+    ],
+    "x": 217,
+    "y": 70
+  },
+  {
+    "index": 6,
+    "line": "green",
+    "stop_id": "70506",
+    "stop_name": "Gilman Square",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 221,
+    "y": 75
+  },
+  {
+    "index": 7,
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Gilman Square \u2013 East Somerville",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70506",
+      "70514"
+    ],
+    "x": 226,
+    "y": 79
+  },
+  {
+    "index": 8,
+    "line": "green",
+    "stop_id": "70514",
+    "stop_name": "East Somerville",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 231,
+    "y": 84
+  },
+  {
+    "index": 9,
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "East Somerville \u2013 Lechmere",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70514",
+      "70502"
+    ],
+    "x": 240,
+    "y": 96
+  },
+  {
+    "index": 10,
+    "line": "green",
+    "stop_id": "70504",
+    "stop_name": "Union Square",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 222,
+    "y": 98
+  },
+  {
+    "index": 11,
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Union Square \u2013 Lechmere",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70504",
+      "70502"
+    ],
+    "x": 237,
+    "y": 101
+  },
+  {
+    "index": 12,
+    "line": "green",
+    "stop_id": "70502",
+    "stop_name": "Lechmere",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 251,
+    "y": 105
+  },
+  {
+    "index": 13,
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Lechmere \u2013 Science Park",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70502",
+      "70208"
+    ],
+    "x": 255,
+    "y": 109
+  },
+  {
+    "index": 14,
+    "line": "green",
+    "stop_id": "70208",
+    "stop_name": "Science Park",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 260,
+    "y": 113
+  },
+  {
+    "index": 15,
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Science Park \u2013 North Station",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70208",
+      "70206"
+    ],
+    "x": 262,
+    "y": 118
+  },
+  {
+    "index": 16,
+    "line": "green",
+    "stop_id": "70206",
+    "stop_name": "North Station",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 265,
+    "y": 125
+  },
+  {
+    "index": 17,
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "North Station \u2013 Haymarket",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70206",
+      "70204"
+    ],
+    "x": 262,
+    "y": 129
+  },
+  {
+    "index": 18,
+    "line": "green",
+    "stop_id": "70204",
+    "stop_name": "Haymarket",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 265,
+    "y": 136
+  },
+  {
+    "index": 19,
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Haymarket \u2013 Government Center",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70204",
+      "70202"
+    ],
+    "x": 261,
+    "y": 142
+  },
+  {
+    "index": 20,
+    "line": "green",
+    "stop_id": "70202",
+    "stop_name": "Government Center",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 254,
+    "y": 151
+  },
+  {
+    "index": 21,
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Government Center \u2013 Park Street",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70202",
+      "70199"
+    ],
+    "x": 247,
+    "y": 157
+  },
+  {
+    "index": 22,
+    "line": "green",
+    "stop_id": "70199",
+    "stop_name": "Park Street",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 239,
+    "y": 167
+  },
+  {
+    "index": 23,
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Park Street \u2013 Boylston",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70199",
+      "70159"
+    ],
+    "x": 232,
+    "y": 172
+  },
+  {
+    "index": 24,
+    "line": "green",
+    "stop_id": "70159",
+    "stop_name": "Boylston",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 224,
+    "y": 180
+  },
+  {
+    "index": 25,
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Boylston \u2013 Arlington",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70159",
+      "70157"
+    ],
+    "x": 214,
+    "y": 182
+  },
+  {
+    "index": 26,
+    "line": "green",
+    "stop_id": "70157",
+    "stop_name": "Arlington",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 204,
+    "y": 182
+  },
+  {
+    "index": 27,
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Arlington \u2013 Copley",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70157",
+      "70155"
+    ],
+    "x": 196,
+    "y": 182
+  },
+  {
+    "index": 28,
+    "line": "green",
+    "stop_id": "70155",
+    "stop_name": "Copley",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 187,
+    "y": 182
+  },
+  {
+    "index": 29,
+    "line": "green",
+    "stop_id": "70154",
+    "stop_name": "Copley",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 193,
+    "y": 182
+  },
+  {
+    "index": 30,
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Copley \u2013 Arlington",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70154",
+      "70156"
+    ],
+    "x": 202,
+    "y": 182
+  },
+  {
+    "index": 31,
+    "line": "green",
+    "stop_id": "70156",
+    "stop_name": "Arlington",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 210,
+    "y": 182
+  },
+  {
+    "index": 32,
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Arlington \u2013 Boylston",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70156",
+      "70158"
+    ],
+    "x": 220,
+    "y": 182
+  },
+  {
+    "index": 33,
+    "line": "green",
+    "stop_id": "70158",
+    "stop_name": "Boylston",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 230,
+    "y": 180
+  },
+  {
+    "index": 34,
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Boylston \u2013 Park Street",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70158",
+      "70200"
+    ],
+    "x": 238,
+    "y": 172
+  },
+  {
+    "index": 35,
+    "line": "green",
+    "stop_id": "70200",
+    "stop_name": "Park Street",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 245,
+    "y": 167
+  },
+  {
+    "index": 36,
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Park Street \u2013 Government Center",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70200",
+      "70201"
+    ],
+    "x": 253,
+    "y": 157
+  },
+  {
+    "index": 37,
+    "line": "green",
+    "stop_id": "70201",
+    "stop_name": "Government Center",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 260,
+    "y": 151
+  },
+  {
+    "index": 38,
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Government Center \u2013 Haymarket",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70201",
+      "70203"
+    ],
+    "x": 267,
+    "y": 142
+  },
+  {
+    "index": 39,
+    "line": "green",
+    "stop_id": "70203",
+    "stop_name": "Haymarket",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 271,
+    "y": 136
+  },
+  {
+    "index": 40,
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Haymarket \u2013 North Station",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70203",
+      "70205"
+    ],
+    "x": 277,
+    "y": 129
+  },
+  {
+    "index": 41,
+    "line": "green",
+    "stop_id": "70205",
+    "stop_name": "North Station",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 271,
+    "y": 125
+  },
+  {
+    "index": 42,
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "North Station \u2013 Science Park",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70205",
+      "70207"
+    ],
+    "x": 268,
+    "y": 118
+  },
+  {
+    "index": 43,
+    "line": "green",
+    "stop_id": "70207",
+    "stop_name": "Science Park",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 266,
+    "y": 113
+  },
+  {
+    "index": 44,
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Science Park \u2013 Lechmere",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70207",
+      "70501"
+    ],
+    "x": 261,
+    "y": 109
+  },
+  {
+    "index": 45,
+    "line": "green",
+    "stop_id": "70501",
+    "stop_name": "Lechmere",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 257,
+    "y": 105
+  },
+  {
+    "index": 46,
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Lechmere \u2013 East Somerville",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70501",
+      "70513"
+    ],
+    "x": 246,
+    "y": 96
+  },
+  {
+    "index": 47,
+    "line": "green",
+    "stop_id": "70513",
+    "stop_name": "East Somerville",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 237,
+    "y": 84
+  },
+  {
+    "index": 48,
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "East Somerville \u2013 Gilman Square",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70513",
+      "70505"
+    ],
+    "x": 232,
+    "y": 79
+  },
+  {
+    "index": 49,
+    "line": "green",
+    "stop_id": "70505",
+    "stop_name": "Gilman Square",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 227,
+    "y": 75
+  },
+  {
+    "index": 50,
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Gilman Square \u2013 Magoun Square",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70505",
+      "70507"
+    ],
+    "x": 223,
+    "y": 70
+  },
+  {
+    "index": 51,
+    "line": "green",
+    "stop_id": "70507",
+    "stop_name": "Magoun Square",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 218,
+    "y": 65
+  },
+  {
+    "index": 52,
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Magoun Square \u2013 Ball Square",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70507",
+      "70509"
+    ],
+    "x": 213,
+    "y": 60
+  },
+  {
+    "index": 53,
+    "line": "green",
+    "stop_id": "70509",
+    "stop_name": "Ball Square",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 208,
+    "y": 56
+  },
+  {
+    "index": 54,
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Ball Square \u2013 Medford/Tufts",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70509",
+      "70511"
+    ],
+    "x": 204,
+    "y": 51
+  },
+  {
+    "index": 55,
+    "line": "green",
+    "stop_id": "70511",
+    "stop_name": "Medford/Tufts",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 199,
+    "y": 47
+  },
+  {
+    "index": 56,
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Lechmere \u2013 Union Square",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70501",
+      "70503"
+    ],
+    "x": 243,
+    "y": 101
+  },
+  {
+    "index": 57,
+    "line": "green",
+    "stop_id": "70503",
+    "stop_name": "Union Square",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 228,
+    "y": 98
+  }
+]
