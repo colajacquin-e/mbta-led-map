@@ -861,16 +861,16 @@
     "index": 64,
     "line": "red",
     "stop_id": null,
-    "stop_name": "JFK/UMass \u2013 Broadway",
+    "stop_name": "JFK/UMass \u2013 Andrew",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
     "adjacent_stops": [
       "70086",
-      "70082"
+      "70084"
     ],
     "x": 293,
-    "y": 252
+    "y": 260
   },
   {
     "index": 65,
