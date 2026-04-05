@@ -112,9 +112,9 @@ def draw_leds(draw, img, leds, color, font, line_name):
                     txt_draw = ImageDraw.Draw(txt_img)
                     txt_draw.text((0, 0), label, fill="white", font=font,
                                   stroke_width=1, stroke_fill=(30, 30, 30))
-                    txt_img = txt_img.rotate(90, expand=True)
-                    label_x = base_px - txt_img.width // 2
-                    label_y = base_py - OFFSET_PX - LABEL_GAP - txt_img.height
+                    txt_img = txt_img.rotate(180, expand=True)
+                    label_x = base_px - OFFSET_PX // 2 - LABEL_GAP - txt_img.width
+                    label_y = base_py - txt_img.height // 2
                     img.paste(txt_img, (label_x, label_y), txt_img)
                 else:
                     label_x = base_px + OFFSET_PX // 2 + LABEL_GAP
