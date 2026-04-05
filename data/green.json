@@ -442,7 +442,7 @@
     "adjacent_stops": null,
     "x": 190,
     "y": 179,
-    "label_position": "below"
+    "label_position": "above-right"
   },
   {
     "index": 31,
@@ -1527,7 +1527,7 @@
     "adjacent_stops": null,
     "x": 173,
     "y": 179,
-    "label_position": "below",
+    "label_position": "above-right",
     "index": 105
   },
   {
@@ -1556,7 +1556,7 @@
     "adjacent_stops": null,
     "x": 155,
     "y": 174,
-    "label_position": "below",
+    "label_position": "above-right",
     "index": 107
   },
   {
