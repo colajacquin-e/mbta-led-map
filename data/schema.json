@@ -49,7 +49,7 @@
       "required": [
         "index", "line", "stop_id", "stop_name",
         "direction", "direction_id", "type", "adjacent_stops",
-        "x", "y"
+        "x", "y", "label_position"
       ],
       "additionalProperties": false,
       "properties": {
@@ -109,6 +109,11 @@
         "y": {
           "type": "number",
           "description": "Visual y-coordinate for map rendering."
+        },
+        "label_position": {
+          "type": "string",
+          "enum": ["left", "right", "below", "none"],
+          "description": "Where to render the station label. Stations: left, right, or below. Midpoints and duplicates: none."
         }
       },
       "allOf": [

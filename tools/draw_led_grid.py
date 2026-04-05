@@ -2,8 +2,9 @@
 """Draw all LED positions on a 400x400mm grid.
 
 Reads per-line JSON files from data/ and renders each LED as a dot at its
-exact (x, y) coordinate. Stations get larger dots with labels, midpoints
-get smaller dots. No position adjustments — the JSON is the source of truth.
+exact (x, y) coordinate. Label placement is driven by each LED's
+label_position field. No position or label logic — the JSON is the source
+of truth.
 
 Usage:
     python tools/draw_led_grid.py                 # output to data/led-grid.png
@@ -36,16 +37,7 @@ LINE_FILES = {
     "mattapan": "data/mattapan.json",
 }
 
-# Stations whose labels should be rotated 270 degrees (vertical text below dots)
-ROTATED_LABELS = {"Butler", "Milton", "Central Ave", "Valley Rd", "Capen St", "Mattapan",
-                  "Boylston", "Arlington", "Copley"}
-
 LABEL_GAP = 4  # mm between LED and label
-
-# Southbound stations that should have labels on the right instead of the default left
-RIGHT_LABEL_SB = {"South Station", "Broadway", "Andrew", "JFK/UMass",
-                  "Savin Hill", "Fields Corner", "Shawmut", "Ashmont",
-                  "North Quincy", "Wollaston", "Quincy Center", "Quincy Adams", "Braintree"}
 
 
 def mm2px(x, y):
@@ -78,31 +70,29 @@ def draw_grid_labels(draw, font):
         draw.text((2, px + 2), f"{mm}", fill=(80, 80, 80), font=font)
 
 
-def draw_leds(draw, img, leds, color, font, simple=False, global_labeled=None):
+def draw_leds(draw, img, leds, color, font, simple=False):
     gap_px = int(LABEL_GAP * MM)
-    if global_labeled is None:
-        global_labeled = set()
 
     for led in leds:
         px, py = mm2px(led["x"], led["y"])
         is_station = led["type"] == "station"
+        pos = led.get("label_position", "none")
 
         if is_station:
             r = 4
             draw.ellipse([(px - r, py - r), (px + r, py + r)],
                          fill=color, outline="white", width=1)
 
-            # In simple mode, label once per station name; in full mode, label every LED
+            if pos == "none":
+                continue
+
             if simple:
-                if led["stop_name"] in global_labeled:
-                    continue
-                global_labeled.add(led["stop_name"])
                 label = led["stop_name"]
             else:
                 stop = led["stop_id"] or "?"
                 label = f"{led['stop_name']} [{stop}]"
 
-            if led["stop_name"] in ROTATED_LABELS:
+            if pos == "below":
                 txt_img = Image.new("RGBA", (300, 20), (0, 0, 0, 0))
                 txt_draw = ImageDraw.Draw(txt_img)
                 txt_draw.text((0, 0), label, fill="white", font=font,
@@ -111,15 +101,13 @@ def draw_leds(draw, img, leds, color, font, simple=False, global_labeled=None):
                 img.paste(txt_img,
                           (px - txt_img.width // 2, py + gap_px),
                           txt_img)
-            elif led["direction_id"] == 0 and led["stop_name"] not in RIGHT_LABEL_SB:
-                # Southbound/outbound: label to the left
+            elif pos == "left":
                 bbox = draw.textbbox((0, 0), label, font=font)
                 tw = bbox[2] - bbox[0]
                 draw.text((px - gap_px - tw, py - 6), label,
                           fill="white", font=font,
                           stroke_width=1, stroke_fill=(30, 30, 30))
-            else:
-                # Northbound/inbound or overridden SB: label to the right
+            else:  # "right"
                 draw.text((px + gap_px, py - 6), label,
                           fill="white", font=font,
                           stroke_width=1, stroke_fill=(30, 30, 30))
@@ -160,13 +148,11 @@ def main():
     draw_grid(draw)
     draw_grid_labels(draw, grid_font)
 
-    global_labeled = set()
     for line_name, filepath in LINE_FILES.items():
         leds = load_line(filepath)
         if leds:
             color = LINE_COLORS.get(line_name, (200, 200, 200))
-            draw_leds(draw, img, leds, color, font, simple=args.simple,
-                      global_labeled=global_labeled)
+            draw_leds(draw, img, leds, color, font, simple=args.simple)
             print(f"  {line_name}: {len(leds)} LEDs")
 
     img.save(args.output)
