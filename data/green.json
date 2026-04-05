@@ -918,7 +918,7 @@
     "adjacent_stops": null,
     "x": 174,
     "y": 214,
-    "label_position": "none",
+    "label_position": "left",
     "index": 63
   },
   {
@@ -947,7 +947,7 @@
     "adjacent_stops": null,
     "x": 170,
     "y": 219,
-    "label_position": "none",
+    "label_position": "left",
     "index": 65
   },
   {
@@ -976,7 +976,7 @@
     "adjacent_stops": null,
     "x": 164,
     "y": 225,
-    "label_position": "none",
+    "label_position": "left",
     "index": 67
   },
   {
@@ -1005,7 +1005,7 @@
     "adjacent_stops": null,
     "x": 159,
     "y": 230,
-    "label_position": "none",
+    "label_position": "left",
     "index": 69
   },
   {
@@ -1034,7 +1034,7 @@
     "adjacent_stops": null,
     "x": 154,
     "y": 235,
-    "label_position": "none",
+    "label_position": "left",
     "index": 71
   },
   {
@@ -1063,7 +1063,7 @@
     "adjacent_stops": null,
     "x": 148,
     "y": 241,
-    "label_position": "none",
+    "label_position": "left",
     "index": 73
   },
   {
@@ -1092,7 +1092,7 @@
     "adjacent_stops": null,
     "x": 143,
     "y": 246,
-    "label_position": "none",
+    "label_position": "left",
     "index": 75
   },
   {
@@ -1121,7 +1121,7 @@
     "adjacent_stops": null,
     "x": 138,
     "y": 251,
-    "label_position": "none",
+    "label_position": "left",
     "index": 77
   },
   {
@@ -1150,7 +1150,7 @@
     "adjacent_stops": null,
     "x": 132,
     "y": 257,
-    "label_position": "none",
+    "label_position": "left",
     "index": 79
   },
   {
@@ -1179,7 +1179,7 @@
     "adjacent_stops": null,
     "x": 126,
     "y": 263,
-    "label_position": "none",
+    "label_position": "left",
     "index": 81
   },
   {
@@ -1192,7 +1192,7 @@
     "adjacent_stops": null,
     "x": 132,
     "y": 263,
-    "label_position": "right",
+    "label_position": "none",
     "index": 82
   },
   {
