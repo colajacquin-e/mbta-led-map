@@ -13,7 +13,7 @@
 
 ### `lines` — Per-Line Metadata
 
-Each key is a line identifier (`red`, `orange`, `blue`, `green`).
+Each key is a line identifier (`red`, `orange`, `blue`, `green`, `mattapan`).
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -29,7 +29,7 @@ Each object in the array represents one physical LED.
 | Field | Type | Description |
 |-------|------|-------------|
 | `index` | integer | Zero-based position in this line's daisy chain |
-| `line` | enum | `"red"`, `"orange"`, `"blue"`, `"green"` |
+| `line` | enum | `"red"`, `"orange"`, `"blue"`, `"green"`, `"mattapan"` |
 |`stop_id` | string \| null | MBTA V3 API stop ID; `null` for midpoints |
 | `stop_name` | string | Human name; midpoints use `"StopA – StopB"` format |
 | `direction` | enum | `"southbound"`, `"northbound"`, `"westbound"`, `"eastbound"`, `"inbound"`, `"outbound"` |
@@ -54,6 +54,7 @@ Each object in the array represents one physical LED.
 | Orange | 20 | 2 | 19 × 2 dir | ~78 |
 | Blue | 12 | 2 | 11 × 2 dir | ~46 |
 | Green | ~66 (4-track at Kenmore) | 2 (4 at Kenmore) | ~68 × 2 dir | ~280 |
+| Mattapan | 8 | 2 | 7 × 2 dir | ~30 |
 
 ## Validation
 
