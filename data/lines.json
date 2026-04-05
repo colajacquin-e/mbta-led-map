@@ -26,7 +26,7 @@
   "mattapan": {
     "name": "Mattapan Trolley",
     "color_hex": "#DA291C",
-    "led_count": 0,
+    "led_count": 30,
     "chain_gpio": 8
   }
 }
