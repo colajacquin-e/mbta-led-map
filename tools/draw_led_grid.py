@@ -7,6 +7,7 @@ get smaller dots. No position adjustments — the JSON is the source of truth.
 
 Usage:
     python tools/draw_led_grid.py                 # output to data/led-grid.png
+    python tools/draw_led_grid.py --simple         # one label per station, saves led-grid-simple.png
     python tools/draw_led_grid.py -o my-grid.png  # custom output path
 """
 
@@ -71,8 +72,10 @@ def draw_grid_labels(draw, font):
         draw.text((2, px + 2), f"{mm}", fill=(80, 80, 80), font=font)
 
 
-def draw_leds(draw, img, leds, color, font):
+def draw_leds(draw, img, leds, color, font, simple=False, global_labeled=None):
     gap_px = int(LABEL_GAP * MM)
+    if global_labeled is None:
+        global_labeled = set()
 
     for led in leds:
         px, py = mm2px(led["x"], led["y"])
@@ -83,8 +86,15 @@ def draw_leds(draw, img, leds, color, font):
             draw.ellipse([(px - r, py - r), (px + r, py + r)],
                          fill=color, outline="white", width=1)
 
-            stop = led["stop_id"] or "?"
-            label = f"{led['stop_name']} [{stop}]"
+            # In simple mode, label once per station name; in full mode, label every LED
+            if simple:
+                if led["stop_name"] in global_labeled:
+                    continue
+                global_labeled.add(led["stop_name"])
+                label = led["stop_name"]
+            else:
+                stop = led["stop_id"] or "?"
+                label = f"{led['stop_name']} [{stop}]"
 
             if led["stop_name"] in ROTATED_LABELS:
                 txt_img = Image.new("RGBA", (300, 20), (0, 0, 0, 0))
@@ -117,7 +127,12 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("-o", "--output", default="data/led-grid.png",
                         help="Output image path (default: data/led-grid.png)")
+    parser.add_argument("--simple", action="store_true",
+                        help="One label per station (no stop IDs), saves to led-grid-simple.png")
     args = parser.parse_args()
+
+    if args.simple and args.output == "data/led-grid.png":
+        args.output = "data/led-grid-simple.png"
 
     img = Image.new("RGB", (PX, PX), (20, 20, 20))
     draw = ImageDraw.Draw(img)
@@ -139,11 +154,13 @@ def main():
     draw_grid(draw)
     draw_grid_labels(draw, grid_font)
 
+    global_labeled = set()
     for line_name, filepath in LINE_FILES.items():
         leds = load_line(filepath)
         if leds:
             color = LINE_COLORS.get(line_name, (200, 200, 200))
-            draw_leds(draw, img, leds, color, font)
+            draw_leds(draw, img, leds, color, font, simple=args.simple,
+                      global_labeled=global_labeled)
             print(f"  {line_name}: {len(leds)} LEDs")
 
     img.save(args.output)
