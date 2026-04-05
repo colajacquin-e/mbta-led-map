@@ -384,7 +384,7 @@
     "adjacent_stops": null,
     "x": 227,
     "y": 177,
-    "label_position": "below"
+    "label_position": "below-left"
   },
   {
     "index": 27,
@@ -413,7 +413,7 @@
     "adjacent_stops": null,
     "x": 207,
     "y": 179,
-    "label_position": "below"
+    "label_position": "below-left"
   },
   {
     "index": 29,
