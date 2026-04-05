@@ -198,7 +198,7 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 239,
-    "y": 165
+    "y": 162
   },
   {
     "index": 15,
@@ -990,7 +990,7 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 245,
-    "y": 165
+    "y": 162
   },
   {
     "index": 74,
