@@ -30,8 +30,7 @@ Each object in the array represents one physical LED.
 |-------|------|-------------|
 | `index` | integer | Zero-based position in this line's daisy chain |
 | `line` | enum | `"red"`, `"orange"`, `"blue"`, `"green"` |
-| `chain` | string | Physical chain ID (matches line name for now) |
-| `stop_id` | string \| null | MBTA V3 API stop ID; `null` for midpoints |
+|`stop_id` | string \| null | MBTA V3 API stop ID; `null` for midpoints |
 | `stop_name` | string | Human name; midpoints use `"StopA – StopB"` format |
 | `direction` | enum | `"southbound"`, `"northbound"`, `"westbound"`, `"eastbound"`, `"inbound"`, `"outbound"` |
 | `direction_id` | integer | `0` = outbound (away from downtown), `1` = inbound (toward downtown) |

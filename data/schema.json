@@ -46,7 +46,7 @@
       "items": {
         "type": "object",
         "required": [
-          "index", "line", "chain", "stop_id", "stop_name",
+          "index", "line", "stop_id", "stop_name",
           "direction", "direction_id", "type", "adjacent_stops",
           "x", "y"
         ],
@@ -62,11 +62,7 @@
             "enum": ["red", "orange", "blue", "green"],
             "description": "Which subway line this LED belongs to."
           },
-          "chain": {
-            "type": "string",
-            "description": "Physical LED chain identifier. Matches line name for single-chain lines."
-          },
-          "stop_id": {
+"stop_id": {
             "description": "MBTA V3 API stop ID for station LEDs; null for midpoints.",
             "oneOf": [
               { "type": "string", "minLength": 1 },

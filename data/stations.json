@@ -29,7 +29,6 @@
     {
       "index": 0,
       "line": "red",
-      "chain": "red",
       "stop_id": "70061",
       "stop_name": "Alewife",
       "direction": "southbound",
@@ -42,7 +41,6 @@
     {
       "index": 1,
       "line": "red",
-      "chain": "red",
       "stop_id": null,
       "stop_name": "Alewife – Davis",
       "direction": "southbound",
@@ -55,7 +53,6 @@
     {
       "index": 2,
       "line": "red",
-      "chain": "red",
       "stop_id": "70063",
       "stop_name": "Davis",
       "direction": "southbound",
