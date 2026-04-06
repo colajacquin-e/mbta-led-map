@@ -112,7 +112,7 @@ def draw_leds(draw, img, leds, color, font, simple=False, all_station_leds=None)
                 if bbox:
                     txt_img = txt_img.crop(bbox)
                 txt_img = txt_img.rotate(45, expand=True)
-                max_x = max(l["x"] for l in all_station_leds.get(led["stop_name"], [led]))
+                max_x = max(l["x"] for l in all_station_leds.get(led["stop_name"].replace("\n", " "), [led]))
                 anchor_px = int(max_x * MM)
                 img.paste(txt_img,
                           (anchor_px + gap_px, py - txt_img.height),
@@ -127,13 +127,13 @@ def draw_leds(draw, img, leds, color, font, simple=False, all_station_leds=None)
                     txt_img = txt_img.crop(bbox)
                 txt_img = txt_img.rotate(45, expand=True)
                 # Anchor from bottommost LED
-                max_y = max(l["y"] for l in all_station_leds.get(led["stop_name"], [led]))
+                max_y = max(l["y"] for l in all_station_leds.get(led["stop_name"].replace("\n", " "), [led]))
                 anchor_py = int(max_y * MM)
                 img.paste(txt_img,
                           (px - txt_img.width, anchor_py + gap_px),
                           txt_img)
             elif pos == "left":
-                min_x = min(l["x"] for l in all_station_leds.get(led["stop_name"], [led]))
+                min_x = min(l["x"] for l in all_station_leds.get(led["stop_name"].replace("\n", " "), [led]))
                 anchor_px = int(min_x * MM)
                 align = led.get("label_alignment", "right")
                 text_lines = label.split("\n")
@@ -151,7 +151,7 @@ def draw_leds(draw, img, leds, color, font, simple=False, all_station_leds=None)
                     draw.text((lx, ly), ln, fill="white", font=font,
                               stroke_width=1, stroke_fill=(30, 30, 30))
             elif pos == "right":
-                max_x = max(l["x"] for l in all_station_leds.get(led["stop_name"], [led]))
+                max_x = max(l["x"] for l in all_station_leds.get(led["stop_name"].replace("\n", " "), [led]))
                 anchor_px = int(max_x * MM)
                 align = led.get("label_alignment", "left")
                 text_lines = label.split("\n")
@@ -171,7 +171,7 @@ def draw_leds(draw, img, leds, color, font, simple=False, all_station_leds=None)
             elif pos == "center":
                 # Label at the vertical center of all LEDs at this station
                 # with left/right positioning based on label_alignment
-                stn_leds = all_station_leds.get(led["stop_name"], [led])
+                stn_leds = all_station_leds.get(led["stop_name"].replace("\n", " "), [led])
                 center_y = int((min(l["y"] for l in stn_leds) + max(l["y"] for l in stn_leds)) / 2 * MM)
                 min_x = int(min(l["x"] for l in stn_leds) * MM)
                 max_x = int(max(l["x"] for l in stn_leds) * MM)
@@ -230,6 +230,7 @@ def main():
     draw_grid_labels(draw, grid_font)
 
     # Build lookup of all station LEDs by name (across all lines) for label anchoring
+    # Normalize names by stripping newlines so transfer stations group together
     all_station_leds = {}
     all_line_data = []
     for line_name, filepath in LINE_FILES.items():
@@ -238,7 +239,8 @@ def main():
             all_line_data.append((line_name, leds))
             for led in leds:
                 if led["type"] == "station":
-                    all_station_leds.setdefault(led["stop_name"], []).append(led)
+                    key = led["stop_name"].replace("\n", " ")
+                    all_station_leds.setdefault(key, []).append(led)
 
     for line_name, leds in all_line_data:
         color = LINE_COLORS.get(line_name, (200, 200, 200))
