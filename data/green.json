@@ -2396,5 +2396,759 @@
     "x": 155,
     "y": 185,
     "label_position": "none"
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Kenmore \u2013 Saint Mary's Street",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70151",
+      "70211"
+    ],
+    "x": 119,
+    "y": 169,
+    "label_position": "none",
+    "index": 166
+  },
+  {
+    "line": "green",
+    "stop_id": "70211",
+    "stop_name": "Saint Mary's Street",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 124,
+    "y": 174,
+    "label_position": "left",
+    "index": 167
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Saint Mary's Street \u2013 Hawes Street",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70211",
+      "70213"
+    ],
+    "x": 121,
+    "y": 171,
+    "label_position": "none",
+    "index": 168
+  },
+  {
+    "line": "green",
+    "stop_id": "70213",
+    "stop_name": "Hawes Street",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 118,
+    "y": 168,
+    "label_position": "left",
+    "index": 169
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Hawes Street \u2013 Kent Street",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70213",
+      "70215"
+    ],
+    "x": 113,
+    "y": 166,
+    "label_position": "none",
+    "index": 170
+  },
+  {
+    "line": "green",
+    "stop_id": "70215",
+    "stop_name": "Kent Street",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 109,
+    "y": 163,
+    "label_position": "left",
+    "index": 171
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Kent Street \u2013 Saint Paul Street",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70215",
+      "70217"
+    ],
+    "x": 104,
+    "y": 166,
+    "label_position": "none",
+    "index": 172
+  },
+  {
+    "line": "green",
+    "stop_id": "70217",
+    "stop_name": "Saint Paul Street",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 100,
+    "y": 168,
+    "label_position": "left",
+    "index": 173
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Saint Paul Street \u2013 Coolidge Corner",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70217",
+      "70219"
+    ],
+    "x": 97,
+    "y": 172,
+    "label_position": "none",
+    "index": 174
+  },
+  {
+    "line": "green",
+    "stop_id": "70219",
+    "stop_name": "Coolidge Corner",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 93,
+    "y": 175,
+    "label_position": "left",
+    "index": 175
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Coolidge Corner \u2013 Summit Avenue",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70219",
+      "70223"
+    ],
+    "x": 90,
+    "y": 178,
+    "label_position": "none",
+    "index": 176
+  },
+  {
+    "line": "green",
+    "stop_id": "70223",
+    "stop_name": "Summit Avenue",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 87,
+    "y": 181,
+    "label_position": "left",
+    "index": 177
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Summit Avenue \u2013 Brandon Hall",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70223",
+      "70225"
+    ],
+    "x": 84,
+    "y": 184,
+    "label_position": "none",
+    "index": 178
+  },
+  {
+    "line": "green",
+    "stop_id": "70225",
+    "stop_name": "Brandon Hall",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 81,
+    "y": 187,
+    "label_position": "left",
+    "index": 179
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Brandon Hall \u2013 Fairbanks Street",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70225",
+      "70227"
+    ],
+    "x": 77,
+    "y": 191,
+    "label_position": "none",
+    "index": 180
+  },
+  {
+    "line": "green",
+    "stop_id": "70227",
+    "stop_name": "Fairbanks Street",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 74,
+    "y": 194,
+    "label_position": "left",
+    "index": 181
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Fairbanks Street \u2013 Washington Square",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70227",
+      "70229"
+    ],
+    "x": 71,
+    "y": 197,
+    "label_position": "none",
+    "index": 182
+  },
+  {
+    "line": "green",
+    "stop_id": "70229",
+    "stop_name": "Washington Square",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 68,
+    "y": 200,
+    "label_position": "left",
+    "index": 183
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Washington Square \u2013 Tappan Street",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70229",
+      "70231"
+    ],
+    "x": 65,
+    "y": 203,
+    "label_position": "none",
+    "index": 184
+  },
+  {
+    "line": "green",
+    "stop_id": "70231",
+    "stop_name": "Tappan Street",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 62,
+    "y": 206,
+    "label_position": "left",
+    "index": 185
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Tappan Street \u2013 Dean Road",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70231",
+      "70233"
+    ],
+    "x": 58,
+    "y": 210,
+    "label_position": "none",
+    "index": 186
+  },
+  {
+    "line": "green",
+    "stop_id": "70233",
+    "stop_name": "Dean Road",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 55,
+    "y": 213,
+    "label_position": "left",
+    "index": 187
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Dean Road \u2013 Englewood Avenue",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70233",
+      "70235"
+    ],
+    "x": 52,
+    "y": 216,
+    "label_position": "none",
+    "index": 188
+  },
+  {
+    "line": "green",
+    "stop_id": "70235",
+    "stop_name": "Englewood Avenue",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 49,
+    "y": 219,
+    "label_position": "left",
+    "index": 189
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Englewood Avenue \u2013 Cleveland Circle",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70235",
+      "70237"
+    ],
+    "x": 45,
+    "y": 222,
+    "label_position": "none",
+    "index": 190
+  },
+  {
+    "line": "green",
+    "stop_id": "70237",
+    "stop_name": "Cleveland Circle",
+    "direction": "westbound",
+    "direction_id": 0,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 42,
+    "y": 226,
+    "label_position": "left",
+    "index": 191
+  },
+  {
+    "line": "green",
+    "stop_id": "70238",
+    "stop_name": "Cleveland Circle",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 48,
+    "y": 226,
+    "label_position": "none",
+    "index": 192
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Cleveland Circle \u2013 Englewood Avenue",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70238",
+      "70236"
+    ],
+    "x": 51,
+    "y": 222,
+    "label_position": "none",
+    "index": 193
+  },
+  {
+    "line": "green",
+    "stop_id": "70236",
+    "stop_name": "Englewood Avenue",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 55,
+    "y": 219,
+    "label_position": "none",
+    "index": 194
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Englewood Avenue \u2013 Dean Road",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70236",
+      "70234"
+    ],
+    "x": 58,
+    "y": 216,
+    "label_position": "none",
+    "index": 195
+  },
+  {
+    "line": "green",
+    "stop_id": "70234",
+    "stop_name": "Dean Road",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 61,
+    "y": 213,
+    "label_position": "none",
+    "index": 196
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Dean Road \u2013 Tappan Street",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70234",
+      "70232"
+    ],
+    "x": 64,
+    "y": 210,
+    "label_position": "none",
+    "index": 197
+  },
+  {
+    "line": "green",
+    "stop_id": "70232",
+    "stop_name": "Tappan Street",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 68,
+    "y": 206,
+    "label_position": "none",
+    "index": 198
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Tappan Street \u2013 Washington Square",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70232",
+      "70230"
+    ],
+    "x": 71,
+    "y": 203,
+    "label_position": "none",
+    "index": 199
+  },
+  {
+    "line": "green",
+    "stop_id": "70230",
+    "stop_name": "Washington Square",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 74,
+    "y": 200,
+    "label_position": "none",
+    "index": 200
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Washington Square \u2013 Fairbanks Street",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70230",
+      "70228"
+    ],
+    "x": 77,
+    "y": 197,
+    "label_position": "none",
+    "index": 201
+  },
+  {
+    "line": "green",
+    "stop_id": "70228",
+    "stop_name": "Fairbanks Street",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 80,
+    "y": 194,
+    "label_position": "none",
+    "index": 202
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Fairbanks Street \u2013 Brandon Hall",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70228",
+      "70226"
+    ],
+    "x": 83,
+    "y": 191,
+    "label_position": "none",
+    "index": 203
+  },
+  {
+    "line": "green",
+    "stop_id": "70226",
+    "stop_name": "Brandon Hall",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 87,
+    "y": 187,
+    "label_position": "none",
+    "index": 204
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Brandon Hall \u2013 Summit Avenue",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70226",
+      "70224"
+    ],
+    "x": 90,
+    "y": 184,
+    "label_position": "none",
+    "index": 205
+  },
+  {
+    "line": "green",
+    "stop_id": "70224",
+    "stop_name": "Summit Avenue",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 93,
+    "y": 181,
+    "label_position": "none",
+    "index": 206
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Summit Avenue \u2013 Coolidge Corner",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70224",
+      "70220"
+    ],
+    "x": 96,
+    "y": 178,
+    "label_position": "none",
+    "index": 207
+  },
+  {
+    "line": "green",
+    "stop_id": "70220",
+    "stop_name": "Coolidge Corner",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 99,
+    "y": 175,
+    "label_position": "none",
+    "index": 208
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Coolidge Corner \u2013 Saint Paul Street",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70220",
+      "70218"
+    ],
+    "x": 103,
+    "y": 172,
+    "label_position": "none",
+    "index": 209
+  },
+  {
+    "line": "green",
+    "stop_id": "70218",
+    "stop_name": "Saint Paul Street",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 106,
+    "y": 168,
+    "label_position": "none",
+    "index": 210
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Saint Paul Street \u2013 Kent Street",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70218",
+      "70216"
+    ],
+    "x": 110,
+    "y": 166,
+    "label_position": "none",
+    "index": 211
+  },
+  {
+    "line": "green",
+    "stop_id": "70216",
+    "stop_name": "Kent Street",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 115,
+    "y": 163,
+    "label_position": "none",
+    "index": 212
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Kent Street \u2013 Hawes Street",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70216",
+      "70214"
+    ],
+    "x": 119,
+    "y": 166,
+    "label_position": "none",
+    "index": 213
+  },
+  {
+    "line": "green",
+    "stop_id": "70214",
+    "stop_name": "Hawes Street",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 124,
+    "y": 168,
+    "label_position": "none",
+    "index": 214
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Hawes Street \u2013 Saint Mary's Street",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70214",
+      "70212"
+    ],
+    "x": 127,
+    "y": 171,
+    "label_position": "none",
+    "index": 215
+  },
+  {
+    "line": "green",
+    "stop_id": "70212",
+    "stop_name": "Saint Mary's Street",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "station",
+    "adjacent_stops": null,
+    "x": 130,
+    "y": 174,
+    "label_position": "none",
+    "index": 216
+  },
+  {
+    "line": "green",
+    "stop_id": null,
+    "stop_name": "Saint Mary's Street \u2013 Kenmore",
+    "direction": "eastbound",
+    "direction_id": 1,
+    "type": "midpoint",
+    "adjacent_stops": [
+      "70212",
+      "70150"
+    ],
+    "x": 125,
+    "y": 169,
+    "label_position": "none",
+    "index": 217
   }
 ]
