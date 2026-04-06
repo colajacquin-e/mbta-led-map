@@ -3,7 +3,7 @@
     "index": 0,
     "line": "green",
     "stop_id": "70512",
-    "stop_name": "Medford/\nTufts",
+    "stop_name": "MEDFORD/\nTUFTS",
     "direction": "westbound",
     "direction_id": 0,
     "type": "station",
@@ -148,7 +148,7 @@
     "index": 10,
     "line": "green",
     "stop_id": "70504",
-    "stop_name": "Union Sq",
+    "stop_name": "UNION SQ",
     "direction": "westbound",
     "direction_id": 0,
     "type": "station",
@@ -1172,7 +1172,7 @@
   {
     "line": "green",
     "stop_id": "70260",
-    "stop_name": "Heath St",
+    "stop_name": "HEATH ST",
     "direction": "westbound",
     "direction_id": 0,
     "type": "station",
@@ -1185,7 +1185,7 @@
   {
     "line": "green",
     "stop_id": "70260",
-    "stop_name": "Heath St",
+    "stop_name": "HEATH ST",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
@@ -1926,7 +1926,7 @@
   {
     "line": "green",
     "stop_id": "70161",
-    "stop_name": "Riverside",
+    "stop_name": "RIVERSIDE",
     "direction": "westbound",
     "direction_id": 0,
     "type": "station",
@@ -1939,7 +1939,7 @@
   {
     "line": "green",
     "stop_id": "70160",
-    "stop_name": "Riverside",
+    "stop_name": "RIVERSIDE",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
@@ -2764,7 +2764,7 @@
   {
     "line": "green",
     "stop_id": "70237",
-    "stop_name": "Cleveland\nCircle",
+    "stop_name": "CLEVELAND\nCIRCLE",
     "direction": "westbound",
     "direction_id": 0,
     "type": "station",
@@ -2777,7 +2777,7 @@
   {
     "line": "green",
     "stop_id": "70238",
-    "stop_name": "Cleveland Circle",
+    "stop_name": "CLEVELAND CIRCLE",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
@@ -3636,7 +3636,7 @@
   {
     "line": "green",
     "stop_id": "70107",
-    "stop_name": "Boston College",
+    "stop_name": "BOSTON COLLEGE",
     "direction": "westbound",
     "direction_id": 0,
     "type": "station",
@@ -3650,7 +3650,7 @@
   {
     "line": "green",
     "stop_id": "70106",
-    "stop_name": "Boston College",
+    "stop_name": "BOSTON COLLEGE",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
