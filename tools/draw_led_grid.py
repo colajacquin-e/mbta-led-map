@@ -189,7 +189,7 @@ def draw_leds(draw, img, leds, color, font, simple=False, all_station_leds=None)
                     else:
                         center_x = (min_x + max_x) // 2
                         lx = center_x - tw // 2
-                    ly = center_y - total_height // 2 + j * 12
+                    ly = center_y - 3 + j * 12
                     draw.text((lx, ly), ln, fill="white", font=font,
                               stroke_width=1, stroke_fill=(30, 30, 30))
         else:
