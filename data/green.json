@@ -350,7 +350,7 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 234,
-    "y": 168,
+    "y": 167,
     "label_position": "none",
     "label_alignment": "left"
   },
@@ -364,7 +364,7 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 239,
-    "y": 168,
+    "y": 167,
     "label_position": "none",
     "label_alignment": "left"
   },
@@ -378,7 +378,7 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 245,
-    "y": 168,
+    "y": 167,
     "label_position": "none",
     "label_alignment": "left"
   },
@@ -578,7 +578,7 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 250,
-    "y": 168,
+    "y": 167,
     "label_position": "none",
     "label_alignment": "left"
   },
