@@ -258,7 +258,7 @@
     "adjacent_stops": null,
     "x": 257,
     "y": 179,
-    "label_position": "right",
+    "label_position": "none",
     "label_alignment": "left"
   },
   {
