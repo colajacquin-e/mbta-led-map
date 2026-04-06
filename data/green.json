@@ -1236,7 +1236,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Back of the Hill \u2013 Heath St",
+    "stop_name": "Back of the Hill \u2013 HEATH ST",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -1281,7 +1281,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Heath St \u2013 Back of the Hill",
+    "stop_name": "HEATH ST \u2013 Back of the Hill",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -2042,7 +2042,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Woodland \u2013 Riverside",
+    "stop_name": "Woodland \u2013 RIVERSIDE",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2087,7 +2087,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Riverside \u2013 Woodland",
+    "stop_name": "RIVERSIDE \u2013 Woodland",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -2938,7 +2938,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Englewood Ave \u2013 Cleveland Circle",
+    "stop_name": "Englewood Ave \u2013 CLEVELAND CIRCLE",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2983,7 +2983,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Cleveland Circle \u2013 Englewood Ave",
+    "stop_name": "CLEVELAND CIRCLE \u2013 Englewood Ave",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3837,7 +3837,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "South St \u2013 Boston College",
+    "stop_name": "South St \u2013 BOSTON COLLEGE",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3882,7 +3882,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Boston College \u2013 South St",
+    "stop_name": "BOSTON COLLEGE \u2013 South St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
