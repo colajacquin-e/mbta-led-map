@@ -114,6 +114,11 @@
           "type": "string",
           "enum": ["left", "right", "below", "above-right", "below-left", "none"],
           "description": "Where to render the station label. Stations: left, right, or below. Midpoints and duplicates: none."
+        },
+        "label_alignment": {
+          "type": "string",
+          "enum": ["left", "right", "center"],
+          "description": "Text alignment for multi-line labels. Defaults to left for right-positioned labels and right for left-positioned labels."
         }
       },
       "allOf": [

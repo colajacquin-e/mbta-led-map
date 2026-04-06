@@ -133,21 +133,41 @@ def draw_leds(draw, img, leds, color, font, simple=False, all_station_leds=None)
                           (px - txt_img.width, anchor_py + gap_px),
                           txt_img)
             elif pos == "left":
-                # Anchor label 5mm to the left of the leftmost LED for this station
                 min_x = min(l["x"] for l in all_station_leds.get(led["stop_name"], [led]))
                 anchor_px = int(min_x * MM)
-                bbox = draw.textbbox((0, 0), label, font=font)
-                tw = bbox[2] - bbox[0]
-                draw.text((anchor_px - gap_px - tw, py - 3), label,
-                          fill="white", font=font,
-                          stroke_width=1, stroke_fill=(30, 30, 30))
+                align = led.get("label_alignment", "right")
+                lines = label.split("\n")
+                line_widths = [draw.textbbox((0, 0), line, font=font)[2] - draw.textbbox((0, 0), line, font=font)[0] for line in lines]
+                max_tw = max(line_widths)
+                for j, line in enumerate(lines):
+                    tw = line_widths[j]
+                    if align == "right":
+                        lx = anchor_px - gap_px - tw
+                    elif align == "center":
+                        lx = anchor_px - gap_px - max_tw // 2 - tw // 2
+                    else:
+                        lx = anchor_px - gap_px - max_tw
+                    ly = py - 3 + j * 12
+                    draw.text((lx, ly), line, fill="white", font=font,
+                              stroke_width=1, stroke_fill=(30, 30, 30))
             elif pos == "right":
-                # Anchor label 5mm to the right of the rightmost LED for this station
                 max_x = max(l["x"] for l in all_station_leds.get(led["stop_name"], [led]))
                 anchor_px = int(max_x * MM)
-                draw.text((anchor_px + gap_px, py - 3), label,
-                          fill="white", font=font,
-                          stroke_width=1, stroke_fill=(30, 30, 30))
+                align = led.get("label_alignment", "left")
+                lines = label.split("\n")
+                line_widths = [draw.textbbox((0, 0), line, font=font)[2] - draw.textbbox((0, 0), line, font=font)[0] for line in lines]
+                max_tw = max(line_widths)
+                for j, line in enumerate(lines):
+                    tw = line_widths[j]
+                    if align == "right":
+                        lx = anchor_px + gap_px + max_tw - tw
+                    elif align == "center":
+                        lx = anchor_px + gap_px + max_tw // 2 - tw // 2
+                    else:
+                        lx = anchor_px + gap_px
+                    ly = py - 3 + j * 12
+                    draw.text((lx, ly), line, fill="white", font=font,
+                              stroke_width=1, stroke_fill=(30, 30, 30))
         else:
             r = 2
             draw.ellipse([(px - r, py - r), (px + r, py + r)],
