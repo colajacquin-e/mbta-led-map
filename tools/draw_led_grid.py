@@ -169,16 +169,27 @@ def draw_leds(draw, img, leds, color, font, simple=False, all_station_leds=None)
                     draw.text((lx, ly), ln, fill="white", font=font,
                               stroke_width=1, stroke_fill=(30, 30, 30))
             elif pos == "center":
-                # Center text over the midpoint of all LEDs at this station
+                # Label at the vertical center of all LEDs at this station
+                # with left/right positioning based on label_alignment
                 stn_leds = all_station_leds.get(led["stop_name"], [led])
-                center_x = int((min(l["x"] for l in stn_leds) + max(l["x"] for l in stn_leds)) / 2 * MM)
-                min_y = int(min(l["y"] for l in stn_leds) * MM)
+                center_y = int((min(l["y"] for l in stn_leds) + max(l["y"] for l in stn_leds)) / 2 * MM)
+                min_x = int(min(l["x"] for l in stn_leds) * MM)
+                max_x = int(max(l["x"] for l in stn_leds) * MM)
                 align = led.get("label_alignment", "center")
                 text_lines = label.split("\n")
+                line_widths = [draw.textbbox((0, 0), ln, font=font)[2] - draw.textbbox((0, 0), ln, font=font)[0] for ln in text_lines]
+                max_tw = max(line_widths)
+                total_height = len(text_lines) * 12
                 for j, ln in enumerate(text_lines):
-                    tw = draw.textbbox((0, 0), ln, font=font)[2] - draw.textbbox((0, 0), ln, font=font)[0]
-                    lx = center_x - tw // 2
-                    ly = min_y - gap_px - (len(text_lines) - j) * 12
+                    tw = line_widths[j]
+                    if align == "right":
+                        lx = min_x - gap_px - tw
+                    elif align == "left":
+                        lx = max_x + gap_px
+                    else:
+                        center_x = (min_x + max_x) // 2
+                        lx = center_x - tw // 2
+                    ly = center_y - total_height // 2 + j * 12
                     draw.text((lx, ly), ln, fill="white", font=font,
                               stroke_width=1, stroke_fill=(30, 30, 30))
         else:
