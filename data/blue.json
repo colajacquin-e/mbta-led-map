@@ -32,14 +32,14 @@
     "index": 2,
     "line": "blue",
     "stop_id": "70057",
-    "stop_name": "Revere Beach",
+    "stop_name": "Revere\nBeach",
     "direction": "westbound",
     "direction_id": 0,
     "type": "station",
     "adjacent_stops": null,
     "x": 372,
     "y": 62,
-    "label_position": "left"
+    "label_position": "right"
   },
   {
     "index": 3,
@@ -293,7 +293,7 @@
     "index": 20,
     "line": "blue",
     "stop_id": "70039",
-    "stop_name": "Government Center",
+    "stop_name": "Gov't\nCenter",
     "direction": "westbound",
     "direction_id": 0,
     "type": "station",
