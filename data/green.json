@@ -344,15 +344,15 @@
     "index": 22,
     "line": "green",
     "stop_id": "70199",
-    "stop_name": "Park St",
+    "stop_name": "Park\nStreet",
     "direction": "westbound",
     "direction_id": 0,
     "type": "station",
     "adjacent_stops": null,
     "x": 234,
     "y": 167,
-    "label_position": "none",
-    "label_alignment": "left"
+    "label_position": "left",
+    "label_alignment": "right"
   },
   {
     "index": 23,
