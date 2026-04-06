@@ -1099,7 +1099,7 @@
     "index": 71,
     "line": "red",
     "stop_id": "70078",
-    "stop_name": "Downtown Crossing",
+    "stop_name": "Downtown\nCrossing",
     "direction": "northbound",
     "direction_id": 1,
     "type": "station",
