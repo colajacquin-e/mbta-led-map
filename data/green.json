@@ -306,7 +306,7 @@
     "index": 21,
     "line": "green",
     "stop_id": null,
-    "stop_name": "Government Center \u2013 Park Street",
+    "stop_name": "Government Center \u2013 Park St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -322,7 +322,7 @@
     "index": 22,
     "line": "green",
     "stop_id": "70199",
-    "stop_name": "Park Street",
+    "stop_name": "Park St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "station",
@@ -335,7 +335,7 @@
     "index": 23,
     "line": "green",
     "stop_id": "70196",
-    "stop_name": "Park Street",
+    "stop_name": "Park St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "station",
@@ -348,7 +348,7 @@
     "index": 24,
     "line": "green",
     "stop_id": "70197",
-    "stop_name": "Park Street",
+    "stop_name": "Park St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "station",
@@ -361,7 +361,7 @@
     "index": 25,
     "line": "green",
     "stop_id": null,
-    "stop_name": "Park Street \u2013 Boylston",
+    "stop_name": "Park St \u2013 Boylston",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -519,7 +519,7 @@
     "index": 36,
     "line": "green",
     "stop_id": null,
-    "stop_name": "Boylston \u2013 Park Street",
+    "stop_name": "Boylston \u2013 Park St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -535,7 +535,7 @@
     "index": 37,
     "line": "green",
     "stop_id": "70200",
-    "stop_name": "Park Street",
+    "stop_name": "Park St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
@@ -548,7 +548,7 @@
     "index": 38,
     "line": "green",
     "stop_id": null,
-    "stop_name": "Park Street \u2013 Government Center",
+    "stop_name": "Park St \u2013 Government Center",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1040,7 +1040,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Brigham Circle \u2013 Fenwood Road",
+    "stop_name": "Brigham Circle \u2013 Fenwood Rd",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -1069,7 +1069,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Fenwood Road \u2013 Mission Park",
+    "stop_name": "Fenwood Rd \u2013 Mission Park",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -1156,7 +1156,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Back of the Hill \u2013 Heath Street",
+    "stop_name": "Back of the Hill \u2013 Heath St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -1185,7 +1185,7 @@
   {
     "line": "green",
     "stop_id": "70260",
-    "stop_name": "Heath Street",
+    "stop_name": "Heath St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
@@ -1198,7 +1198,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Heath Street \u2013 Back of the Hill",
+    "stop_name": "Heath St \u2013 Back of the Hill",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1285,7 +1285,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Mission Park \u2013 Fenwood Road",
+    "stop_name": "Mission Park \u2013 Fenwood Rd",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1314,7 +1314,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Fenwood Road \u2013 Brigham Circle",
+    "stop_name": "Fenwood Rd \u2013 Brigham Circle",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -2400,7 +2400,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Kenmore \u2013 Saint Mary's Street",
+    "stop_name": "Kenmore \u2013 Saint Mary's St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2429,7 +2429,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Saint Mary's Street \u2013 Hawes Street",
+    "stop_name": "Saint Mary's St \u2013 Hawes St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2458,7 +2458,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Hawes Street \u2013 Kent Street",
+    "stop_name": "Hawes St \u2013 Kent St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2487,7 +2487,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Kent Street \u2013 Saint Paul Street",
+    "stop_name": "Kent St \u2013 Saint Paul St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2516,7 +2516,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Saint Paul Street \u2013 Coolidge Corner",
+    "stop_name": "Saint Paul St \u2013 Coolidge Corner",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2545,7 +2545,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Coolidge Corner \u2013 Summit Avenue",
+    "stop_name": "Coolidge Corner \u2013 Summit Ave",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2574,7 +2574,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Summit Avenue \u2013 Brandon Hall",
+    "stop_name": "Summit Ave \u2013 Brandon Hall",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2603,7 +2603,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Brandon Hall \u2013 Fairbanks Street",
+    "stop_name": "Brandon Hall \u2013 Fairbanks St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2632,7 +2632,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Fairbanks Street \u2013 Washington Square",
+    "stop_name": "Fairbanks St \u2013 Washington Square",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2661,7 +2661,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Washington Square \u2013 Tappan Street",
+    "stop_name": "Washington Square \u2013 Tappan St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2690,7 +2690,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Tappan Street \u2013 Dean Road",
+    "stop_name": "Tappan St \u2013 Dean Rd",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2719,7 +2719,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Dean Road \u2013 Englewood Avenue",
+    "stop_name": "Dean Rd \u2013 Englewood Ave",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2748,7 +2748,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Englewood Avenue \u2013 Cleveland Circle",
+    "stop_name": "Englewood Ave \u2013 Cleveland Circle",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2790,7 +2790,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Cleveland Circle \u2013 Englewood Avenue",
+    "stop_name": "Cleveland Circle \u2013 Englewood Ave",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -2806,7 +2806,7 @@
   {
     "line": "green",
     "stop_id": "70236",
-    "stop_name": "Englewood Avenue",
+    "stop_name": "Englewood Ave",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
@@ -2819,7 +2819,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Englewood Avenue \u2013 Dean Road",
+    "stop_name": "Englewood Ave \u2013 Dean Rd",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -2835,7 +2835,7 @@
   {
     "line": "green",
     "stop_id": "70234",
-    "stop_name": "Dean Road",
+    "stop_name": "Dean Rd",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
@@ -2848,7 +2848,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Dean Road \u2013 Tappan Street",
+    "stop_name": "Dean Rd \u2013 Tappan St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -2864,7 +2864,7 @@
   {
     "line": "green",
     "stop_id": "70232",
-    "stop_name": "Tappan Street",
+    "stop_name": "Tappan St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
@@ -2877,7 +2877,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Tappan Street \u2013 Washington Square",
+    "stop_name": "Tappan St \u2013 Washington Square",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -2906,7 +2906,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Washington Square \u2013 Fairbanks Street",
+    "stop_name": "Washington Square \u2013 Fairbanks St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -2922,7 +2922,7 @@
   {
     "line": "green",
     "stop_id": "70228",
-    "stop_name": "Fairbanks Street",
+    "stop_name": "Fairbanks St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
@@ -2935,7 +2935,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Fairbanks Street \u2013 Brandon Hall",
+    "stop_name": "Fairbanks St \u2013 Brandon Hall",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -2964,7 +2964,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Brandon Hall \u2013 Summit Avenue",
+    "stop_name": "Brandon Hall \u2013 Summit Ave",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -2980,7 +2980,7 @@
   {
     "line": "green",
     "stop_id": "70224",
-    "stop_name": "Summit Avenue",
+    "stop_name": "Summit Ave",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
@@ -2993,7 +2993,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Summit Avenue \u2013 Coolidge Corner",
+    "stop_name": "Summit Ave \u2013 Coolidge Corner",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3022,7 +3022,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Coolidge Corner \u2013 Saint Paul Street",
+    "stop_name": "Coolidge Corner \u2013 Saint Paul St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3038,7 +3038,7 @@
   {
     "line": "green",
     "stop_id": "70218",
-    "stop_name": "Saint Paul Street",
+    "stop_name": "Saint Paul St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
@@ -3051,7 +3051,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Saint Paul Street \u2013 Kent Street",
+    "stop_name": "Saint Paul St \u2013 Kent St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3067,7 +3067,7 @@
   {
     "line": "green",
     "stop_id": "70216",
-    "stop_name": "Kent Street",
+    "stop_name": "Kent St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
@@ -3080,7 +3080,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Kent Street \u2013 Hawes Street",
+    "stop_name": "Kent St \u2013 Hawes St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3096,7 +3096,7 @@
   {
     "line": "green",
     "stop_id": "70214",
-    "stop_name": "Hawes Street",
+    "stop_name": "Hawes St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
@@ -3109,7 +3109,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Hawes Street \u2013 Saint Mary's Street",
+    "stop_name": "Hawes St \u2013 Saint Mary's St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3125,7 +3125,7 @@
   {
     "line": "green",
     "stop_id": "70212",
-    "stop_name": "Saint Mary's Street",
+    "stop_name": "Saint Mary's St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
@@ -3138,7 +3138,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Saint Mary's Street \u2013 Kenmore",
+    "stop_name": "Saint Mary's St \u2013 Kenmore",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3154,7 +3154,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Kenmore \u2013 Blandford Street",
+    "stop_name": "Kenmore \u2013 Blandford St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3171,21 +3171,21 @@
   {
     "line": "green",
     "stop_id": "70149",
-    "stop_name": "Blandford Street",
+    "stop_name": "Blandford St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "station",
     "adjacent_stops": null,
     "x": 131,
     "y": 168,
-    "label_position": "left",
+    "label_position": "right",
     "label_alignment": "left",
     "index": 219
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Blandford Street \u2013 Boston University East",
+    "stop_name": "Blandford St \u2013 BU East",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3202,21 +3202,21 @@
   {
     "line": "green",
     "stop_id": "70147",
-    "stop_name": "Boston University East",
+    "stop_name": "BU East",
     "direction": "westbound",
     "direction_id": 0,
     "type": "station",
     "adjacent_stops": null,
     "x": 124,
     "y": 161,
-    "label_position": "left",
+    "label_position": "right",
     "label_alignment": "left",
     "index": 221
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Boston University East \u2013 Boston University Central",
+    "stop_name": "BU East \u2013 BU Central",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3233,21 +3233,21 @@
   {
     "line": "green",
     "stop_id": "70145",
-    "stop_name": "Boston University Central",
+    "stop_name": "BU Central",
     "direction": "westbound",
     "direction_id": 0,
     "type": "station",
     "adjacent_stops": null,
     "x": 118,
     "y": 155,
-    "label_position": "left",
+    "label_position": "right",
     "label_alignment": "left",
     "index": 223
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Boston University Central \u2013 Amory Street",
+    "stop_name": "BU Central \u2013 Amory St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3264,21 +3264,21 @@
   {
     "line": "green",
     "stop_id": "170141",
-    "stop_name": "Amory Street",
+    "stop_name": "Amory St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "station",
     "adjacent_stops": null,
     "x": 112,
     "y": 148,
-    "label_position": "left",
+    "label_position": "right",
     "label_alignment": "left",
     "index": 225
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Amory Street \u2013 Babcock Street",
+    "stop_name": "Amory St \u2013 Babcock St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3295,21 +3295,21 @@
   {
     "line": "green",
     "stop_id": "170137",
-    "stop_name": "Babcock Street",
+    "stop_name": "Babcock St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "station",
     "adjacent_stops": null,
     "x": 106,
     "y": 142,
-    "label_position": "left",
+    "label_position": "right",
     "label_alignment": "left",
     "index": 227
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Babcock Street \u2013 Packard's Corner",
+    "stop_name": "Babcock St \u2013 Packard's Corner",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3333,14 +3333,14 @@
     "adjacent_stops": null,
     "x": 99,
     "y": 136,
-    "label_position": "left",
+    "label_position": "right",
     "label_alignment": "left",
     "index": 229
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Packard's Corner \u2013 Harvard Avenue",
+    "stop_name": "Packard's Corner \u2013 Harvard Ave",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3357,7 +3357,7 @@
   {
     "line": "green",
     "stop_id": "70131",
-    "stop_name": "Harvard Avenue",
+    "stop_name": "Harvard Ave",
     "direction": "westbound",
     "direction_id": 0,
     "type": "station",
@@ -3371,7 +3371,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Harvard Avenue \u2013 Griggs Street",
+    "stop_name": "Harvard Ave \u2013 Griggs St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3388,7 +3388,7 @@
   {
     "line": "green",
     "stop_id": "70129",
-    "stop_name": "Griggs Street",
+    "stop_name": "Griggs St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "station",
@@ -3402,7 +3402,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Griggs Street \u2013 Allston Street",
+    "stop_name": "Griggs St \u2013 Allston St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3419,7 +3419,7 @@
   {
     "line": "green",
     "stop_id": "70127",
-    "stop_name": "Allston Street",
+    "stop_name": "Allston St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "station",
@@ -3433,7 +3433,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Allston Street \u2013 Warren Street",
+    "stop_name": "Allston St \u2013 Warren St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3450,7 +3450,7 @@
   {
     "line": "green",
     "stop_id": "70125",
-    "stop_name": "Warren Street",
+    "stop_name": "Warren St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "station",
@@ -3464,7 +3464,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Warren Street \u2013 Washington Street",
+    "stop_name": "Warren St \u2013 Washington St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3481,7 +3481,7 @@
   {
     "line": "green",
     "stop_id": "70121",
-    "stop_name": "Washington Street",
+    "stop_name": "Washington St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "station",
@@ -3495,7 +3495,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Washington Street \u2013 Sutherland Road",
+    "stop_name": "Washington St \u2013 Sutherland Rd",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3512,7 +3512,7 @@
   {
     "line": "green",
     "stop_id": "70117",
-    "stop_name": "Sutherland Road",
+    "stop_name": "Sutherland Rd",
     "direction": "westbound",
     "direction_id": 0,
     "type": "station",
@@ -3526,7 +3526,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Sutherland Road \u2013 Chiswick Road",
+    "stop_name": "Sutherland Rd \u2013 Chiswick Rd",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3543,7 +3543,7 @@
   {
     "line": "green",
     "stop_id": "70115",
-    "stop_name": "Chiswick Road",
+    "stop_name": "Chiswick Rd",
     "direction": "westbound",
     "direction_id": 0,
     "type": "station",
@@ -3557,7 +3557,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Chiswick Road \u2013 Chestnut Hill Avenue",
+    "stop_name": "Chiswick Rd \u2013 Chestnut Hill Ave",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3574,7 +3574,7 @@
   {
     "line": "green",
     "stop_id": "70113",
-    "stop_name": "Chestnut Hill Avenue",
+    "stop_name": "Chestnut Hill Ave",
     "direction": "westbound",
     "direction_id": 0,
     "type": "station",
@@ -3588,7 +3588,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Chestnut Hill Avenue \u2013 South Street",
+    "stop_name": "Chestnut Hill Ave \u2013 South St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3605,7 +3605,7 @@
   {
     "line": "green",
     "stop_id": "70111",
-    "stop_name": "South Street",
+    "stop_name": "South St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "station",
@@ -3619,7 +3619,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "South Street \u2013 Boston College",
+    "stop_name": "South St \u2013 Boston College",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3664,7 +3664,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Boston College \u2013 South Street",
+    "stop_name": "Boston College \u2013 South St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3681,7 +3681,7 @@
   {
     "line": "green",
     "stop_id": "70110",
-    "stop_name": "South Street",
+    "stop_name": "South St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
@@ -3695,7 +3695,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "South Street \u2013 Chestnut Hill Avenue",
+    "stop_name": "South St \u2013 Chestnut Hill Ave",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3712,7 +3712,7 @@
   {
     "line": "green",
     "stop_id": "70112",
-    "stop_name": "Chestnut Hill Avenue",
+    "stop_name": "Chestnut Hill Ave",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
@@ -3726,7 +3726,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Chestnut Hill Avenue \u2013 Chiswick Road",
+    "stop_name": "Chestnut Hill Ave \u2013 Chiswick Rd",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3743,7 +3743,7 @@
   {
     "line": "green",
     "stop_id": "70114",
-    "stop_name": "Chiswick Road",
+    "stop_name": "Chiswick Rd",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
@@ -3757,7 +3757,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Chiswick Road \u2013 Sutherland Road",
+    "stop_name": "Chiswick Rd \u2013 Sutherland Rd",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3774,7 +3774,7 @@
   {
     "line": "green",
     "stop_id": "70116",
-    "stop_name": "Sutherland Road",
+    "stop_name": "Sutherland Rd",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
@@ -3788,7 +3788,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Sutherland Road \u2013 Washington Street",
+    "stop_name": "Sutherland Rd \u2013 Washington St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3805,7 +3805,7 @@
   {
     "line": "green",
     "stop_id": "70120",
-    "stop_name": "Washington Street",
+    "stop_name": "Washington St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
@@ -3819,7 +3819,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Washington Street \u2013 Warren Street",
+    "stop_name": "Washington St \u2013 Warren St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3836,7 +3836,7 @@
   {
     "line": "green",
     "stop_id": "70124",
-    "stop_name": "Warren Street",
+    "stop_name": "Warren St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
@@ -3850,7 +3850,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Warren Street \u2013 Allston Street",
+    "stop_name": "Warren St \u2013 Allston St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3867,7 +3867,7 @@
   {
     "line": "green",
     "stop_id": "70126",
-    "stop_name": "Allston Street",
+    "stop_name": "Allston St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
@@ -3881,7 +3881,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Allston Street \u2013 Griggs Street",
+    "stop_name": "Allston St \u2013 Griggs St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3898,7 +3898,7 @@
   {
     "line": "green",
     "stop_id": "70128",
-    "stop_name": "Griggs Street",
+    "stop_name": "Griggs St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
@@ -3912,7 +3912,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Griggs Street \u2013 Harvard Avenue",
+    "stop_name": "Griggs St \u2013 Harvard Ave",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3929,7 +3929,7 @@
   {
     "line": "green",
     "stop_id": "70130",
-    "stop_name": "Harvard Avenue",
+    "stop_name": "Harvard Ave",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
@@ -3943,7 +3943,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Harvard Avenue \u2013 Packard's Corner",
+    "stop_name": "Harvard Ave \u2013 Packard's Corner",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3974,7 +3974,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Packard's Corner \u2013 Babcock Street",
+    "stop_name": "Packard's Corner \u2013 Babcock St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3991,7 +3991,7 @@
   {
     "line": "green",
     "stop_id": "170136",
-    "stop_name": "Babcock Street",
+    "stop_name": "Babcock St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
@@ -4005,7 +4005,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Babcock Street \u2013 Amory Street",
+    "stop_name": "Babcock St \u2013 Amory St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -4022,7 +4022,7 @@
   {
     "line": "green",
     "stop_id": "170140",
-    "stop_name": "Amory Street",
+    "stop_name": "Amory St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
@@ -4036,7 +4036,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Amory Street \u2013 Boston University Central",
+    "stop_name": "Amory St \u2013 BU Central",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -4053,7 +4053,7 @@
   {
     "line": "green",
     "stop_id": "70144",
-    "stop_name": "Boston University Central",
+    "stop_name": "BU Central",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
@@ -4067,7 +4067,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Boston University Central \u2013 Boston University East",
+    "stop_name": "BU Central \u2013 BU East",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -4084,7 +4084,7 @@
   {
     "line": "green",
     "stop_id": "70146",
-    "stop_name": "Boston University East",
+    "stop_name": "BU East",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
@@ -4098,7 +4098,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Boston University East \u2013 Blandford Street",
+    "stop_name": "BU East \u2013 Blandford St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -4115,7 +4115,7 @@
   {
     "line": "green",
     "stop_id": "70148",
-    "stop_name": "Blandford Street",
+    "stop_name": "Blandford St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
@@ -4129,7 +4129,7 @@
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Blandford Street \u2013 Kenmore",
+    "stop_name": "Blandford St \u2013 Kenmore",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
