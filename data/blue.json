@@ -321,7 +321,9 @@
     "x": 254,
     "y": 147,
     "label_position": "left",
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "label_y_offset": 2,
+    "label_x_offset": -1
   },
   {
     "index": 21,

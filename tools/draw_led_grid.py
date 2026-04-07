@@ -104,7 +104,10 @@ def draw_leds(draw, img, leds, color, font, simple=False, all_station_leds=None)
                           (px - txt_img.width // 2, py + gap_px),
                           txt_img)
             elif pos == "above-right":
-                txt_img = Image.new("RGBA", (300, 20), (0, 0, 0, 0))
+                # Canvas height scales to line count; line 2 anchors at LED
+                ar_lines = label.split("\n")
+                ar_h = len(ar_lines) * 14 + 4
+                txt_img = Image.new("RGBA", (300, ar_h), (0, 0, 0, 0))
                 txt_draw = ImageDraw.Draw(txt_img)
                 txt_draw.text((0, 0), label, fill="white", font=font,
                               stroke_width=1, stroke_fill=(30, 30, 30))
@@ -114,58 +117,70 @@ def draw_leds(draw, img, leds, color, font, simple=False, all_station_leds=None)
                 txt_img = txt_img.rotate(45, expand=True)
                 max_x = max(l["x"] for l in all_station_leds.get(led["stop_name"].replace("\n", " "), [led]))
                 anchor_px = int(max_x * MM)
+                label_y_off = int(led.get("label_y_offset", 0) * MM)
+                label_x_off = int(led.get("label_x_offset", 0) * MM)
                 img.paste(txt_img,
-                          (anchor_px + gap_px, py - txt_img.height),
+                          (anchor_px + gap_px + label_x_off, py - txt_img.height + label_y_off),
                           txt_img)
             elif pos == "below-left":
-                txt_img = Image.new("RGBA", (300, 20), (0, 0, 0, 0))
+                bl_lines = label.split("\n")
+                bl_h = len(bl_lines) * 14 + 4
+                txt_img = Image.new("RGBA", (300, bl_h), (0, 0, 0, 0))
                 txt_draw = ImageDraw.Draw(txt_img)
-                txt_draw.text((0, 0), label, fill="white", font=font,
-                              stroke_width=1, stroke_fill=(30, 30, 30))
+                align = led.get("label_alignment", "left")
+                bl_widths = [txt_draw.textbbox((0, 0), ln, font=font)[2] - txt_draw.textbbox((0, 0), ln, font=font)[0] for ln in bl_lines]
+                bl_max_w = max(bl_widths)
+                for j, ln in enumerate(bl_lines):
+                    lx = bl_max_w - bl_widths[j] if align == "right" else 0
+                    txt_draw.text((lx, j * 14), ln, fill="white", font=font,
+                                  stroke_width=1, stroke_fill=(30, 30, 30))
                 bbox = txt_img.getbbox()
                 if bbox:
                     txt_img = txt_img.crop(bbox)
                 txt_img = txt_img.rotate(45, expand=True)
-                # Anchor from bottommost LED
                 max_y = max(l["y"] for l in all_station_leds.get(led["stop_name"].replace("\n", " "), [led]))
                 anchor_py = int(max_y * MM)
                 img.paste(txt_img,
-                          (px - txt_img.width, anchor_py + gap_px),
+                          (px - txt_img.width, anchor_py + gap_px // 2),
                           txt_img)
             elif pos == "left":
                 min_x = min(l["x"] for l in all_station_leds.get(led["stop_name"].replace("\n", " "), [led]))
                 anchor_px = int(min_x * MM)
                 align = led.get("label_alignment", "right")
+                label_y_off = int(led.get("label_y_offset", 0) * MM)
+                label_x_off = int(led.get("label_x_offset", 0) * MM)
                 text_lines = label.split("\n")
                 line_widths = [draw.textbbox((0, 0), ln, font=font)[2] - draw.textbbox((0, 0), ln, font=font)[0] for ln in text_lines]
                 max_tw = max(line_widths)
                 for j, ln in enumerate(text_lines):
                     tw = line_widths[j]
                     if align == "right":
-                        lx = anchor_px - gap_px - tw
+                        lx = anchor_px - gap_px - tw + label_x_off
                     elif align == "center":
-                        lx = anchor_px - gap_px - max_tw // 2 - tw // 2
+                        lx = anchor_px - gap_px - max_tw // 2 - tw // 2 + label_x_off
                     else:
-                        lx = anchor_px - gap_px - max_tw
-                    ly = py - 3 + j * 12
+                        lx = anchor_px - gap_px - max_tw + label_x_off
+                    ly = py - r - int(2 * MM) + j * 12 + label_y_off
                     draw.text((lx, ly), ln, fill="white", font=font,
                               stroke_width=1, stroke_fill=(30, 30, 30))
             elif pos == "right":
                 max_x = max(l["x"] for l in all_station_leds.get(led["stop_name"].replace("\n", " "), [led]))
                 anchor_px = int(max_x * MM)
                 align = led.get("label_alignment", "left")
+                label_y_off = int(led.get("label_y_offset", 0) * MM)
+                label_x_off = int(led.get("label_x_offset", 0) * MM)
                 text_lines = label.split("\n")
                 line_widths = [draw.textbbox((0, 0), ln, font=font)[2] - draw.textbbox((0, 0), ln, font=font)[0] for ln in text_lines]
                 max_tw = max(line_widths)
                 for j, ln in enumerate(text_lines):
                     tw = line_widths[j]
                     if align == "right":
-                        lx = anchor_px + gap_px + max_tw - tw
+                        lx = anchor_px + gap_px + max_tw - tw + label_x_off
                     elif align == "center":
-                        lx = anchor_px + gap_px + max_tw // 2 - tw // 2
+                        lx = anchor_px + gap_px + max_tw // 2 - tw // 2 + label_x_off
                     else:
-                        lx = anchor_px + gap_px
-                    ly = py - 3 + j * 12
+                        lx = anchor_px + gap_px + label_x_off
+                    ly = py - r - int(2 * MM) + j * 12 + label_y_off
                     draw.text((lx, ly), ln, fill="white", font=font,
                               stroke_width=1, stroke_fill=(30, 30, 30))
             elif pos == "center":
@@ -189,7 +204,7 @@ def draw_leds(draw, img, leds, color, font, simple=False, all_station_leds=None)
                     else:
                         center_x = (min_x + max_x) // 2
                         lx = center_x - tw // 2
-                    ly = center_y - 3 + j * 12
+                    ly = center_y - total_height // 2 + j * 12
                     draw.text((lx, ly), ln, fill="white", font=font,
                               stroke_width=1, stroke_fill=(30, 30, 30))
         else:

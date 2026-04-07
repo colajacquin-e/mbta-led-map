@@ -11,7 +11,9 @@
     "x": 193,
     "y": 47,
     "label_position": "left",
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "label_y_offset": 2,
+    "label_x_offset": -1
   },
   {
     "index": 1,
@@ -42,7 +44,9 @@
     "x": 202,
     "y": 56,
     "label_position": "left",
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "label_y_offset": 2,
+    "label_x_offset": -1
   },
   {
     "index": 3,
@@ -73,7 +77,9 @@
     "x": 212,
     "y": 65,
     "label_position": "left",
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "label_y_offset": 2,
+    "label_x_offset": -1
   },
   {
     "index": 5,
@@ -104,7 +110,9 @@
     "x": 221,
     "y": 75,
     "label_position": "left",
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "label_y_offset": 2,
+    "label_x_offset": -1
   },
   {
     "index": 7,
@@ -135,7 +143,9 @@
     "x": 231,
     "y": 84,
     "label_position": "left",
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "label_y_offset": 2,
+    "label_x_offset": -1
   },
   {
     "index": 9,
@@ -149,8 +159,8 @@
       "70514",
       "70502"
     ],
-    "x": 240,
-    "y": 95,
+    "x": 236,
+    "y": 90,
     "label_position": "none",
     "label_alignment": "left"
   },
@@ -163,10 +173,12 @@
     "direction_id": 0,
     "type": "station",
     "adjacent_stops": null,
-    "x": 222,
-    "y": 98,
+    "x": 225,
+    "y": 95,
     "label_position": "left",
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "label_y_offset": 2,
+    "label_x_offset": -1
   },
   {
     "index": 11,
@@ -180,8 +192,8 @@
       "70504",
       "70502"
     ],
-    "x": 237,
-    "y": 101,
+    "x": 240,
+    "y": 95,
     "label_position": "none",
     "label_alignment": "left"
   },
@@ -197,7 +209,9 @@
     "x": 251,
     "y": 105,
     "label_position": "left",
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "label_y_offset": 2,
+    "label_x_offset": -1
   },
   {
     "index": 13,
@@ -228,7 +242,8 @@
     "x": 260,
     "y": 113,
     "label_position": "left",
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "label_y_offset": 2
   },
   {
     "index": 15,
@@ -256,8 +271,8 @@
     "direction_id": 0,
     "type": "station",
     "adjacent_stops": null,
-    "x": 268,
-    "y": 125,
+    "x": 262,
+    "y": 122,
     "label_position": "none",
     "label_alignment": "left"
   },
@@ -287,8 +302,8 @@
     "direction_id": 0,
     "type": "station",
     "adjacent_stops": null,
-    "x": 268,
-    "y": 136,
+    "x": 262,
+    "y": 133,
     "label_position": "none",
     "label_alignment": "left"
   },
@@ -440,7 +455,7 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 207,
-    "y": 179,
+    "y": 180,
     "label_position": "below-left",
     "label_alignment": "left"
   },
@@ -457,7 +472,7 @@
       "70155"
     ],
     "x": 199,
-    "y": 179,
+    "y": 180,
     "label_position": "none",
     "label_alignment": "left"
   },
@@ -471,9 +486,11 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 190,
-    "y": 179,
+    "y": 180,
     "label_position": "above-right",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "label_y_offset": -2,
+    "label_x_offset": -2
   },
   {
     "index": 31,
@@ -485,7 +502,7 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 190,
-    "y": 185,
+    "y": 186,
     "label_position": "none",
     "label_alignment": "left"
   },
@@ -502,7 +519,7 @@
       "70156"
     ],
     "x": 199,
-    "y": 185,
+    "y": 186,
     "label_position": "none",
     "label_alignment": "left"
   },
@@ -516,7 +533,7 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 207,
-    "y": 185,
+    "y": 186,
     "label_position": "none",
     "label_alignment": "left"
   },
@@ -639,8 +656,8 @@
     "direction_id": 1,
     "type": "station",
     "adjacent_stops": null,
-    "x": 274,
-    "y": 136,
+    "x": 268,
+    "y": 133,
     "label_position": "none",
     "label_alignment": "left"
   },
@@ -670,8 +687,8 @@
     "direction_id": 1,
     "type": "station",
     "adjacent_stops": null,
-    "x": 274,
-    "y": 125,
+    "x": 268,
+    "y": 122,
     "label_position": "none",
     "label_alignment": "left"
   },
@@ -749,8 +766,8 @@
       "70501",
       "70513"
     ],
-    "x": 246,
-    "y": 95,
+    "x": 242,
+    "y": 90,
     "label_position": "none",
     "label_alignment": "left"
   },
@@ -904,7 +921,7 @@
       "70501",
       "70503"
     ],
-    "x": 243,
+    "x": 240,
     "y": 101,
     "label_position": "none",
     "label_alignment": "left"
@@ -918,8 +935,8 @@
     "direction_id": 1,
     "type": "station",
     "adjacent_stops": null,
-    "x": 228,
-    "y": 98,
+    "x": 225,
+    "y": 101,
     "label_position": "none",
     "label_alignment": "left"
   },
@@ -935,7 +952,7 @@
       "70239"
     ],
     "x": 175,
-    "y": 192,
+    "y": 193,
     "label_position": "none",
     "index": 60,
     "label_alignment": "left"
@@ -980,7 +997,7 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 174,
-    "y": 214,
+    "y": 212,
     "label_position": "left",
     "index": 63,
     "label_alignment": "right"
@@ -996,8 +1013,8 @@
       "70241",
       "70243"
     ],
-    "x": 172,
-    "y": 216,
+    "x": 171,
+    "y": 215,
     "label_position": "none",
     "index": 64,
     "label_alignment": "left"
@@ -1010,8 +1027,8 @@
     "direction_id": 0,
     "type": "station",
     "adjacent_stops": null,
-    "x": 170,
-    "y": 219,
+    "x": 168,
+    "y": 218,
     "label_position": "left",
     "index": 65,
     "label_alignment": "right"
@@ -1027,8 +1044,8 @@
       "70243",
       "70245"
     ],
-    "x": 167,
-    "y": 222,
+    "x": 165,
+    "y": 221,
     "label_position": "none",
     "index": 66,
     "label_alignment": "left"
@@ -1041,8 +1058,8 @@
     "direction_id": 0,
     "type": "station",
     "adjacent_stops": null,
-    "x": 164,
-    "y": 225,
+    "x": 162,
+    "y": 224,
     "label_position": "left",
     "index": 67,
     "label_alignment": "right"
@@ -1058,7 +1075,7 @@
       "70245",
       "70247"
     ],
-    "x": 162,
+    "x": 159,
     "y": 227,
     "label_position": "none",
     "index": 68,
@@ -1072,7 +1089,7 @@
     "direction_id": 0,
     "type": "station",
     "adjacent_stops": null,
-    "x": 159,
+    "x": 156,
     "y": 230,
     "label_position": "left",
     "index": 69,
@@ -1089,8 +1106,8 @@
       "70247",
       "70249"
     ],
-    "x": 156,
-    "y": 232,
+    "x": 153,
+    "y": 233,
     "label_position": "none",
     "index": 70,
     "label_alignment": "left"
@@ -1103,8 +1120,8 @@
     "direction_id": 0,
     "type": "station",
     "adjacent_stops": null,
-    "x": 154,
-    "y": 235,
+    "x": 150,
+    "y": 236,
     "label_position": "left",
     "index": 71,
     "label_alignment": "right"
@@ -1120,8 +1137,8 @@
       "70249",
       "70251"
     ],
-    "x": 151,
-    "y": 238,
+    "x": 147,
+    "y": 239,
     "label_position": "none",
     "index": 72,
     "label_alignment": "left"
@@ -1134,8 +1151,8 @@
     "direction_id": 0,
     "type": "station",
     "adjacent_stops": null,
-    "x": 148,
-    "y": 241,
+    "x": 144,
+    "y": 242,
     "label_position": "left",
     "index": 73,
     "label_alignment": "right"
@@ -1151,8 +1168,8 @@
       "70251",
       "70253"
     ],
-    "x": 146,
-    "y": 243,
+    "x": 141,
+    "y": 245,
     "label_position": "none",
     "index": 74,
     "label_alignment": "left"
@@ -1165,8 +1182,8 @@
     "direction_id": 0,
     "type": "station",
     "adjacent_stops": null,
-    "x": 143,
-    "y": 246,
+    "x": 138,
+    "y": 248,
     "label_position": "left",
     "index": 75,
     "label_alignment": "right"
@@ -1182,8 +1199,8 @@
       "70253",
       "70255"
     ],
-    "x": 140,
-    "y": 249,
+    "x": 135,
+    "y": 251,
     "label_position": "none",
     "index": 76,
     "label_alignment": "left"
@@ -1196,8 +1213,8 @@
     "direction_id": 0,
     "type": "station",
     "adjacent_stops": null,
-    "x": 138,
-    "y": 251,
+    "x": 132,
+    "y": 254,
     "label_position": "left",
     "index": 77,
     "label_alignment": "right"
@@ -1213,8 +1230,8 @@
       "70255",
       "70257"
     ],
-    "x": 135,
-    "y": 254,
+    "x": 129,
+    "y": 257,
     "label_position": "none",
     "index": 78,
     "label_alignment": "left"
@@ -1227,8 +1244,8 @@
     "direction_id": 0,
     "type": "station",
     "adjacent_stops": null,
-    "x": 132,
-    "y": 257,
+    "x": 126,
+    "y": 260,
     "label_position": "left",
     "index": 79,
     "label_alignment": "right"
@@ -1244,8 +1261,8 @@
       "70257",
       "70260"
     ],
-    "x": 129,
-    "y": 260,
+    "x": 123,
+    "y": 263,
     "label_position": "none",
     "index": 80,
     "label_alignment": "left"
@@ -1258,8 +1275,8 @@
     "direction_id": 0,
     "type": "station",
     "adjacent_stops": null,
-    "x": 126,
-    "y": 263,
+    "x": 120,
+    "y": 266,
     "label_position": "left",
     "index": 81,
     "label_alignment": "right"
@@ -1272,8 +1289,8 @@
     "direction_id": 1,
     "type": "station",
     "adjacent_stops": null,
-    "x": 132,
-    "y": 263,
+    "x": 126,
+    "y": 266,
     "label_position": "none",
     "index": 82,
     "label_alignment": "left"
@@ -1289,8 +1306,8 @@
       "70260",
       "70258"
     ],
-    "x": 135,
-    "y": 260,
+    "x": 129,
+    "y": 263,
     "label_position": "none",
     "index": 83,
     "label_alignment": "left"
@@ -1303,8 +1320,8 @@
     "direction_id": 1,
     "type": "station",
     "adjacent_stops": null,
-    "x": 138,
-    "y": 257,
+    "x": 132,
+    "y": 260,
     "label_position": "none",
     "index": 84,
     "label_alignment": "left"
@@ -1320,8 +1337,8 @@
       "70258",
       "70256"
     ],
-    "x": 141,
-    "y": 254,
+    "x": 135,
+    "y": 257,
     "label_position": "none",
     "index": 85,
     "label_alignment": "left"
@@ -1334,8 +1351,8 @@
     "direction_id": 1,
     "type": "station",
     "adjacent_stops": null,
-    "x": 144,
-    "y": 251,
+    "x": 138,
+    "y": 254,
     "label_position": "none",
     "index": 86,
     "label_alignment": "left"
@@ -1351,8 +1368,8 @@
       "70256",
       "70254"
     ],
-    "x": 146,
-    "y": 249,
+    "x": 141,
+    "y": 251,
     "label_position": "none",
     "index": 87,
     "label_alignment": "left"
@@ -1365,8 +1382,8 @@
     "direction_id": 1,
     "type": "station",
     "adjacent_stops": null,
-    "x": 149,
-    "y": 246,
+    "x": 144,
+    "y": 248,
     "label_position": "none",
     "index": 88,
     "label_alignment": "left"
@@ -1382,8 +1399,8 @@
       "70254",
       "70252"
     ],
-    "x": 152,
-    "y": 243,
+    "x": 147,
+    "y": 245,
     "label_position": "none",
     "index": 89,
     "label_alignment": "left"
@@ -1396,8 +1413,8 @@
     "direction_id": 1,
     "type": "station",
     "adjacent_stops": null,
-    "x": 154,
-    "y": 241,
+    "x": 150,
+    "y": 242,
     "label_position": "none",
     "index": 90,
     "label_alignment": "left"
@@ -1413,8 +1430,8 @@
       "70252",
       "70250"
     ],
-    "x": 157,
-    "y": 238,
+    "x": 153,
+    "y": 239,
     "label_position": "none",
     "index": 91,
     "label_alignment": "left"
@@ -1427,8 +1444,8 @@
     "direction_id": 1,
     "type": "station",
     "adjacent_stops": null,
-    "x": 160,
-    "y": 235,
+    "x": 156,
+    "y": 236,
     "label_position": "none",
     "index": 92,
     "label_alignment": "left"
@@ -1444,8 +1461,8 @@
       "70250",
       "70248"
     ],
-    "x": 162,
-    "y": 232,
+    "x": 159,
+    "y": 233,
     "label_position": "none",
     "index": 93,
     "label_alignment": "left"
@@ -1458,7 +1475,7 @@
     "direction_id": 1,
     "type": "station",
     "adjacent_stops": null,
-    "x": 165,
+    "x": 162,
     "y": 230,
     "label_position": "none",
     "index": 94,
@@ -1475,7 +1492,7 @@
       "70248",
       "70246"
     ],
-    "x": 168,
+    "x": 165,
     "y": 227,
     "label_position": "none",
     "index": 95,
@@ -1489,8 +1506,8 @@
     "direction_id": 1,
     "type": "station",
     "adjacent_stops": null,
-    "x": 170,
-    "y": 225,
+    "x": 168,
+    "y": 224,
     "label_position": "none",
     "index": 96,
     "label_alignment": "left"
@@ -1506,8 +1523,8 @@
       "70246",
       "70244"
     ],
-    "x": 173,
-    "y": 222,
+    "x": 171,
+    "y": 221,
     "label_position": "none",
     "index": 97,
     "label_alignment": "left"
@@ -1520,8 +1537,8 @@
     "direction_id": 1,
     "type": "station",
     "adjacent_stops": null,
-    "x": 176,
-    "y": 219,
+    "x": 174,
+    "y": 218,
     "label_position": "none",
     "index": 98,
     "label_alignment": "left"
@@ -1537,8 +1554,8 @@
       "70244",
       "70242"
     ],
-    "x": 178,
-    "y": 216,
+    "x": 177,
+    "y": 215,
     "label_position": "none",
     "index": 99,
     "label_alignment": "left"
@@ -1552,7 +1569,7 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 180,
-    "y": 214,
+    "y": 212,
     "label_position": "none",
     "index": 100,
     "label_alignment": "left"
@@ -1600,7 +1617,7 @@
       "70154"
     ],
     "x": 181,
-    "y": 192,
+    "y": 193,
     "label_position": "none",
     "index": 103,
     "label_alignment": "left"
@@ -1617,7 +1634,7 @@
       "70153"
     ],
     "x": 181,
-    "y": 179,
+    "y": 180,
     "label_position": "none",
     "index": 104,
     "label_alignment": "left"
@@ -1631,10 +1648,12 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 173,
-    "y": 179,
+    "y": 180,
     "label_position": "above-right",
     "index": 105,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "label_y_offset": -2,
+    "label_x_offset": -2
   },
   {
     "line": "green",
@@ -1648,7 +1667,7 @@
       "70151"
     ],
     "x": 164,
-    "y": 179,
+    "y": 180,
     "label_position": "none",
     "index": 106,
     "label_alignment": "left"
@@ -1662,10 +1681,12 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 155,
-    "y": 174,
+    "y": 175,
     "label_position": "above-right",
     "index": 107,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "label_y_offset": -2,
+    "label_x_offset": -2
   },
   {
     "line": "green",
@@ -1679,7 +1700,7 @@
       "70187"
     ],
     "x": 143,
-    "y": 185,
+    "y": 186,
     "label_position": "none",
     "index": 108,
     "label_alignment": "left"
@@ -2468,7 +2489,7 @@
       "70150"
     ],
     "x": 149,
-    "y": 185,
+    "y": 186,
     "label_position": "none",
     "index": 159,
     "label_alignment": "left"
@@ -2482,7 +2503,7 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 155,
-    "y": 190,
+    "y": 191,
     "label_position": "none",
     "index": 160,
     "label_alignment": "left"
@@ -2499,7 +2520,7 @@
       "70152"
     ],
     "x": 164,
-    "y": 185,
+    "y": 186,
     "label_position": "none",
     "index": 161,
     "label_alignment": "left"
@@ -2513,7 +2534,7 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 173,
-    "y": 185,
+    "y": 186,
     "label_position": "none",
     "index": 162,
     "label_alignment": "left"
@@ -2530,7 +2551,7 @@
       "70154"
     ],
     "x": 181,
-    "y": 185,
+    "y": 186,
     "label_position": "none",
     "index": 163,
     "label_alignment": "left"
@@ -2545,7 +2566,7 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 155,
-    "y": 179,
+    "y": 180,
     "label_position": "none",
     "label_alignment": "left"
   },
@@ -2559,7 +2580,7 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 155,
-    "y": 185,
+    "y": 186,
     "label_position": "none",
     "label_alignment": "left"
   },
@@ -2574,8 +2595,8 @@
       "70151",
       "70211"
     ],
-    "x": 132,
-    "y": 179,
+    "x": 131,
+    "y": 180,
     "label_position": "none",
     "index": 166,
     "label_alignment": "left"
@@ -2636,8 +2657,8 @@
       "70213",
       "70215"
     ],
-    "x": 113,
-    "y": 166,
+    "x": 115,
+    "y": 165,
     "label_position": "none",
     "index": 170,
     "label_alignment": "left"
@@ -2651,7 +2672,7 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 109,
-    "y": 163,
+    "y": 161,
     "label_position": "left",
     "index": 171,
     "label_alignment": "right"
@@ -2667,8 +2688,8 @@
       "70215",
       "70217"
     ],
-    "x": 104,
-    "y": 166,
+    "x": 103,
+    "y": 165,
     "label_position": "none",
     "index": 172,
     "label_alignment": "left"
@@ -3270,8 +3291,8 @@
       "70218",
       "70216"
     ],
-    "x": 110,
-    "y": 166,
+    "x": 109,
+    "y": 165,
     "label_position": "none",
     "index": 211,
     "label_alignment": "left"
@@ -3285,7 +3306,7 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 115,
-    "y": 163,
+    "y": 161,
     "label_position": "none",
     "index": 212,
     "label_alignment": "left"
@@ -3301,8 +3322,8 @@
       "70216",
       "70214"
     ],
-    "x": 119,
-    "y": 166,
+    "x": 121,
+    "y": 165,
     "label_position": "none",
     "index": 213,
     "label_alignment": "left"
@@ -3363,8 +3384,8 @@
       "70212",
       "70150"
     ],
-    "x": 138,
-    "y": 179,
+    "x": 137,
+    "y": 180,
     "label_position": "none",
     "index": 217,
     "label_alignment": "left"
@@ -3380,8 +3401,8 @@
       "71151",
       "70149"
     ],
-    "x": 138,
-    "y": 173,
+    "x": 137,
+    "y": 174,
     "label_position": "none",
     "label_alignment": "left",
     "index": 218
@@ -3412,7 +3433,7 @@
       "70147"
     ],
     "x": 128,
-    "y": 164,
+    "y": 165,
     "label_position": "none",
     "label_alignment": "left",
     "index": 220
@@ -3566,8 +3587,8 @@
       "70135",
       "70131"
     ],
-    "x": 94,
-    "y": 133,
+    "x": 95,
+    "y": 132,
     "label_position": "none",
     "label_alignment": "left",
     "index": 230
@@ -3580,8 +3601,8 @@
     "direction_id": 0,
     "type": "station",
     "adjacent_stops": null,
-    "x": 88,
-    "y": 130,
+    "x": 89,
+    "y": 128,
     "label_position": "left",
     "label_alignment": "left",
     "index": 231
@@ -3597,8 +3618,8 @@
       "70131",
       "70129"
     ],
-    "x": 83,
-    "y": 133,
+    "x": 82,
+    "y": 132,
     "label_position": "none",
     "label_alignment": "left",
     "index": 232
@@ -4138,8 +4159,8 @@
       "70128",
       "70130"
     ],
-    "x": 89,
-    "y": 133,
+    "x": 88,
+    "y": 132,
     "label_position": "none",
     "label_alignment": "left",
     "index": 267
@@ -4152,8 +4173,8 @@
     "direction_id": 1,
     "type": "station",
     "adjacent_stops": null,
-    "x": 94,
-    "y": 130,
+    "x": 95,
+    "y": 128,
     "label_position": "none",
     "label_alignment": "left",
     "index": 268
@@ -4169,8 +4190,8 @@
       "70130",
       "70134"
     ],
-    "x": 100,
-    "y": 133,
+    "x": 101,
+    "y": 132,
     "label_position": "none",
     "label_alignment": "left",
     "index": 269
@@ -4325,7 +4346,7 @@
       "70148"
     ],
     "x": 134,
-    "y": 164,
+    "y": 165,
     "label_position": "none",
     "label_alignment": "left",
     "index": 279
@@ -4356,7 +4377,7 @@
       "71150"
     ],
     "x": 144,
-    "y": 173,
+    "y": 174,
     "label_position": "none",
     "label_alignment": "left",
     "index": 281
