@@ -79,13 +79,13 @@
     "index": 5,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Wellington \u2013 Sullivan Square",
+    "stop_name": "Wellington \u2013 Assembly",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
     "adjacent_stops": [
       "70032",
-      "70030"
+      "70278"
     ],
     "x": 270,
     "y": 63,
@@ -95,8 +95,8 @@
   {
     "index": 6,
     "line": "orange",
-    "stop_id": "70030",
-    "stop_name": "Sullivan Sq",
+    "stop_id": "70278",
+    "stop_name": "Assembly",
     "direction": "southbound",
     "direction_id": 0,
     "type": "station",
@@ -110,13 +110,13 @@
     "index": 7,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Sullivan Square \u2013 Assembly",
+    "stop_name": "Assembly \u2013 Sullivan Square",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
     "adjacent_stops": [
-      "70030",
-      "70278"
+      "70278",
+      "70030"
     ],
     "x": 270,
     "y": 74,
@@ -126,8 +126,8 @@
   {
     "index": 8,
     "line": "orange",
-    "stop_id": "70278",
-    "stop_name": "Assembly",
+    "stop_id": "70030",
+    "stop_name": "Sullivan Sq",
     "direction": "southbound",
     "direction_id": 0,
     "type": "station",
@@ -141,12 +141,12 @@
     "index": 9,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Assembly \u2013 Community College",
+    "stop_name": "Sullivan Square \u2013 Community College",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
     "adjacent_stops": [
-      "70278",
+      "70030",
       "70028"
     ],
     "x": 270,
@@ -180,7 +180,7 @@
       "70028",
       "70026"
     ],
-    "x": 274,
+    "x": 270,
     "y": 117,
     "label_position": "none",
     "label_alignment": "left"
@@ -194,7 +194,7 @@
     "direction_id": 0,
     "type": "station",
     "adjacent_stops": null,
-    "x": 274,
+    "x": 270,
     "y": 122,
     "label_position": "left",
     "label_alignment": "left",
@@ -213,7 +213,7 @@
       "70026",
       "70024"
     ],
-    "x": 274,
+    "x": 270,
     "y": 128,
     "label_position": "none",
     "label_alignment": "left"
@@ -227,7 +227,7 @@
     "direction_id": 0,
     "type": "station",
     "adjacent_stops": null,
-    "x": 274,
+    "x": 270,
     "y": 133,
     "label_position": "right",
     "label_alignment": "left",
@@ -246,8 +246,8 @@
       "70024",
       "70022"
     ],
-    "x": 270,
-    "y": 148,
+    "x": 271,
+    "y": 143,
     "label_position": "none",
     "label_alignment": "left"
   },
@@ -261,7 +261,7 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 270,
-    "y": 165,
+    "y": 164,
     "label_position": "center",
     "label_alignment": "right"
   },
@@ -292,7 +292,7 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 257,
-    "y": 184,
+    "y": 185,
     "label_position": "none",
     "label_alignment": "left"
   },
@@ -615,7 +615,7 @@
     "direction_id": 1,
     "type": "station",
     "adjacent_stops": null,
-    "x": 132,
+    "x": 131,
     "y": 312,
     "label_position": "none",
     "label_alignment": "left"
@@ -646,7 +646,7 @@
     "direction_id": 1,
     "type": "station",
     "adjacent_stops": null,
-    "x": 145,
+    "x": 144,
     "y": 299,
     "label_position": "none",
     "label_alignment": "left"
@@ -677,7 +677,7 @@
     "direction_id": 1,
     "type": "station",
     "adjacent_stops": null,
-    "x": 158,
+    "x": 157,
     "y": 286,
     "label_position": "none",
     "label_alignment": "left"
@@ -708,7 +708,7 @@
     "direction_id": 1,
     "type": "station",
     "adjacent_stops": null,
-    "x": 171,
+    "x": 170,
     "y": 273,
     "label_position": "none",
     "label_alignment": "left"
@@ -739,7 +739,7 @@
     "direction_id": 1,
     "type": "station",
     "adjacent_stops": null,
-    "x": 184,
+    "x": 183,
     "y": 260,
     "label_position": "none",
     "label_alignment": "left"
@@ -770,7 +770,7 @@
     "direction_id": 1,
     "type": "station",
     "adjacent_stops": null,
-    "x": 195,
+    "x": 194,
     "y": 250,
     "label_position": "none",
     "label_alignment": "left"
@@ -801,7 +801,7 @@
     "direction_id": 1,
     "type": "station",
     "adjacent_stops": null,
-    "x": 205,
+    "x": 204,
     "y": 239,
     "label_position": "none",
     "label_alignment": "left"
@@ -832,7 +832,7 @@
     "direction_id": 1,
     "type": "station",
     "adjacent_stops": null,
-    "x": 215,
+    "x": 214,
     "y": 229,
     "label_position": "none",
     "label_alignment": "left"
@@ -863,7 +863,7 @@
     "direction_id": 1,
     "type": "station",
     "adjacent_stops": null,
-    "x": 231,
+    "x": 230,
     "y": 213,
     "label_position": "none",
     "label_alignment": "left"
@@ -894,7 +894,7 @@
     "direction_id": 1,
     "type": "station",
     "adjacent_stops": null,
-    "x": 247,
+    "x": 246,
     "y": 197,
     "label_position": "none",
     "label_alignment": "left"
@@ -926,7 +926,7 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 263,
-    "y": 184,
+    "y": 185,
     "label_position": "none",
     "label_alignment": "left"
   },
@@ -957,7 +957,7 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 276,
-    "y": 165,
+    "y": 164,
     "label_position": "none",
     "label_alignment": "left"
   },
@@ -973,8 +973,8 @@
       "70023",
       "70025"
     ],
-    "x": 276,
-    "y": 148,
+    "x": 275,
+    "y": 143,
     "label_position": "none",
     "label_alignment": "left"
   },
@@ -987,7 +987,7 @@
     "direction_id": 1,
     "type": "station",
     "adjacent_stops": null,
-    "x": 280,
+    "x": 276,
     "y": 133,
     "label_position": "none",
     "label_alignment": "left"
@@ -1004,7 +1004,7 @@
       "70025",
       "70027"
     ],
-    "x": 280,
+    "x": 276,
     "y": 128,
     "label_position": "none",
     "label_alignment": "left"
@@ -1018,7 +1018,7 @@
     "direction_id": 1,
     "type": "station",
     "adjacent_stops": null,
-    "x": 280,
+    "x": 276,
     "y": 122,
     "label_position": "none",
     "label_alignment": "left"
@@ -1035,7 +1035,7 @@
       "70027",
       "70029"
     ],
-    "x": 280,
+    "x": 276,
     "y": 117,
     "label_position": "none",
     "label_alignment": "left"
@@ -1058,13 +1058,13 @@
     "index": 68,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Community College \u2013 Assembly",
+    "stop_name": "Community College \u2013 Sullivan Square",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
     "adjacent_stops": [
       "70029",
-      "70279"
+      "70031"
     ],
     "x": 276,
     "y": 86,
@@ -1074,8 +1074,8 @@
   {
     "index": 69,
     "line": "orange",
-    "stop_id": "70279",
-    "stop_name": "Assembly",
+    "stop_id": "70031",
+    "stop_name": "Sullivan Square",
     "direction": "northbound",
     "direction_id": 1,
     "type": "station",
@@ -1089,13 +1089,13 @@
     "index": 70,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Assembly \u2013 Sullivan Square",
+    "stop_name": "Sullivan Square \u2013 Assembly",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
     "adjacent_stops": [
-      "70279",
-      "70031"
+      "70031",
+      "70279"
     ],
     "x": 276,
     "y": 74,
@@ -1105,8 +1105,8 @@
   {
     "index": 71,
     "line": "orange",
-    "stop_id": "70031",
-    "stop_name": "Sullivan Square",
+    "stop_id": "70279",
+    "stop_name": "Assembly",
     "direction": "northbound",
     "direction_id": 1,
     "type": "station",
@@ -1120,12 +1120,12 @@
     "index": 72,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Sullivan Square \u2013 Wellington",
+    "stop_name": "Assembly \u2013 Wellington",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
     "adjacent_stops": [
-      "70031",
+      "70279",
       "70033"
     ],
     "x": 276,
