@@ -79,7 +79,13 @@ async def get_stations() -> JSONResponse:
     """
     payload: dict[str, Any] = {}
     for line, records in _mapper.all_leds.items():
-        payload[line] = [r.__dict__ for r in records]
+        serialized = []
+        for r in records:
+            d = dict(r.__dict__)
+            # Rename led_type → type so the frontend matches the raw JSON schema
+            d["type"] = d.pop("led_type", None)
+            serialized.append(d)
+        payload[line] = serialized
     return JSONResponse(payload)
 
 
