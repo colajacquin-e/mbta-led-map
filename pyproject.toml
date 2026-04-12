@@ -1,0 +1,26 @@
+[project]
+name = "mbta-led-map"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Ephram Cola Jacquin", email = "ecolajacquin@gmail.com"},
+]
+dependencies = [
+    "pillow>=12.2.0",
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.34",
+    "httpx>=0.28",
+    "python-dotenv>=1.0",
+    "websockets>=14",
+]
+requires-python = ">=3.14"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true

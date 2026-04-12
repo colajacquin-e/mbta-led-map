@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MBTA LED Map</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background: #fff;
+      color: #333;
+      font-family: 'Courier New', Courier, monospace;
+      overflow-y: hidden;
+      overflow-x: auto;
+    }
+
+    canvas {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    #overlay {
+      position: fixed;
+      bottom: 12px;
+      left: 14px;
+      background: rgba(255,255,255,0.85);
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 8px 12px;
+      font-size: 11px;
+      line-height: 1.6;
+      min-width: 160px;
+      text-align: left;
+    }
+
+    #status-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #aaa;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+    #status-dot.connected    { background: #00843D; }
+    #status-dot.disconnected { background: #DA291C; }
+
+    #legend {
+      position: fixed;
+      top: 12px;
+      left: 14px;
+      background: rgba(255,255,255,0.85);
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 8px 12px;
+      font-size: 11px;
+      line-height: 1.8;
+    }
+
+    .legend-item { display: flex; align-items: center; gap: 8px; }
+    .legend-swatch {
+      width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+<canvas id="map"></canvas>
+
+<div id="legend">
+  <div class="legend-item"><span class="legend-swatch" style="background:#DA291C"></span> Red / Mattapan</div>
+  <div class="legend-item"><span class="legend-swatch" style="background:#ED8B00"></span> Orange</div>
+  <div class="legend-item"><span class="legend-swatch" style="background:#003DA5"></span> Blue</div>
+  <div class="legend-item"><span class="legend-swatch" style="background:#00843D"></span> Green</div>
+</div>
+
+<div id="overlay">
+  <div><span id="status-dot" class="disconnected"></span><span id="ws-status">Connecting…</span></div>
+  <div id="last-updated">—</div>
+  <div id="vehicle-count">0 active LEDs</div>
+</div>
+
+<script>
+  // -----------------------------------------------------------------------
+  // Constants
+  // -----------------------------------------------------------------------
+  const LINE_COLORS = {
+    red:      '#DA291C',
+    orange:   '#ED8B00',
+    blue:     '#003DA5',
+    green:    '#00843D',
+    mattapan: '#DA291C',
+  };
+
+  const BOARD_SIZE   = 400;  // mm — LED map area
+  const PANEL_WIDTH  = 100;  // mm — left info panel
+  const PADDING      = 0;
+  // LED radii in mm (scaled at render time).
+  // Station = 2×2 mm package → 1 mm radius
+  // Midpoint = 1×1 mm package → 0.5 mm radius
+  const R_STATION_MM  = 1.0;
+  const R_MIDPOINT_MM = 0.5;
+
+  // -----------------------------------------------------------------------
+  // Canvas setup
+  // -----------------------------------------------------------------------
+  const canvas = document.getElementById('map');
+  const ctx    = canvas.getContext('2d');
+
+  // All loaded LED records: { line, index, x, y, type, stop_id, direction_id }
+  let allLeds = [];
+
+  // Background map image (400×400 mm, drawn into the 0–400 mm quadrant)
+  const mapImg = new Image();
+  mapImg.src = '/static/map-bg.jpg';
+  mapImg.onload = () => render();
+
+  // Latest brightness state: { line -> [brightness, ...] }
+  let ledState = {};
+
+  // -----------------------------------------------------------------------
+  // Zoom / pan state
+  // -----------------------------------------------------------------------
+  let zoomLevel   = 1.0;          // 1 = full board fits in canvas height
+  let panMm       = { x: 0, y: 0 }; // top-left of visible area in board-mm
+
+  function clampPan() {
+    const es   = effScale();
+    const cssW = canvas.width  / DPR;
+    const cssH = canvas.height / DPR;
+    const visW = cssW / es - PANEL_WIDTH;
+    const visH = cssH / es;
+    panMm.x = Math.max(0, Math.min(BOARD_SIZE - visW, panMm.x));
+    panMm.y = Math.max(0, Math.min(BOARD_SIZE - visH, panMm.y));
+  }
+
+  // -----------------------------------------------------------------------
+  // Fit canvas to window — render at full device resolution (retina-safe)
+  // -----------------------------------------------------------------------
+  const DPR = window.devicePixelRatio || 1;
+
+  function resizeCanvas() {
+    // CSS size = window size; internal buffer = CSS size × DPR for crisp text
+    canvas.style.width  = window.innerWidth  + 'px';
+    canvas.style.height = window.innerHeight + 'px';
+    canvas.width  = Math.round(window.innerWidth  * DPR);
+    canvas.height = Math.round(window.innerHeight * DPR);
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);  // scale all drawing by DPR
+    render();
+  }
+
+  window.addEventListener('resize', resizeCanvas);
+
+  // -----------------------------------------------------------------------
+  // Coordinate transform: board mm -> canvas px
+  // -----------------------------------------------------------------------
+  // canvas.height is in physical pixels; divide by DPR to get CSS pixels,
+  // which is the coordinate space ctx operates in after setTransform(DPR,…).
+  function baseScale() { return (canvas.height / DPR) / BOARD_SIZE; }
+  function effScale()  { return baseScale() * zoomLevel; }
+  function panelPx()   { return PANEL_WIDTH * baseScale(); }
+
+  function toCanvas(boardX, boardY) {
+    const es = effScale();
+    const pp = panelPx();
+    return [
+      pp + (boardX - panMm.x) * es,
+      (boardY - panMm.y) * es,
+    ];
+  }
+
+  // -----------------------------------------------------------------------
+  // Render
+  // -----------------------------------------------------------------------
+  function hexToRgb(hex) {
+    const r = parseInt(hex.slice(1, 3), 16);
+    const g = parseInt(hex.slice(3, 5), 16);
+    const b = parseInt(hex.slice(5, 7), 16);
+    return [r, g, b];
+  }
+
+  // -----------------------------------------------------------------------
+  // Label rendering
+  // -----------------------------------------------------------------------
+  let stationGroups = {};  // normalised stop_name → [led, ...]
+
+  function buildStationGroups() {
+    stationGroups = {};
+    for (const led of allLeds) {
+      if (led.type !== 'station') continue;
+      const key = (led.stop_name || '').replace(/\n/g, ' ');
+      if (!stationGroups[key]) stationGroups[key] = [];
+      stationGroups[key].push(led);
+    }
+  }
+
+  function renderLabels() {
+    const scale    = effScale();
+    const gapPx    = 3 * scale;            // 3 mm gap
+    const fontSize = Math.max(7, effScale() * 2.2);
+    ctx.font      = `${fontSize}px 'Courier New', monospace`;
+
+    for (const led of allLeds) {
+      const pos = led.label_position;
+      if (!pos || pos === 'none' || led.type !== 'station') continue;
+
+      const key      = (led.stop_name || '').replace(/\n/g, ' ');
+      const group    = stationGroups[key] || [led];
+      const rawLabel = led.stop_name || '';
+      const lines    = rawLabel.split('\n');
+
+      const xOff = (led.label_x_offset || 0) * scale;
+      const yOff = (led.label_y_offset || 0) * scale;
+
+      const [ledCx, ledCy] = toCanvas(led.x, led.y);
+
+      // Group bounds
+      const minX = Math.min(...group.map(l => l.x));
+      const maxX = Math.max(...group.map(l => l.x));
+      const minY = Math.min(...group.map(l => l.y));
+      const maxY = Math.max(...group.map(l => l.y));
+      const [ancMinX]  = toCanvas(minX, 0);
+      const [ancMaxX]  = toCanvas(maxX, 0);
+      const [, ancMinY] = toCanvas(0, minY);
+      const [, ancMaxY] = toCanvas(0, maxY);
+
+      const lineH = fontSize * 1.3;
+
+      ctx.save();
+      ctx.lineWidth   = 2.5;
+      ctx.strokeStyle = 'rgba(255,255,255,0.9)';
+      ctx.fillStyle   = 'rgba(30,30,30,0.92)';
+
+      const drawLines = (textLines, ax, ay, align) => {
+        ctx.textAlign    = align;
+        ctx.textBaseline = 'top';
+        textLines.forEach((ln, i) => {
+          const y = ay + i * lineH;
+          ctx.strokeText(ln, ax, y);
+          ctx.fillText(ln, ax, y);
+        });
+      };
+
+      if (pos === 'left') {
+        const ax = ancMinX - gapPx + xOff;
+        const ay = ledCy - (lines.length * lineH) / 2 + yOff;
+        drawLines(lines, ax, ay, 'right');
+
+      } else if (pos === 'right') {
+        const ax = ancMaxX + gapPx + xOff;
+        const ay = ledCy - (lines.length * lineH) / 2 + yOff;
+        drawLines(lines, ax, ay, 'left');
+
+      } else if (pos === 'above-right') {
+        // Rotate -45° so +X points upper-right; anchor right of the station, at LED's y.
+        // Last line sits closest to the LED at the baseline.
+        ctx.translate(ancMaxX + gapPx + xOff, ledCy + yOff);
+        ctx.rotate(-Math.PI / 4);
+        ctx.textAlign    = 'left';
+        ctx.textBaseline = 'bottom';
+        lines.forEach((ln, i) => {
+          ctx.strokeText(ln, 0, -(lines.length - 1 - i) * lineH);
+          ctx.fillText(ln,   0, -(lines.length - 1 - i) * lineH);
+        });
+
+      } else if (pos === 'below-left') {
+        // Same -45° rotation; anchor below the station.
+        // Text extends in -X (lower-left in screen) so it appears below-left of the LED.
+        // right-align: each line's right edge at x=0 (the anchor, nearest to LED)
+        // left-align:  each line's left edge at x=-maxW
+        const align = led.label_alignment || 'left';
+        ctx.translate(ledCx + xOff, ancMaxY + gapPx / 2 + yOff);
+        ctx.rotate(-Math.PI / 4);
+        ctx.textBaseline = 'top';
+        const widths = lines.map(ln => ctx.measureText(ln).width);
+        const maxW   = Math.max(...widths);
+        lines.forEach((ln, i) => {
+          const lx = align === 'right' ? -widths[i] : -maxW;
+          ctx.strokeText(ln, lx, i * lineH);
+          ctx.fillText(ln,   lx, i * lineH);
+        });
+
+      } else if (pos === 'below') {
+        ctx.translate(ledCx + xOff, ledCy + gapPx + yOff);
+        ctx.rotate(Math.PI / 2);
+        ctx.textAlign    = 'left';
+        ctx.textBaseline = 'middle';
+        lines.forEach((ln, i) => {
+          ctx.strokeText(ln, 0, (i - (lines.length - 1) / 2) * lineH);
+          ctx.fillText(ln, 0, (i - (lines.length - 1) / 2) * lineH);
+        });
+
+      } else if (pos === 'center') {
+        const align  = led.label_alignment || 'center';
+        const centerY = (ancMinY + ancMaxY) / 2;
+        const ay = centerY - (lines.length * lineH) / 2 + yOff;
+        let ax, textAlign;
+        if (align === 'right')       { ax = ancMinX - gapPx + xOff; textAlign = 'right'; }
+        else if (align === 'left')   { ax = ancMaxX + gapPx + xOff; textAlign = 'left';  }
+        else                         { ax = (ancMinX + ancMaxX) / 2 + xOff; textAlign = 'center'; }
+        drawLines(lines, ax, ay, textAlign);
+      }
+
+      ctx.restore();
+    }
+  }
+
+  // -----------------------------------------------------------------------
+  // Subway line drawing
+  // -----------------------------------------------------------------------
+  function drawLineSegments(color, waypoints) {
+    if (waypoints.length < 2) return;
+    ctx.save();
+    ctx.strokeStyle = color;
+    ctx.lineWidth   = effScale() * 0.5;  // 0.5 mm track width, scales with zoom
+    ctx.lineJoin    = 'round';
+    ctx.lineCap     = 'round';
+    ctx.beginPath();
+    const [sx, sy] = toCanvas(waypoints[0].x, waypoints[0].y);
+    ctx.moveTo(sx, sy);
+    for (let i = 1; i < waypoints.length; i++) {
+      const [px, py] = toCanvas(waypoints[i].x, waypoints[i].y);
+      ctx.lineTo(px, py);
+    }
+    ctx.stroke();
+    ctx.restore();
+  }
+
+  // -----------------------------------------------------------------------
+  // Render
+  // -----------------------------------------------------------------------
+  function render() {
+    // Clear in CSS-pixel space (ctx transform already accounts for DPR)
+    ctx.clearRect(0, 0, canvas.width / DPR, canvas.height / DPR);
+
+    const scale    = baseScale();   // unzoomed — used for background/panel sizing
+    const es       = effScale();    // zoomed  — used for LEDs, labels, line widths
+    const pp       = panelPx();
+    const mapPx    = BOARD_SIZE * scale;
+
+    const cssW = canvas.width  / DPR;
+    const cssH = canvas.height / DPR;
+
+    // Right overflow — light grey
+    ctx.fillStyle = '#d9d9d9';
+    ctx.fillRect(0, 0, cssW, cssH);
+
+    // Left info panel — white
+    ctx.fillStyle = '#fff';
+    ctx.fillRect(0, 0, pp, cssH);
+
+    // Map area — white base then image
+    ctx.fillStyle = '#fff';
+    ctx.fillRect(pp, 0, mapPx, mapPx);
+
+    if (mapImg.complete && mapImg.naturalWidth > 0) {
+      // Map image covers the full 400×400 mm board.
+      // With zoom/pan, we draw the portion of the image that's visible.
+      const es   = effScale();
+      const imgW = BOARD_SIZE * es;   // full image size at current zoom (px)
+      const imgH = BOARD_SIZE * es;
+      const imgX = pp - panMm.x * es; // left edge of full image in canvas px
+      const imgY =    - panMm.y * es; // top  edge
+      ctx.drawImage(mapImg, imgX, imgY, imgW, imgH);
+    }
+
+    // 1px black left border between panel and map (half-pixel offset for crisp rendering)
+    ctx.strokeStyle = '#000';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    const borderX = Math.round(pp) + 0.5;
+    ctx.moveTo(borderX, 0);
+    ctx.lineTo(borderX, mapPx);
+    ctx.stroke();
+
+    // Clip all map drawing to the map area so nothing bleeds into the panel
+    ctx.save();
+    ctx.beginPath();
+    ctx.rect(pp, 0, cssW - pp, cssH);
+    ctx.clip();
+
+    // Subway lines
+    drawLineSegments('#ED8B00', [
+      { x: 129, y: 312 },  // Forest Hills midpoint
+      { x: 273, y: 170 },  // State equiv X, slightly below State (y=165)
+      { x: 273, y:  35 },  // Oak Grove midpoint
+    ]);
+    drawLineSegments('#DA291C', [
+      { x: 140, y:  60.5 },  // Alewife midpoint
+      { x: 290, y: 213.5 },  // South Station→Broadway midpoint (first point at x=290)
+    ]);
+    drawLineSegments('#DA291C', [
+      { x: 272, y: 335 },  // Ashmont
+      { x: 272, y: 312 },  // Savin Hill
+      { x: 290, y: 290 },  // JFK/UMass intersection
+    ]);
+    drawLineSegments('#DA291C', [
+      { x: 290, y: 290 },  // meets both branch lines
+      { x: 290, y: 213.5 },  // meets Alewife diagonal at Broadway/South Station midpoint
+    ]);
+    drawLineSegments('#DA291C', [
+      { x: 346, y: 367 },  // Braintree
+      { x: 346, y: 350 },  // Quincy Adams
+      { x: 343, y: 343 },  // Quincy Center–Quincy Adams midpoint
+      { x: 338, y: 338 },  // Quincy Center
+      { x: 332, y: 332 },  // Quincy Center–Wollaston midpoint
+      { x: 326, y: 326 },  // Wollaston
+      { x: 321, y: 321 },  // Wollaston–North Quincy midpoint
+      { x: 315, y: 315 },  // North Quincy
+      { x: 302, y: 302 },  // North Quincy–JFK midpoint
+      { x: 290, y: 290 },  // extended to JFK/UMass middle-X
+    ]);
+    drawLineSegments('#003DA5', [
+      { x: 247, y: 139 },  // Bowdoin midpoint
+      { x: 273, y: 162.5 },  // State midpoint (all 4 State LEDs across orange + blue)
+      { x: 386, y:  51 },  // Wonderland midpoint
+    ]);
+    // Mattapan line (part of Red Line) — 2 segments
+    drawLineSegments('#DA291C', [
+      { x: 272, y: 340 },  // Ashmont midpoint (avg of OB 269 + IB 274/275 ≈ 272)
+      { x: 272, y: 358 },  // Butler midpoint X
+    ]);
+    drawLineSegments('#DA291C', [
+      { x: 272, y: 358 },  // Butler midpoint X
+      { x: 228, y: 357.5 },  // Mattapan midpoint X
+    ]);
+
+    // Green Line
+    drawLineSegments('#00843D', [
+      { x: 196, y:  47 },  // MEDFORD/TUFTS mid (193+199)/2
+      { x: 264.5, y: 114.5 },  // shortened to match North Station/Haymarket segment x=264.5
+    ]);
+    drawLineSegments('#00843D', [
+      { x: 264.5, y: 114.5 },  // extended to meet diagonal at North Station
+      { x: 264.5, y: 143 },  // extended down to Haymarket–Gov Center midpoint center (y=143)
+    ]);
+    drawLineSegments('#00843D', [
+      { x: 264.5, y: 143 },  // Haymarket–Gov Center midpoint center
+      { x: 227, y: 179.5 },  // Boylston center
+      { x: 224, y: 182.4 },  // extended to meet Arlington segment
+    ]);
+    drawLineSegments('#00843D', [
+      { x: 225, y: 98 },  // UNION SQ mid
+      { x: 247, y: 98 },  // intersects main trunk
+    ]);
+    drawLineSegments('#00843D', [
+      { x: 137.6, y: 183 },  // extended left to meet C branch
+      { x: 207, y: 182.5 },  // Arlington mid
+      { x: 224, y: 182.4 },  // extended to meet Boylston segment
+    ]);
+    drawLineSegments('#00843D', [
+      { x: 176.5, y: 212 },  // Symphony center
+      { x: 176.5, y: 186 },  // top stops at IB Hynes y
+    ]);
+    drawLineSegments('#00843D', [
+      { x: 176.5, y: 186 },  // top of Symphony vertical
+      { x: 179.5, y: 183 },  // connects to Kenmore->Arlington segment (slope 1)
+    ]);
+    drawLineSegments('#00843D', [
+      { x: 176.5, y: 212 },  // Symphony center
+      { x: 122.5, y: 266 },  // HEATH ST center (120+125)/2
+    ]);
+    drawLineSegments('#00843D', [
+      { x: 61.5, y: 268 },  // RIVERSIDE mid
+      { x: 149.25, y: 183 },  // extended to match Blandford line end x
+    ]);
+    drawLineSegments('#00843D', [
+      { x: 91.5, y: 128 },  // Harvard Ave mid
+      { x: 149.25, y: 183 },  // extended to Kenmore-Arlington y level
+    ]);
+    drawLineSegments('#00843D', [
+      { x: 29.5, y: 187 },  // BOSTON COLLEGE mid (27+32)/2
+      { x: 91.5, y: 128 },  // Harvard Ave mid
+    ]);
+    drawLineSegments('#00843D', [
+      { x: 44.5, y: 226 },  // CLEVELAND CIRCLE mid (42+47)/2
+      { x: 111.5, y: 161 },  // Kent St mid (109+114)/2
+    ]);
+    drawLineSegments('#00843D', [
+      { x: 111.5, y: 161 },  // Kent St mid
+      { x: 137.6, y: 183 },  // extended to Kenmore-Arlington y
+    ]);
+
+    // White halo pass — masks subway lines behind each LED
+    for (const led of allLeds) {
+      const [cx, cy] = toCanvas(led.x, led.y);
+      const rMm   = led.type === 'station' ? R_STATION_MM : R_MIDPOINT_MM;
+      const radius = rMm * es;
+      ctx.beginPath();
+      ctx.arc(cx, cy, radius + 1, 0, 2 * Math.PI);
+      ctx.fillStyle = '#fff';
+      ctx.fill();
+    }
+
+    // LED pass
+    for (const led of allLeds) {
+      const [cx, cy] = toCanvas(led.x, led.y);
+      const baseColor = LINE_COLORS[led.line] || '#fff';
+      const [r, g, b] = hexToRgb(baseColor);
+
+      const brightness = (ledState[led.line] && ledState[led.line][led.index]) || 0;
+      const opacity = brightness === 0 ? 0.25 : 1.0;
+
+      const rMm   = led.type === 'station' ? R_STATION_MM : R_MIDPOINT_MM;
+      const radius = rMm * es;
+
+      ctx.beginPath();
+      ctx.arc(cx, cy, radius, 0, 2 * Math.PI);
+      ctx.fillStyle = `rgba(${r},${g},${b},${opacity})`;
+      ctx.fill();
+    }
+
+    renderLabels();
+
+    // End map clip region
+    ctx.restore();
+
+    drawScaleBar();
+  }
+
+  // -----------------------------------------------------------------------
+  // Scale bar
+  // -----------------------------------------------------------------------
+  function drawScaleBar() {
+    const es   = effScale();
+    const pp   = panelPx();
+    const cssW = canvas.width  / DPR;
+    const cssH = canvas.height / DPR;
+
+    // Pick a "nice" bar length in mm that's roughly 15% of map canvas width
+    const targetMm   = (cssW - pp) * 0.15 / es;
+    const niceSteps  = [1, 2, 5, 10, 20, 25, 50, 100, 200];
+    const niceMm     = niceSteps.reduce((a, b) =>
+      Math.abs(b - targetMm) < Math.abs(a - targetMm) ? b : a);
+    const barPx      = niceMm * es;
+
+    // Position: bottom-left of map area
+    const margin = 12;
+    const x  = pp + margin;
+    const y  = cssH - margin;
+    const th = 13;   // text height
+    const tk = 5;    // tick height half
+    const pad = 4;
+
+    // Background pill
+    ctx.save();
+    ctx.fillStyle = 'rgba(20, 20, 20, 0.72)';
+    roundRect(ctx, x - pad, y - th - tk - pad, barPx + pad * 2, th + tk * 2 + pad * 2, 4);
+    ctx.fill();
+
+    // Bar line
+    ctx.strokeStyle = '#ffffff';
+    ctx.lineWidth   = 1.5;
+    ctx.lineCap     = 'square';
+    ctx.beginPath();
+    const lineY = y - pad - tk;
+    ctx.moveTo(x, lineY - tk); ctx.lineTo(x, lineY + tk);   // left tick
+    ctx.moveTo(x, lineY);      ctx.lineTo(x + barPx, lineY); // bar
+    ctx.moveTo(x + barPx, lineY - tk); ctx.lineTo(x + barPx, lineY + tk); // right tick
+    ctx.stroke();
+
+    // Label
+    ctx.fillStyle   = '#ffffff';
+    ctx.font        = `bold 10px 'Courier New', monospace`;
+    ctx.textAlign   = 'center';
+    ctx.textBaseline = 'bottom';
+    ctx.fillText(`${niceMm} mm`, x + barPx / 2, lineY - tk - 1);
+
+    // Zoom level badge (top-right corner of map)
+    if (zoomLevel > 1.005) {
+      const zoomText = `${zoomLevel.toFixed(1)}×`;
+      ctx.font = `bold 10px 'Courier New', monospace`;
+      ctx.textAlign = 'right';
+      ctx.textBaseline = 'top';
+      const tw = ctx.measureText(zoomText).width;
+      ctx.fillStyle = 'rgba(20,20,20,0.72)';
+      roundRect(ctx, cssW - margin - tw - pad * 2, margin, tw + pad * 2, 18, 4);
+      ctx.fill();
+      ctx.fillStyle = '#ffffff';
+      ctx.fillText(zoomText, cssW - margin - pad, margin + pad);
+    }
+
+    ctx.restore();
+  }
+
+  function roundRect(ctx, x, y, w, h, r) {
+    ctx.beginPath();
+    ctx.moveTo(x + r, y);
+    ctx.lineTo(x + w - r, y);
+    ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+    ctx.lineTo(x + w, y + h - r);
+    ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+    ctx.lineTo(x + r, y + h);
+    ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+    ctx.lineTo(x, y + r);
+    ctx.quadraticCurveTo(x, y, x + r, y);
+    ctx.closePath();
+  }
+
+  // -----------------------------------------------------------------------
+  // Load LED layout from REST endpoint
+  // -----------------------------------------------------------------------
+  async function loadLeds() {
+    const resp = await fetch('/api/leds');
+    const data = await resp.json();
+    allLeds = [];
+    for (const [line, records] of Object.entries(data)) {
+      for (const rec of records) {
+        allLeds.push({ ...rec, line });
+      }
+    }
+    buildStationGroups();
+    render();
+  }
+
+  // -----------------------------------------------------------------------
+  // WebSocket
+  // -----------------------------------------------------------------------
+  let ws = null;
+  let reconnectDelay = 1000;
+
+  function connect() {
+    const url = `ws://${location.host}/ws`;
+    ws = new WebSocket(url);
+
+    ws.onopen = () => {
+      document.getElementById('ws-status').textContent = 'Connected';
+      document.getElementById('status-dot').className  = 'connected';
+      reconnectDelay = 1000;
+    };
+
+    ws.onmessage = (event) => {
+      try {
+        const msg = JSON.parse(event.data);
+
+        // Update brightness state
+        if (msg.lines) {
+          for (const [line, info] of Object.entries(msg.lines)) {
+            ledState[line] = info.leds;
+          }
+        }
+
+        // Update overlay
+        if (msg.timestamp) {
+          const d = new Date(msg.timestamp);
+          document.getElementById('last-updated').textContent =
+            'Updated ' + d.toLocaleTimeString();
+        }
+
+        // Count active LEDs
+        let active = 0;
+        for (const arr of Object.values(ledState)) {
+          active += arr.filter(v => v > 0).length;
+        }
+        const vehicles = msg.vehicle_count ?? '?';
+        document.getElementById('vehicle-count').textContent =
+          `${vehicles} vehicles · ${active} LEDs lit`;
+
+        render();
+      } catch (e) {
+        console.error('Parse error:', e);
+      }
+    };
+
+    ws.onclose = () => {
+      document.getElementById('ws-status').textContent = `Reconnecting in ${reconnectDelay / 1000}s…`;
+      document.getElementById('status-dot').className  = 'disconnected';
+      setTimeout(() => {
+        reconnectDelay = Math.min(reconnectDelay * 2, 30000);
+        connect();
+      }, reconnectDelay);
+    };
+
+    ws.onerror = (err) => {
+      console.error('WS error', err);
+      ws.close();
+    };
+  }
+
+  // -----------------------------------------------------------------------
+  // Zoom (scroll wheel) + pan (drag)
+  // -----------------------------------------------------------------------
+  canvas.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    const rect   = canvas.getBoundingClientRect();
+    // Convert client coords → CSS canvas coords (rect size = CSS size)
+    const mouseX = (e.clientX - rect.left);
+    const mouseY = (e.clientY - rect.top);
+
+    const pp = panelPx();
+    if (mouseX < pp) return;   // cursor is over the info panel — ignore
+
+    const es = effScale();
+    // Board coords under cursor before zoom
+    const bx = (mouseX - pp) / es + panMm.x;
+    const by = mouseY / es + panMm.y;
+
+    const factor = e.deltaY < 0 ? 1.15 : 1 / 1.15;
+    zoomLevel = Math.max(1, Math.min(40, zoomLevel * factor));
+
+    // Adjust pan so cursor stays pinned to the same board point
+    const esNew = effScale();
+    panMm.x = bx - (mouseX - pp) / esNew;
+    panMm.y = by - mouseY / esNew;
+    clampPan();
+    render();
+  }, { passive: false });
+
+  let drag = null;
+  canvas.addEventListener('mousedown', (e) => {
+    drag = { startX: e.clientX, startY: e.clientY, panX: panMm.x, panY: panMm.y };
+    canvas.style.cursor = 'grabbing';
+  });
+  canvas.addEventListener('mousemove', (e) => {
+    if (!drag) return;
+    // clientX/Y are already in CSS pixels — no DPR scaling needed
+    const dx = e.clientX - drag.startX;
+    const dy = e.clientY - drag.startY;
+    const es = effScale();
+    panMm.x = drag.panX - dx / es;
+    panMm.y = drag.panY - dy / es;
+    clampPan();
+    render();
+  });
+  canvas.addEventListener('mouseup',    () => { drag = null; canvas.style.cursor = ''; });
+  canvas.addEventListener('mouseleave', () => { drag = null; canvas.style.cursor = ''; });
+
+  // Double-click to reset zoom
+  canvas.addEventListener('dblclick', () => {
+    zoomLevel = 1;
+    panMm     = { x: 0, y: 0 };
+    render();
+  });
+
+  // -----------------------------------------------------------------------
+  // Boot
+  // -----------------------------------------------------------------------
+  resizeCanvas();
+  loadLeds().then(() => connect());
+</script>
+</body>
+</html>

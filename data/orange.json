@@ -11,13 +11,15 @@
     "x": 270,
     "y": 35,
     "label_position": "left",
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.437735,
+    "lon": -71.070875
   },
   {
     "index": 1,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "OAK GROVE \u2013 Malden Center",
+    "stop_name": "OAK GROVE – Malden Center",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -28,7 +30,9 @@
     "x": 270,
     "y": 41,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.432206,
+    "lon": -71.07262800000001
   },
   {
     "index": 2,
@@ -42,13 +46,15 @@
     "x": 270,
     "y": 46,
     "label_position": "left",
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.426677,
+    "lon": -71.074381
   },
   {
     "index": 3,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Malden Center \u2013 Wellington",
+    "stop_name": "Malden Center – Wellington",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -59,7 +65,9 @@
     "x": 270,
     "y": 52,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.414091,
+    "lon": -71.0758165
   },
   {
     "index": 4,
@@ -73,13 +81,15 @@
     "x": 270,
     "y": 58,
     "label_position": "left",
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.401505,
+    "lon": -71.077252
   },
   {
     "index": 5,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Wellington \u2013 Assembly",
+    "stop_name": "Wellington – Assembly",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -90,7 +100,9 @@
     "x": 270,
     "y": 63,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.396918,
+    "lon": -71.077257
   },
   {
     "index": 6,
@@ -104,13 +116,15 @@
     "x": 270,
     "y": 69,
     "label_position": "left",
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.392331,
+    "lon": -71.077262
   },
   {
     "index": 7,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Assembly \u2013 Sullivan Square",
+    "stop_name": "Assembly – Sullivan Square",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -121,7 +135,9 @@
     "x": 270,
     "y": 74,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.388153,
+    "lon": -71.077128
   },
   {
     "index": 8,
@@ -135,13 +151,15 @@
     "x": 270,
     "y": 80,
     "label_position": "left",
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.383975,
+    "lon": -71.076994
   },
   {
     "index": 9,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Sullivan Square \u2013 Community College",
+    "stop_name": "Sullivan Square – Community College",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -152,7 +170,9 @@
     "x": 270,
     "y": 86,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3787985,
+    "lon": -71.0732635
   },
   {
     "index": 10,
@@ -166,13 +186,15 @@
     "x": 270,
     "y": 91,
     "label_position": "left",
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.373622,
+    "lon": -71.069533
   },
   {
     "index": 11,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Community College \u2013 North Station",
+    "stop_name": "Community College – North Station",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -183,7 +205,9 @@
     "x": 270,
     "y": 117,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.369451,
+    "lon": -71.064869
   },
   {
     "index": 12,
@@ -199,13 +223,15 @@
     "label_position": "left",
     "label_alignment": "left",
     "label_y_offset": 2,
-    "label_x_offset": -1
+    "label_x_offset": -1,
+    "lat": 42.36528,
+    "lon": -71.060205
   },
   {
     "index": 13,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "North Station \u2013 Haymarket",
+    "stop_name": "North Station – Haymarket",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -216,7 +242,9 @@
     "x": 270,
     "y": 128,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3641505,
+    "lon": -71.0592475
   },
   {
     "index": 14,
@@ -232,13 +260,15 @@
     "label_position": "right",
     "label_alignment": "left",
     "label_y_offset": 2,
-    "label_x_offset": -1
+    "label_x_offset": -1,
+    "lat": 42.363021,
+    "lon": -71.05829
   },
   {
     "index": 15,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Haymarket \u2013 State",
+    "stop_name": "Haymarket – State",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -249,7 +279,9 @@
     "x": 271,
     "y": 143,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.360999500000005,
+    "lon": -71.05794399999999
   },
   {
     "index": 16,
@@ -263,13 +295,15 @@
     "x": 270,
     "y": 164,
     "label_position": "center",
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.358978,
+    "lon": -71.057598
   },
   {
     "index": 17,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "State \u2013 Downtown Crossing",
+    "stop_name": "State – Downtown Crossing",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -280,7 +314,9 @@
     "x": 265,
     "y": 173,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.357248,
+    "lon": -71.0589115
   },
   {
     "index": 18,
@@ -294,13 +330,15 @@
     "x": 257,
     "y": 185,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.355518,
+    "lon": -71.060225
   },
   {
     "index": 19,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Downtown Crossing \u2013 Chinatown",
+    "stop_name": "Downtown Crossing – Chinatown",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -311,7 +349,9 @@
     "x": 249,
     "y": 190,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3540325,
+    "lon": -71.0614885
   },
   {
     "index": 20,
@@ -325,13 +365,15 @@
     "x": 241,
     "y": 197,
     "label_position": "right",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.352547,
+    "lon": -71.062752
   },
   {
     "index": 21,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Chinatown \u2013 Tufts Medical Center",
+    "stop_name": "Chinatown – Tufts Medical Center",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -342,7 +384,9 @@
     "x": 233,
     "y": 205,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.351104500000005,
+    "lon": -71.0633345
   },
   {
     "index": 22,
@@ -356,13 +400,15 @@
     "x": 225,
     "y": 213,
     "label_position": "right",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.349662,
+    "lon": -71.063917
   },
   {
     "index": 23,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Tufts Medical Center \u2013 Back Bay",
+    "stop_name": "Tufts Medical Center – Back Bay",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -373,7 +419,9 @@
     "x": 217,
     "y": 221,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.348506,
+    "lon": -71.069822
   },
   {
     "index": 24,
@@ -387,13 +435,15 @@
     "x": 209,
     "y": 229,
     "label_position": "right",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.34735,
+    "lon": -71.075727
   },
   {
     "index": 25,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Back Bay \u2013 Massachusetts Ave",
+    "stop_name": "Back Bay – Massachusetts Ave",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -404,7 +454,9 @@
     "x": 204,
     "y": 234,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3441385,
+    "lon": -71.0799575
   },
   {
     "index": 26,
@@ -418,13 +470,15 @@
     "x": 199,
     "y": 239,
     "label_position": "right",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.340927,
+    "lon": -71.084188
   },
   {
     "index": 27,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Massachusetts Ave \u2013 Ruggles",
+    "stop_name": "Massachusetts Ave – Ruggles",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -435,7 +489,9 @@
     "x": 194,
     "y": 244,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.338708499999996,
+    "lon": -71.08693600000001
   },
   {
     "index": 28,
@@ -449,13 +505,15 @@
     "x": 189,
     "y": 250,
     "label_position": "right",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.33649,
+    "lon": -71.089684
   },
   {
     "index": 29,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Ruggles \u2013 Roxbury Crossing",
+    "stop_name": "Ruggles – Roxbury Crossing",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -466,7 +524,9 @@
     "x": 184,
     "y": 255,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3335805,
+    "lon": -71.09290250000001
   },
   {
     "index": 30,
@@ -480,13 +540,15 @@
     "x": 178,
     "y": 260,
     "label_position": "right",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.330671,
+    "lon": -71.096121
   },
   {
     "index": 31,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Roxbury Crossing \u2013 Jackson Square",
+    "stop_name": "Roxbury Crossing – Jackson Square",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -497,7 +559,9 @@
     "x": 172,
     "y": 266,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.326901500000005,
+    "lon": -71.0978565
   },
   {
     "index": 32,
@@ -511,13 +575,15 @@
     "x": 165,
     "y": 273,
     "label_position": "right",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.323132,
+    "lon": -71.099592
   },
   {
     "index": 33,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Jackson Square \u2013 Stony Brook",
+    "stop_name": "Jackson Square – Stony Brook",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -528,7 +594,9 @@
     "x": 159,
     "y": 279,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.320097000000004,
+    "lon": -71.10192
   },
   {
     "index": 34,
@@ -542,13 +610,15 @@
     "x": 152,
     "y": 286,
     "label_position": "right",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.317062,
+    "lon": -71.104248
   },
   {
     "index": 35,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Stony Brook \u2013 Green St",
+    "stop_name": "Stony Brook – Green St",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -559,7 +629,9 @@
     "x": 146,
     "y": 292,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.313447,
+    "lon": -71.1061535
   },
   {
     "index": 36,
@@ -573,13 +645,15 @@
     "x": 139,
     "y": 299,
     "label_position": "right",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.309832,
+    "lon": -71.108059
   },
   {
     "index": 37,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Green St \u2013 FOREST HILLS",
+    "stop_name": "Green St – FOREST HILLS",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -590,7 +664,9 @@
     "x": 133,
     "y": 306,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.305379,
+    "lon": -71.11109400000001
   },
   {
     "index": 38,
@@ -604,7 +680,9 @@
     "x": 126,
     "y": 312,
     "label_position": "right",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.300926,
+    "lon": -71.114129
   },
   {
     "index": 39,
@@ -618,13 +696,15 @@
     "x": 131,
     "y": 312,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.300926,
+    "lon": -71.114129
   },
   {
     "index": 40,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "FOREST HILLS \u2013 Green St",
+    "stop_name": "FOREST HILLS – Green St",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -635,7 +715,9 @@
     "x": 139,
     "y": 306,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.305361,
+    "lon": -71.11105850000001
   },
   {
     "index": 41,
@@ -649,13 +731,15 @@
     "x": 144,
     "y": 299,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.309796,
+    "lon": -71.107988
   },
   {
     "index": 42,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Green St \u2013 Stony Brook",
+    "stop_name": "Green St – Stony Brook",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -666,7 +750,9 @@
     "x": 152,
     "y": 292,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.313429,
+    "lon": -71.10611800000001
   },
   {
     "index": 43,
@@ -680,13 +766,15 @@
     "x": 157,
     "y": 286,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.317062,
+    "lon": -71.104248
   },
   {
     "index": 44,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Stony Brook \u2013 Jackson Square",
+    "stop_name": "Stony Brook – Jackson Square",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -697,7 +785,9 @@
     "x": 165,
     "y": 279,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.320097000000004,
+    "lon": -71.10192
   },
   {
     "index": 45,
@@ -711,13 +801,15 @@
     "x": 170,
     "y": 273,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.323132,
+    "lon": -71.099592
   },
   {
     "index": 46,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Jackson Square \u2013 Roxbury Crossing",
+    "stop_name": "Jackson Square – Roxbury Crossing",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -728,7 +820,9 @@
     "x": 178,
     "y": 266,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.326886,
+    "lon": -71.097816
   },
   {
     "index": 47,
@@ -742,13 +836,15 @@
     "x": 183,
     "y": 260,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.33064,
+    "lon": -71.09604
   },
   {
     "index": 48,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Roxbury Crossing \u2013 Ruggles",
+    "stop_name": "Roxbury Crossing – Ruggles",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -759,7 +855,9 @@
     "x": 190,
     "y": 255,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3335455,
+    "lon": -71.0928375
   },
   {
     "index": 49,
@@ -773,13 +871,15 @@
     "x": 194,
     "y": 250,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.336451,
+    "lon": -71.089635
   },
   {
     "index": 50,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Ruggles \u2013 Massachusetts Ave",
+    "stop_name": "Ruggles – Massachusetts Ave",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -790,7 +890,9 @@
     "x": 200,
     "y": 244,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3386715,
+    "lon": -71.08687950000001
   },
   {
     "index": 51,
@@ -804,13 +906,15 @@
     "x": 204,
     "y": 239,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.340892,
+    "lon": -71.084124
   },
   {
     "index": 52,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Massachusetts Ave \u2013 Back Bay",
+    "stop_name": "Massachusetts Ave – Back Bay",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -821,7 +925,9 @@
     "x": 210,
     "y": 234,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.344121,
+    "lon": -71.0799255
   },
   {
     "index": 53,
@@ -835,13 +941,15 @@
     "x": 214,
     "y": 229,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.34735,
+    "lon": -71.075727
   },
   {
     "index": 54,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Back Bay \u2013 Tufts Medical Center",
+    "stop_name": "Back Bay – Tufts Medical Center",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -852,7 +960,9 @@
     "x": 223,
     "y": 221,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.348506,
+    "lon": -71.069822
   },
   {
     "index": 55,
@@ -866,13 +976,15 @@
     "x": 230,
     "y": 213,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.349662,
+    "lon": -71.063917
   },
   {
     "index": 56,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Tufts Medical Center \u2013 Chinatown",
+    "stop_name": "Tufts Medical Center – Chinatown",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -883,7 +995,9 @@
     "x": 239,
     "y": 205,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.351104500000005,
+    "lon": -71.0633345
   },
   {
     "index": 57,
@@ -897,13 +1011,15 @@
     "x": 246,
     "y": 197,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.352547,
+    "lon": -71.062752
   },
   {
     "index": 58,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Chinatown \u2013 Downtown Crossing",
+    "stop_name": "Chinatown – Downtown Crossing",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -914,7 +1030,9 @@
     "x": 255,
     "y": 190,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3540325,
+    "lon": -71.0614885
   },
   {
     "index": 59,
@@ -928,13 +1046,15 @@
     "x": 263,
     "y": 185,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.355518,
+    "lon": -71.060225
   },
   {
     "index": 60,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Downtown Crossing \u2013 State",
+    "stop_name": "Downtown Crossing – State",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -945,7 +1065,9 @@
     "x": 271,
     "y": 173,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.357248,
+    "lon": -71.0589115
   },
   {
     "index": 61,
@@ -959,13 +1081,15 @@
     "x": 276,
     "y": 164,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.358978,
+    "lon": -71.057598
   },
   {
     "index": 62,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "State \u2013 Haymarket",
+    "stop_name": "State – Haymarket",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -976,7 +1100,9 @@
     "x": 275,
     "y": 143,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.360999500000005,
+    "lon": -71.05794399999999
   },
   {
     "index": 63,
@@ -990,13 +1116,15 @@
     "x": 276,
     "y": 133,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.363021,
+    "lon": -71.05829
   },
   {
     "index": 64,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Haymarket \u2013 North Station",
+    "stop_name": "Haymarket – North Station",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1007,7 +1135,9 @@
     "x": 276,
     "y": 128,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3641505,
+    "lon": -71.0592475
   },
   {
     "index": 65,
@@ -1021,13 +1151,15 @@
     "x": 276,
     "y": 122,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.36528,
+    "lon": -71.060205
   },
   {
     "index": 66,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "North Station \u2013 Community College",
+    "stop_name": "North Station – Community College",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1038,7 +1170,9 @@
     "x": 276,
     "y": 117,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.369451,
+    "lon": -71.064869
   },
   {
     "index": 67,
@@ -1052,13 +1186,15 @@
     "x": 276,
     "y": 91,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.373622,
+    "lon": -71.069533
   },
   {
     "index": 68,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Community College \u2013 Sullivan Square",
+    "stop_name": "Community College – Sullivan Square",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1069,7 +1205,9 @@
     "x": 276,
     "y": 86,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3787985,
+    "lon": -71.0732635
   },
   {
     "index": 69,
@@ -1083,13 +1221,15 @@
     "x": 276,
     "y": 80,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.383975,
+    "lon": -71.076994
   },
   {
     "index": 70,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Sullivan Square \u2013 Assembly",
+    "stop_name": "Sullivan Square – Assembly",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1100,7 +1240,9 @@
     "x": 276,
     "y": 74,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.388155499999996,
+    "lon": -71.077087
   },
   {
     "index": 71,
@@ -1114,13 +1256,15 @@
     "x": 276,
     "y": 69,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.392336,
+    "lon": -71.07718
   },
   {
     "index": 72,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Assembly \u2013 Wellington",
+    "stop_name": "Assembly – Wellington",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1131,7 +1275,9 @@
     "x": 276,
     "y": 63,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.396921500000005,
+    "lon": -71.07716500000001
   },
   {
     "index": 73,
@@ -1145,13 +1291,15 @@
     "x": 276,
     "y": 58,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.401507,
+    "lon": -71.07715
   },
   {
     "index": 74,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Wellington \u2013 Malden Center",
+    "stop_name": "Wellington – Malden Center",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1162,7 +1310,9 @@
     "x": 276,
     "y": 52,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.4140845,
+    "lon": -71.075732
   },
   {
     "index": 75,
@@ -1176,13 +1326,15 @@
     "x": 276,
     "y": 46,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.426662,
+    "lon": -71.074314
   },
   {
     "index": 76,
     "line": "orange",
     "stop_id": null,
-    "stop_name": "Malden Center \u2013 OAK GROVE",
+    "stop_name": "Malden Center – OAK GROVE",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1193,7 +1345,9 @@
     "x": 276,
     "y": 41,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.4321985,
+    "lon": -71.07259450000001
   },
   {
     "index": 77,
@@ -1207,6 +1361,8 @@
     "x": 276,
     "y": 35,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.437735,
+    "lon": -71.070875
   }
 ]
