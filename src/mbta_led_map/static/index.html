@@ -126,6 +126,21 @@
   let ledState = {};
 
   // -----------------------------------------------------------------------
+  // Zoom / pan state
+  // -----------------------------------------------------------------------
+  let zoomLevel   = 1.0;          // 1 = full board fits in canvas height
+  let panMm       = { x: 0, y: 0 }; // top-left of visible area in board-mm
+
+  function clampPan() {
+    const baseScale = canvas.height / BOARD_SIZE;
+    const effScale  = baseScale * zoomLevel;
+    const visW = canvas.width  / effScale - PANEL_WIDTH;  // visible board width in mm
+    const visH = canvas.height / effScale;                // visible board height in mm
+    panMm.x = Math.max(0, Math.min(BOARD_SIZE - visW, panMm.x));
+    panMm.y = Math.max(0, Math.min(BOARD_SIZE - visH, panMm.y));
+  }
+
+  // -----------------------------------------------------------------------
   // Fit canvas to window
   // -----------------------------------------------------------------------
   function resizeCanvas() {
@@ -139,11 +154,16 @@
   // -----------------------------------------------------------------------
   // Coordinate transform: board mm -> canvas px
   // -----------------------------------------------------------------------
+  function baseScale() { return canvas.height / BOARD_SIZE; }
+  function effScale()  { return baseScale() * zoomLevel; }
+  function panelPx()   { return PANEL_WIDTH * baseScale(); }
+
   function toCanvas(boardX, boardY) {
-    const scale = canvas.height / BOARD_SIZE;
+    const es = effScale();
+    const pp = panelPx();
     return [
-      (PANEL_WIDTH + boardX) * scale,
-      boardY * scale,
+      pp + (boardX - panMm.x) * es,
+      (boardY - panMm.y) * es,
     ];
   }
 
@@ -173,9 +193,9 @@
   }
 
   function renderLabels() {
-    const scale   = canvas.height / BOARD_SIZE;
-    const gapPx   = 3 * scale;            // 3 mm gap
-    const fontSize = Math.max(7, scale * 2.2);
+    const scale    = effScale();
+    const gapPx    = 3 * scale;            // 3 mm gap
+    const fontSize = Math.max(7, baseScale() * 2.2);
     ctx.font      = `${fontSize}px 'Courier New', monospace`;
 
     for (const led of allLeds) {
@@ -310,9 +330,9 @@
   function render() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    const scale    = canvas.height / BOARD_SIZE;
-    const panelPx  = PANEL_WIDTH * scale;
-    const mapPx    = BOARD_SIZE  * scale;
+    const scale    = baseScale();
+    const pp       = panelPx();
+    const mapPx    = BOARD_SIZE * scale;
 
     // Right overflow — light grey
     ctx.fillStyle = '#d9d9d9';
@@ -320,24 +340,37 @@
 
     // Left info panel — white
     ctx.fillStyle = '#fff';
-    ctx.fillRect(0, 0, panelPx, canvas.height);
+    ctx.fillRect(0, 0, pp, canvas.height);
 
     // Map area — white base then image
     ctx.fillStyle = '#fff';
-    ctx.fillRect(panelPx, 0, mapPx, mapPx);
+    ctx.fillRect(pp, 0, mapPx, mapPx);
 
     if (mapImg.complete && mapImg.naturalWidth > 0) {
-      ctx.drawImage(mapImg, panelPx, 0, mapPx, mapPx);
+      // Map image covers the full 400×400 mm board.
+      // With zoom/pan, we draw the portion of the image that's visible.
+      const es   = effScale();
+      const imgW = BOARD_SIZE * es;   // full image size at current zoom (px)
+      const imgH = BOARD_SIZE * es;
+      const imgX = pp - panMm.x * es; // left edge of full image in canvas px
+      const imgY =    - panMm.y * es; // top  edge
+      ctx.drawImage(mapImg, imgX, imgY, imgW, imgH);
     }
 
     // 1px black left border between panel and map (half-pixel offset for crisp rendering)
     ctx.strokeStyle = '#000';
     ctx.lineWidth = 1;
     ctx.beginPath();
-    const borderX = Math.round(panelPx) + 0.5;
+    const borderX = Math.round(pp) + 0.5;
     ctx.moveTo(borderX, 0);
     ctx.lineTo(borderX, mapPx);
     ctx.stroke();
+
+    // Clip all map drawing to the map area so nothing bleeds into the panel
+    ctx.save();
+    ctx.beginPath();
+    ctx.rect(pp, 0, canvas.width - pp, canvas.height);
+    ctx.clip();
 
     // Subway lines
     drawLineSegments('#ED8B00', [
@@ -471,6 +504,88 @@
     }
 
     renderLabels();
+
+    // End map clip region
+    ctx.restore();
+
+    drawScaleBar();
+  }
+
+  // -----------------------------------------------------------------------
+  // Scale bar
+  // -----------------------------------------------------------------------
+  function drawScaleBar() {
+    const es = effScale();
+    const pp = panelPx();
+
+    // Pick a "nice" bar length in mm that's roughly 15% of map canvas width
+    const targetMm   = (canvas.width - pp) * 0.15 / es;
+    const niceSteps  = [1, 2, 5, 10, 20, 25, 50, 100, 200];
+    const niceMm     = niceSteps.reduce((a, b) =>
+      Math.abs(b - targetMm) < Math.abs(a - targetMm) ? b : a);
+    const barPx      = niceMm * es;
+
+    // Position: bottom-left of map area
+    const margin = 12;
+    const x  = pp + margin;
+    const y  = canvas.height - margin;
+    const th = 13;   // text height
+    const tk = 5;    // tick height half
+    const pad = 4;
+
+    // Background pill
+    ctx.save();
+    ctx.fillStyle = 'rgba(20, 20, 20, 0.72)';
+    roundRect(ctx, x - pad, y - th - tk - pad, barPx + pad * 2, th + tk * 2 + pad * 2, 4);
+    ctx.fill();
+
+    // Bar line
+    ctx.strokeStyle = '#ffffff';
+    ctx.lineWidth   = 1.5;
+    ctx.lineCap     = 'square';
+    ctx.beginPath();
+    const lineY = y - pad - tk;
+    ctx.moveTo(x, lineY - tk); ctx.lineTo(x, lineY + tk);   // left tick
+    ctx.moveTo(x, lineY);      ctx.lineTo(x + barPx, lineY); // bar
+    ctx.moveTo(x + barPx, lineY - tk); ctx.lineTo(x + barPx, lineY + tk); // right tick
+    ctx.stroke();
+
+    // Label
+    ctx.fillStyle   = '#ffffff';
+    ctx.font        = `bold 10px 'Courier New', monospace`;
+    ctx.textAlign   = 'center';
+    ctx.textBaseline = 'bottom';
+    ctx.fillText(`${niceMm} mm`, x + barPx / 2, lineY - tk - 1);
+
+    // Zoom level badge (top-right corner of map)
+    if (zoomLevel > 1.005) {
+      const zoomText = `${zoomLevel.toFixed(1)}×`;
+      ctx.font = `bold 10px 'Courier New', monospace`;
+      ctx.textAlign = 'right';
+      ctx.textBaseline = 'top';
+      const tw = ctx.measureText(zoomText).width;
+      ctx.fillStyle = 'rgba(20,20,20,0.72)';
+      roundRect(ctx, canvas.width - margin - tw - pad * 2, margin, tw + pad * 2, 18, 4);
+      ctx.fill();
+      ctx.fillStyle = '#ffffff';
+      ctx.fillText(zoomText, canvas.width - margin - pad, margin + pad);
+    }
+
+    ctx.restore();
+  }
+
+  function roundRect(ctx, x, y, w, h, r) {
+    ctx.beginPath();
+    ctx.moveTo(x + r, y);
+    ctx.lineTo(x + w - r, y);
+    ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+    ctx.lineTo(x + w, y + h - r);
+    ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+    ctx.lineTo(x + r, y + h);
+    ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+    ctx.lineTo(x, y + r);
+    ctx.quadraticCurveTo(x, y, x + r, y);
+    ctx.closePath();
   }
 
   // -----------------------------------------------------------------------
@@ -552,6 +667,61 @@
       ws.close();
     };
   }
+
+  // -----------------------------------------------------------------------
+  // Zoom (scroll wheel) + pan (drag)
+  // -----------------------------------------------------------------------
+  canvas.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    const rect   = canvas.getBoundingClientRect();
+    const mouseX = (e.clientX - rect.left) * (canvas.width  / rect.width);
+    const mouseY = (e.clientY - rect.top)  * (canvas.height / rect.height);
+
+    const pp = panelPx();
+    if (mouseX < pp) return;   // cursor is over the info panel — ignore
+
+    const es = effScale();
+    // Board coords under cursor before zoom
+    const bx = (mouseX - pp) / es + panMm.x;
+    const by = mouseY / es + panMm.y;
+
+    const factor = e.deltaY < 0 ? 1.15 : 1 / 1.15;
+    zoomLevel = Math.max(1, Math.min(40, zoomLevel * factor));
+
+    // Adjust pan so cursor stays pinned to the same board point
+    const esNew = effScale();
+    panMm.x = bx - (mouseX - pp) / esNew;
+    panMm.y = by - mouseY / esNew;
+    clampPan();
+    render();
+  }, { passive: false });
+
+  let drag = null;
+  canvas.addEventListener('mousedown', (e) => {
+    drag = { startX: e.clientX, startY: e.clientY, panX: panMm.x, panY: panMm.y };
+    canvas.style.cursor = 'grabbing';
+  });
+  canvas.addEventListener('mousemove', (e) => {
+    if (!drag) return;
+    const rect  = canvas.getBoundingClientRect();
+    const scale = canvas.width / rect.width;
+    const dx    = (e.clientX - drag.startX) * scale;
+    const dy    = (e.clientY - drag.startY) * scale;
+    const es    = effScale();
+    panMm.x = drag.panX - dx / es;
+    panMm.y = drag.panY - dy / es;
+    clampPan();
+    render();
+  });
+  canvas.addEventListener('mouseup',    () => { drag = null; canvas.style.cursor = ''; });
+  canvas.addEventListener('mouseleave', () => { drag = null; canvas.style.cursor = ''; });
+
+  // Double-click to reset zoom
+  canvas.addEventListener('dblclick', () => {
+    zoomLevel = 1;
+    panMm     = { x: 0, y: 0 };
+    render();
+  });
 
   // -----------------------------------------------------------------------
   // Boot
