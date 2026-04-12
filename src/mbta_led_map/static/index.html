@@ -102,8 +102,11 @@
   const BOARD_SIZE   = 400;  // mm — LED map area
   const PANEL_WIDTH  = 100;  // mm — left info panel
   const PADDING      = 0;
-  const R_STATION   = 5;
-  const R_MIDPOINT  = 2;
+  // LED radii in mm (scaled at render time).
+  // Station = 2×2 mm package → 1 mm radius
+  // Midpoint = 1×1 mm package → 0.5 mm radius
+  const R_STATION_MM  = 1.0;
+  const R_MIDPOINT_MM = 0.5;
 
   // -----------------------------------------------------------------------
   // Canvas setup
@@ -441,7 +444,8 @@
     // White halo pass — masks subway lines behind each LED
     for (const led of allLeds) {
       const [cx, cy] = toCanvas(led.x, led.y);
-      const radius = led.type === 'station' ? R_STATION : R_MIDPOINT;
+      const rMm   = led.type === 'station' ? R_STATION_MM : R_MIDPOINT_MM;
+      const radius = rMm * scale;
       ctx.beginPath();
       ctx.arc(cx, cy, radius + 1, 0, 2 * Math.PI);
       ctx.fillStyle = '#fff';
@@ -457,7 +461,8 @@
       const brightness = (ledState[led.line] && ledState[led.line][led.index]) || 0;
       const opacity = brightness === 0 ? 0.25 : 1.0;
 
-      const radius = led.type === 'station' ? R_STATION : R_MIDPOINT;
+      const rMm   = led.type === 'station' ? R_STATION_MM : R_MIDPOINT_MM;
+      const radius = rMm * scale;
 
       ctx.beginPath();
       ctx.arc(cx, cy, radius, 0, 2 * Math.PI);
