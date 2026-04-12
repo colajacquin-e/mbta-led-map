@@ -204,7 +204,7 @@
   function renderLabels() {
     const scale    = effScale();
     const gapPx    = 3 * scale;            // 3 mm gap
-    const fontSize = Math.max(7, baseScale() * 2.2);
+    const fontSize = Math.max(7, effScale() * 2.2);
     ctx.font      = `${fontSize}px 'Courier New', monospace`;
 
     for (const led of allLeds) {
@@ -319,7 +319,7 @@
     if (waypoints.length < 2) return;
     ctx.save();
     ctx.strokeStyle = color;
-    ctx.lineWidth   = 2;
+    ctx.lineWidth   = effScale() * 0.5;  // 0.5 mm track width, scales with zoom
     ctx.lineJoin    = 'round';
     ctx.lineCap     = 'round';
     ctx.beginPath();
@@ -340,7 +340,8 @@
     // Clear in CSS-pixel space (ctx transform already accounts for DPR)
     ctx.clearRect(0, 0, canvas.width / DPR, canvas.height / DPR);
 
-    const scale    = baseScale();
+    const scale    = baseScale();   // unzoomed — used for background/panel sizing
+    const es       = effScale();    // zoomed  — used for LEDs, labels, line widths
     const pp       = panelPx();
     const mapPx    = BOARD_SIZE * scale;
 
@@ -491,7 +492,7 @@
     for (const led of allLeds) {
       const [cx, cy] = toCanvas(led.x, led.y);
       const rMm   = led.type === 'station' ? R_STATION_MM : R_MIDPOINT_MM;
-      const radius = rMm * scale;
+      const radius = rMm * es;
       ctx.beginPath();
       ctx.arc(cx, cy, radius + 1, 0, 2 * Math.PI);
       ctx.fillStyle = '#fff';
@@ -508,7 +509,7 @@
       const opacity = brightness === 0 ? 0.25 : 1.0;
 
       const rMm   = led.type === 'station' ? R_STATION_MM : R_MIDPOINT_MM;
-      const radius = rMm * scale;
+      const radius = rMm * es;
 
       ctx.beginPath();
       ctx.arc(cx, cy, radius, 0, 2 * Math.PI);
