@@ -30,14 +30,8 @@ from .models import Vehicle
 
 log = logging.getLogger(__name__)
 
-# ---------------------------------------------------------------------------
-# Brightness constants
-# ---------------------------------------------------------------------------
-BRIGHTNESS: dict[str, int] = {
-    "STOPPED_AT": 255,
-    "INCOMING_AT": 180,
-    "IN_TRANSIT_TO": 128,
-}
+# All active LEDs use full brightness — we show position, not approach state.
+BRIGHTNESS = 255
 
 # ---------------------------------------------------------------------------
 # MBTA route → internal line name
@@ -244,10 +238,7 @@ class LedMapper:
             log.debug("Unknown route %s for vehicle %s", vehicle.route_id, vehicle.id)
             return
 
-        brightness = BRIGHTNESS.get(vehicle.current_status)
-        if brightness is None:
-            log.debug("Unknown status %s for vehicle %s", vehicle.current_status, vehicle.id)
-            return
+        brightness = BRIGHTNESS
 
         chain = self._chains.get((line, vehicle.direction_id), [])
         if not chain:
@@ -306,7 +297,7 @@ class LedMapper:
             if dist < existing.distance_m:
                 # We are closer — evict the previous occupant.
                 evicted_id = existing.vehicle_id
-                evicted_brightness = existing.brightness
+                evicted_brightness = BRIGHTNESS
                 evicted_line = key[0]
                 evicted_chain = self._chains.get((evicted_line, vehicle.direction_id), chain)
 
@@ -359,28 +350,36 @@ class LedMapper:
     ) -> list[tuple[LedRecord, float]]:
         """Return LEDs in *chain* ranked by proximity to *vehicle*.
 
-        If the vehicle has GPS coordinates, ranks by Haversine distance.
-        Falls back to stop_id matching (exact match gets distance 0, otherwise
-        skipped) when GPS is unavailable.
+        Strategy:
+        - IN_TRANSIT_TO: use stop_id → midpoint lookup first (MBTA vehicle GPS
+          for in-transit trains is often reported at the next stop, not the
+          actual position between stops, so GPS would incorrectly snap to a
+          station LED).  Falls back to GPS / stop_id if no midpoint found.
+        - STOPPED_AT / INCOMING_AT: use GPS distance ranking when coordinates
+          are available; otherwise fall back to stop_id matching.
         """
+        if vehicle.current_status == "IN_TRANSIT_TO":
+            # Try stop_id → midpoint lookup first.
+            midpoint_candidates = self._rank_by_stop_id(vehicle, chain)
+            if midpoint_candidates:
+                return midpoint_candidates
+            # No midpoint found — fall through to GPS / stop_id for stations.
+
         has_gps = vehicle.latitude is not None and vehicle.longitude is not None
 
         if has_gps:
-            # GPS path: rank all LEDs that also have coordinates.
+            # GPS path: rank all LEDs that also have GPS coordinates.
             scored: list[tuple[LedRecord, float]] = []
             for led in chain:
                 if led.lat is not None and led.lon is not None:
                     d = haversine_m(vehicle.latitude, vehicle.longitude, led.lat, led.lon)  # type: ignore[arg-type]
                     scored.append((led, d))
-                # LEDs without lat/lon are skipped in GPS mode.
-            if not scored:
-                # No enriched LEDs yet — fall through to stop_id matching.
-                log.debug(
-                    "No GPS-enriched LEDs in chain for %s, falling back to stop_id", vehicle.id
-                )
-                return self._rank_by_stop_id(vehicle, chain)
-            scored.sort(key=lambda t: t[1])
-            return scored
+            if scored:
+                scored.sort(key=lambda t: t[1])
+                return scored
+            log.debug(
+                "No GPS-enriched LEDs in chain for %s, falling back to stop_id", vehicle.id
+            )
 
         return self._rank_by_stop_id(vehicle, chain)
 
@@ -436,15 +435,12 @@ def _make_dummy_vehicle(vehicle_id: str, brightness: int, reference: Vehicle) ->
     stored in the LED records (the caller provides the pre-ranked candidate
     list anyway; this object is only needed to satisfy type signatures).
     """
-    # Reverse-map brightness to status string (best effort).
-    status_map = {v: k for k, v in BRIGHTNESS.items()}
-    status = status_map.get(brightness, "STOPPED_AT")
     return Vehicle(
         id=vehicle_id,
         route_id=reference.route_id,
         direction_id=reference.direction_id,
         stop_id=None,
-        current_status=status,
+        current_status="STOPPED_AT",
         latitude=None,
         longitude=None,
         label=None,
