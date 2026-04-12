@@ -11,13 +11,15 @@
     "x": 269,
     "y": 340,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.283768,
+    "lon": -71.063191
   },
   {
     "index": 1,
     "line": "mattapan",
     "stop_id": null,
-    "stop_name": "Ashmont \u2013 Cedar Grove",
+    "stop_name": "Ashmont – Cedar Grove",
     "direction": "outbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -28,7 +30,9 @@
     "x": 269,
     "y": 344,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.281657,
+    "lon": -71.0617915
   },
   {
     "index": 2,
@@ -42,13 +46,15 @@
     "x": 269,
     "y": 348,
     "label_position": "right",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.279546,
+    "lon": -71.060392
   },
   {
     "index": 3,
     "line": "mattapan",
     "stop_id": null,
-    "stop_name": "Cedar Grove \u2013 Butler",
+    "stop_name": "Cedar Grove – Butler",
     "direction": "outbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -59,7 +65,9 @@
     "x": 269,
     "y": 352,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.2759975,
+    "lon": -71.0614525
   },
   {
     "index": 4,
@@ -73,13 +81,15 @@
     "x": 269,
     "y": 355,
     "label_position": "below-left",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.272449,
+    "lon": -71.062513
   },
   {
     "index": 5,
     "line": "mattapan",
     "stop_id": null,
-    "stop_name": "Butler \u2013 Milton",
+    "stop_name": "Butler – Milton",
     "direction": "outbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -90,7 +100,9 @@
     "x": 266,
     "y": 355,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.271418499999996,
+    "lon": -71.064883
   },
   {
     "index": 6,
@@ -104,13 +116,15 @@
     "x": 262,
     "y": 355,
     "label_position": "below-left",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.270388,
+    "lon": -71.067253
   },
   {
     "index": 7,
     "line": "mattapan",
     "stop_id": null,
-    "stop_name": "Milton \u2013 Central Ave",
+    "stop_name": "Milton – Central Ave",
     "direction": "outbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -121,7 +135,9 @@
     "x": 258,
     "y": 355,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.270221,
+    "lon": -71.070388
   },
   {
     "index": 8,
@@ -135,13 +151,15 @@
     "x": 253,
     "y": 355,
     "label_position": "below-left",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.270054,
+    "lon": -71.073523
   },
   {
     "index": 9,
     "line": "mattapan",
     "stop_id": null,
-    "stop_name": "Central Ave \u2013 Valley Rd",
+    "stop_name": "Central Ave – Valley Rd",
     "direction": "outbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -152,7 +170,9 @@
     "x": 249,
     "y": 355,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.2692215,
+    "lon": -71.0775135
   },
   {
     "index": 10,
@@ -166,13 +186,15 @@
     "x": 245,
     "y": 355,
     "label_position": "below-left",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.268389,
+    "lon": -71.081504
   },
   {
     "index": 11,
     "line": "mattapan",
     "stop_id": null,
-    "stop_name": "Valley Rd \u2013 Capen St",
+    "stop_name": "Valley Rd – Capen St",
     "direction": "outbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -183,7 +205,9 @@
     "x": 240,
     "y": 355,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.267989,
+    "lon": -71.08432149999999
   },
   {
     "index": 12,
@@ -197,13 +221,15 @@
     "x": 236,
     "y": 355,
     "label_position": "below-left",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.267589,
+    "lon": -71.087139
   },
   {
     "index": 13,
     "line": "mattapan",
     "stop_id": null,
-    "stop_name": "Capen St \u2013 MATTAPAN",
+    "stop_name": "Capen St – MATTAPAN",
     "direction": "outbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -214,7 +240,9 @@
     "x": 232,
     "y": 355,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.267607,
+    "lon": -71.089764
   },
   {
     "index": 14,
@@ -228,7 +256,9 @@
     "x": 228,
     "y": 355,
     "label_position": "below-left",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.267625,
+    "lon": -71.092389
   },
   {
     "index": 15,
@@ -242,13 +272,15 @@
     "x": 228,
     "y": 360,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.267559,
+    "lon": -71.092233
   },
   {
     "index": 16,
     "line": "mattapan",
     "stop_id": null,
-    "stop_name": "MATTAPAN \u2013 Capen St",
+    "stop_name": "MATTAPAN – Capen St",
     "direction": "inbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -259,7 +291,9 @@
     "x": 232,
     "y": 361,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.267561,
+    "lon": -71.0897855
   },
   {
     "index": 17,
@@ -273,13 +307,15 @@
     "x": 236,
     "y": 360,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.267563,
+    "lon": -71.087338
   },
   {
     "index": 18,
     "line": "mattapan",
     "stop_id": null,
-    "stop_name": "Capen St \u2013 Valley Rd",
+    "stop_name": "Capen St – Valley Rd",
     "direction": "inbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -290,7 +326,9 @@
     "x": 240,
     "y": 361,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.267955,
+    "lon": -71.0843405
   },
   {
     "index": 19,
@@ -304,13 +342,15 @@
     "x": 245,
     "y": 360,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.268347,
+    "lon": -71.081343
   },
   {
     "index": 20,
     "line": "mattapan",
     "stop_id": null,
-    "stop_name": "Valley Rd \u2013 Central Ave",
+    "stop_name": "Valley Rd – Central Ave",
     "direction": "inbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -321,7 +361,9 @@
     "x": 249,
     "y": 361,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.269174,
+    "lon": -71.0773505
   },
   {
     "index": 21,
@@ -335,13 +377,15 @@
     "x": 253,
     "y": 360,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.270001,
+    "lon": -71.073358
   },
   {
     "index": 22,
     "line": "mattapan",
     "stop_id": null,
-    "stop_name": "Central Ave \u2013 Milton",
+    "stop_name": "Central Ave – Milton",
     "direction": "inbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -352,7 +396,9 @@
     "x": 258,
     "y": 361,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.270154500000004,
+    "lon": -71.0703235
   },
   {
     "index": 23,
@@ -366,13 +412,15 @@
     "x": 262,
     "y": 360,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.270308,
+    "lon": -71.067289
   },
   {
     "index": 24,
     "line": "mattapan",
     "stop_id": null,
-    "stop_name": "Milton \u2013 Butler",
+    "stop_name": "Milton – Butler",
     "direction": "inbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -383,7 +431,9 @@
     "x": 266,
     "y": 361,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.271392500000005,
+    "lon": -71.0648635
   },
   {
     "index": 25,
@@ -397,13 +447,15 @@
     "x": 274,
     "y": 360,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.272477,
+    "lon": -71.062438
   },
   {
     "index": 26,
     "line": "mattapan",
     "stop_id": null,
-    "stop_name": "Butler \u2013 Cedar Grove",
+    "stop_name": "Butler – Cedar Grove",
     "direction": "inbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -414,7 +466,9 @@
     "x": 275,
     "y": 352,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.276085,
+    "lon": -71.0614095
   },
   {
     "index": 27,
@@ -428,29 +482,33 @@
     "x": 274,
     "y": 348,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.279693,
+    "lon": -71.060381
   },
   {
     "index": 28,
     "line": "mattapan",
     "stop_id": null,
-    "stop_name": "Cedar Grove \u2013 Ashmont",
+    "stop_name": "Cedar Grove – Ashmont",
     "direction": "inbound",
     "direction_id": 1,
     "type": "midpoint",
     "adjacent_stops": [
       "70264",
-      "70262"
+      "70261"
     ],
     "x": 275,
     "y": 344,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.281731,
+    "lon": -71.061441
   },
   {
     "index": 29,
     "line": "mattapan",
-    "stop_id": "70262",
+    "stop_id": "70261",
     "stop_name": "ASHMONT",
     "direction": "inbound",
     "direction_id": 1,
@@ -459,6 +517,8 @@
     "x": 274,
     "y": 340,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.283768,
+    "lon": -71.063191
   }
 ]

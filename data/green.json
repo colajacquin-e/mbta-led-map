@@ -13,13 +13,15 @@
     "label_position": "left",
     "label_alignment": "right",
     "label_y_offset": 2,
-    "label_x_offset": -1
+    "label_x_offset": -1,
+    "lat": 42.40828,
+    "lon": -71.117339
   },
   {
     "index": 1,
     "line": "green",
     "stop_id": null,
-    "stop_name": "Medford/Tufts \u2013 Ball Square",
+    "stop_name": "Medford/Tufts – Ball Square",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -30,7 +32,9 @@
     "x": 198,
     "y": 51,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.404191499999996,
+    "lon": -71.114273
   },
   {
     "index": 2,
@@ -46,13 +50,15 @@
     "label_position": "left",
     "label_alignment": "right",
     "label_y_offset": 2,
-    "label_x_offset": -1
+    "label_x_offset": -1,
+    "lat": 42.400103,
+    "lon": -71.111207
   },
   {
     "index": 3,
     "line": "green",
     "stop_id": null,
-    "stop_name": "Ball Square \u2013 Magoun Square",
+    "stop_name": "Ball Square – Magoun Square",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -63,7 +69,9 @@
     "x": 207,
     "y": 60,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3970765,
+    "lon": -71.1089475
   },
   {
     "index": 4,
@@ -79,13 +87,15 @@
     "label_position": "left",
     "label_alignment": "right",
     "label_y_offset": 2,
-    "label_x_offset": -1
+    "label_x_offset": -1,
+    "lat": 42.39405,
+    "lon": -71.106688
   },
   {
     "index": 5,
     "line": "green",
     "stop_id": null,
-    "stop_name": "Magoun Square \u2013 Gilman Square",
+    "stop_name": "Magoun Square – Gilman Square",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -96,7 +106,9 @@
     "x": 217,
     "y": 70,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3909405,
+    "lon": -71.1016585
   },
   {
     "index": 6,
@@ -112,13 +124,15 @@
     "label_position": "left",
     "label_alignment": "right",
     "label_y_offset": 2,
-    "label_x_offset": -1
+    "label_x_offset": -1,
+    "lat": 42.387831,
+    "lon": -71.096629
   },
   {
     "index": 7,
     "line": "green",
     "stop_id": null,
-    "stop_name": "Gilman Square \u2013 East Somerville",
+    "stop_name": "Gilman Square – East Somerville",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -129,7 +143,9 @@
     "x": 226,
     "y": 79,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3837275,
+    "lon": -71.09172899999999
   },
   {
     "index": 8,
@@ -145,13 +161,15 @@
     "label_position": "left",
     "label_alignment": "right",
     "label_y_offset": 2,
-    "label_x_offset": -1
+    "label_x_offset": -1,
+    "lat": 42.379624,
+    "lon": -71.086829
   },
   {
     "index": 9,
     "line": "green",
     "stop_id": null,
-    "stop_name": "East Somerville \u2013 Lechmere",
+    "stop_name": "East Somerville – Lechmere",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -162,7 +180,9 @@
     "x": 236,
     "y": 90,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3753065,
+    "lon": -71.0813445
   },
   {
     "index": 10,
@@ -178,13 +198,15 @@
     "label_position": "left",
     "label_alignment": "right",
     "label_y_offset": 2,
-    "label_x_offset": -1
+    "label_x_offset": -1,
+    "lat": 42.37699,
+    "lon": -71.093993
   },
   {
     "index": 11,
     "line": "green",
     "stop_id": null,
-    "stop_name": "Union Square \u2013 Lechmere",
+    "stop_name": "Union Square – Lechmere",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -195,7 +217,9 @@
     "x": 240,
     "y": 95,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3739895,
+    "lon": -71.0849265
   },
   {
     "index": 12,
@@ -211,13 +235,15 @@
     "label_position": "left",
     "label_alignment": "right",
     "label_y_offset": 2,
-    "label_x_offset": -1
+    "label_x_offset": -1,
+    "lat": 42.370989,
+    "lon": -71.07586
   },
   {
     "index": 13,
     "line": "green",
     "stop_id": null,
-    "stop_name": "Lechmere \u2013 Science Park",
+    "stop_name": "Lechmere – Science Park",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -228,7 +254,9 @@
     "x": 255,
     "y": 109,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3688265,
+    "lon": -71.071763
   },
   {
     "index": 14,
@@ -243,13 +271,15 @@
     "y": 113,
     "label_position": "left",
     "label_alignment": "right",
-    "label_y_offset": 2
+    "label_y_offset": 2,
+    "lat": 42.366664,
+    "lon": -71.067666
   },
   {
     "index": 15,
     "line": "green",
     "stop_id": null,
-    "stop_name": "Science Park \u2013 North Station",
+    "stop_name": "Science Park – North Station",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -260,7 +290,9 @@
     "x": 262,
     "y": 117,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.365972,
+    "lon": -71.0639355
   },
   {
     "index": 16,
@@ -274,13 +306,15 @@
     "x": 262,
     "y": 122,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.36528,
+    "lon": -71.060205
   },
   {
     "index": 17,
     "line": "green",
     "stop_id": null,
-    "stop_name": "North Station \u2013 Haymarket",
+    "stop_name": "North Station – Haymarket",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -291,7 +325,9 @@
     "x": 262,
     "y": 128,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3641505,
+    "lon": -71.0592475
   },
   {
     "index": 18,
@@ -305,13 +341,15 @@
     "x": 262,
     "y": 133,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.363021,
+    "lon": -71.05829
   },
   {
     "index": 19,
     "line": "green",
     "stop_id": null,
-    "stop_name": "Haymarket \u2013 Government Center",
+    "stop_name": "Haymarket – Government Center",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -322,7 +360,9 @@
     "x": 262,
     "y": 143,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.361363,
+    "lon": -71.0587525
   },
   {
     "index": 20,
@@ -336,13 +376,15 @@
     "x": 255,
     "y": 152,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.359705,
+    "lon": -71.059215
   },
   {
     "index": 21,
     "line": "green",
     "stop_id": null,
-    "stop_name": "Government Center \u2013 Park Street",
+    "stop_name": "Government Center – Park Street",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -353,7 +395,9 @@
     "x": 248,
     "y": 156,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3580498,
+    "lon": -71.0608196
   },
   {
     "index": 22,
@@ -367,7 +411,9 @@
     "x": 234,
     "y": 167,
     "label_position": "center",
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.3563946,
+    "lon": -71.0624242
   },
   {
     "index": 23,
@@ -381,7 +427,9 @@
     "x": 239,
     "y": 167,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3563946,
+    "lon": -71.0624242
   },
   {
     "index": 24,
@@ -395,13 +443,15 @@
     "x": 245,
     "y": 167,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3563946,
+    "lon": -71.0624242
   },
   {
     "index": 25,
     "line": "green",
     "stop_id": null,
-    "stop_name": "Park Street \u2013 Boylston",
+    "stop_name": "Park Street – Boylston",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -412,7 +462,9 @@
     "x": 229,
     "y": 173,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3548043,
+    "lon": -71.0634846
   },
   {
     "index": 26,
@@ -426,13 +478,15 @@
     "x": 227,
     "y": 177,
     "label_position": "below-left",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.353214,
+    "lon": -71.064545
   },
   {
     "index": 27,
     "line": "green",
     "stop_id": null,
-    "stop_name": "Boylston \u2013 Arlington",
+    "stop_name": "Boylston – Arlington",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -443,7 +497,9 @@
     "x": 217,
     "y": 179,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.352558,
+    "lon": -71.067719
   },
   {
     "index": 28,
@@ -457,13 +513,15 @@
     "x": 207,
     "y": 180,
     "label_position": "below-left",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.351902,
+    "lon": -71.070893
   },
   {
     "index": 29,
     "line": "green",
     "stop_id": null,
-    "stop_name": "Arlington \u2013 Copley",
+    "stop_name": "Arlington – Copley",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -474,7 +532,9 @@
     "x": 199,
     "y": 180,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.351014000000006,
+    "lon": -71.0741345
   },
   {
     "index": 30,
@@ -490,7 +550,9 @@
     "label_position": "above-right",
     "label_alignment": "left",
     "label_y_offset": -2,
-    "label_x_offset": -2
+    "label_x_offset": -2,
+    "lat": 42.350126,
+    "lon": -71.077376
   },
   {
     "index": 31,
@@ -504,13 +566,15 @@
     "x": 190,
     "y": 185,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.349871,
+    "lon": -71.078049
   },
   {
     "index": 32,
     "line": "green",
     "stop_id": null,
-    "stop_name": "Copley \u2013 Arlington",
+    "stop_name": "Copley – Arlington",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -521,7 +585,9 @@
     "x": 199,
     "y": 186,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3508865,
+    "lon": -71.07447099999999
   },
   {
     "index": 33,
@@ -535,13 +601,15 @@
     "x": 207,
     "y": 185,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.351902,
+    "lon": -71.070893
   },
   {
     "index": 34,
     "line": "green",
     "stop_id": null,
-    "stop_name": "Arlington \u2013 Boylston",
+    "stop_name": "Arlington – Boylston",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -552,7 +620,9 @@
     "x": 217,
     "y": 185,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3522165,
+    "lon": -71.06778750000001
   },
   {
     "index": 35,
@@ -566,13 +636,15 @@
     "x": 227,
     "y": 182,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.352531,
+    "lon": -71.064682
   },
   {
     "index": 36,
     "line": "green",
     "stop_id": null,
-    "stop_name": "Boylston \u2013 Park Street",
+    "stop_name": "Boylston – Park Street",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -583,7 +655,9 @@
     "x": 239,
     "y": 173,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3544628,
+    "lon": -71.06355310000001
   },
   {
     "index": 37,
@@ -597,13 +671,15 @@
     "x": 250,
     "y": 167,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3563946,
+    "lon": -71.0624242
   },
   {
     "index": 38,
     "line": "green",
     "stop_id": null,
-    "stop_name": "Park Street \u2013 Government Center",
+    "stop_name": "Park Street – Government Center",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -614,7 +690,9 @@
     "x": 254,
     "y": 156,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3580498,
+    "lon": -71.0608196
   },
   {
     "index": 39,
@@ -628,13 +706,15 @@
     "x": 261,
     "y": 152,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.359705,
+    "lon": -71.059215
   },
   {
     "index": 40,
     "line": "green",
     "stop_id": null,
-    "stop_name": "Government Center \u2013 Haymarket",
+    "stop_name": "Government Center – Haymarket",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -645,7 +725,9 @@
     "x": 267,
     "y": 143,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.361363,
+    "lon": -71.0587525
   },
   {
     "index": 41,
@@ -659,13 +741,15 @@
     "x": 267,
     "y": 133,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.363021,
+    "lon": -71.05829
   },
   {
     "index": 42,
     "line": "green",
     "stop_id": null,
-    "stop_name": "Haymarket \u2013 North Station",
+    "stop_name": "Haymarket – North Station",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -676,7 +760,9 @@
     "x": 268,
     "y": 128,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3641505,
+    "lon": -71.0592475
   },
   {
     "index": 43,
@@ -690,13 +776,15 @@
     "x": 267,
     "y": 122,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.36528,
+    "lon": -71.060205
   },
   {
     "index": 44,
     "line": "green",
     "stop_id": null,
-    "stop_name": "North Station \u2013 Science Park",
+    "stop_name": "North Station – Science Park",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -707,7 +795,9 @@
     "x": 267,
     "y": 117,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.365972,
+    "lon": -71.0639355
   },
   {
     "index": 45,
@@ -721,13 +811,15 @@
     "x": 266,
     "y": 113,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.366664,
+    "lon": -71.067666
   },
   {
     "index": 46,
     "line": "green",
     "stop_id": null,
-    "stop_name": "Science Park \u2013 Lechmere",
+    "stop_name": "Science Park – Lechmere",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -738,7 +830,9 @@
     "x": 261,
     "y": 109,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.369115,
+    "lon": -71.0720615
   },
   {
     "index": 47,
@@ -752,13 +846,15 @@
     "x": 257,
     "y": 105,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.371566,
+    "lon": -71.076457
   },
   {
     "index": 48,
     "line": "green",
     "stop_id": null,
-    "stop_name": "Lechmere \u2013 East Somerville",
+    "stop_name": "Lechmere – East Somerville",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -769,7 +865,9 @@
     "x": 242,
     "y": 90,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3757235,
+    "lon": -71.0817445
   },
   {
     "index": 49,
@@ -783,13 +881,15 @@
     "x": 236,
     "y": 84,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.379881,
+    "lon": -71.087032
   },
   {
     "index": 50,
     "line": "green",
     "stop_id": null,
-    "stop_name": "East Somerville \u2013 Gilman Square",
+    "stop_name": "East Somerville – Gilman Square",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -800,7 +900,9 @@
     "x": 232,
     "y": 79,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.383962,
+    "lon": -71.091994
   },
   {
     "index": 51,
@@ -814,13 +916,15 @@
     "x": 227,
     "y": 75,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.388043,
+    "lon": -71.096956
   },
   {
     "index": 52,
     "line": "green",
     "stop_id": null,
-    "stop_name": "Gilman Square \u2013 Magoun Square",
+    "stop_name": "Gilman Square – Magoun Square",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -831,7 +935,9 @@
     "x": 223,
     "y": 70,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3912,
+    "lon": -71.10189
   },
   {
     "index": 53,
@@ -845,13 +951,15 @@
     "x": 218,
     "y": 65,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.394357,
+    "lon": -71.106824
   },
   {
     "index": 54,
     "line": "green",
     "stop_id": null,
-    "stop_name": "Magoun Square \u2013 Ball Square",
+    "stop_name": "Magoun Square – Ball Square",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -862,7 +970,9 @@
     "x": 213,
     "y": 60,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3973685,
+    "lon": -71.10907750000001
   },
   {
     "index": 55,
@@ -876,13 +986,15 @@
     "x": 208,
     "y": 56,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.40038,
+    "lon": -71.111331
   },
   {
     "index": 56,
     "line": "green",
     "stop_id": null,
-    "stop_name": "Ball Square \u2013 Medford/Tufts",
+    "stop_name": "Ball Square – Medford/Tufts",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -893,7 +1005,9 @@
     "x": 204,
     "y": 51,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.404343,
+    "lon": -71.1143055
   },
   {
     "index": 57,
@@ -907,13 +1021,15 @@
     "x": 199,
     "y": 47,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.408306,
+    "lon": -71.11728
   },
   {
     "index": 58,
     "line": "green",
     "stop_id": null,
-    "stop_name": "Lechmere \u2013 Union Square",
+    "stop_name": "Lechmere – Union Square",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -924,7 +1040,9 @@
     "x": 240,
     "y": 101,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.374295000000004,
+    "lon": -71.0852105
   },
   {
     "index": 59,
@@ -938,12 +1056,14 @@
     "x": 225,
     "y": 101,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.377024,
+    "lon": -71.093964
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Copley \u2013 Prudential",
+    "stop_name": "Copley – Prudential",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -955,7 +1075,9 @@
     "y": 193,
     "label_position": "none",
     "index": 60,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.347848,
+    "lon": -71.07953599999999
   },
   {
     "line": "green",
@@ -969,12 +1091,14 @@
     "y": 199,
     "label_position": "left",
     "index": 61,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.34557,
+    "lon": -71.081696
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Prudential \u2013 Symphony",
+    "stop_name": "Prudential – Symphony",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -986,7 +1110,9 @@
     "y": 206,
     "label_position": "none",
     "index": 62,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3441285,
+    "lon": -71.08337599999999
   },
   {
     "line": "green",
@@ -1000,12 +1126,14 @@
     "y": 212,
     "label_position": "left",
     "index": 63,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.342687,
+    "lon": -71.085056
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Symphony \u2013 Northeastern",
+    "stop_name": "Symphony – Northeastern",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -1017,7 +1145,9 @@
     "y": 215,
     "label_position": "none",
     "index": 64,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.341291999999996,
+    "lon": -71.087633
   },
   {
     "line": "green",
@@ -1031,12 +1161,14 @@
     "y": 218,
     "label_position": "left",
     "index": 65,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.339897,
+    "lon": -71.09021
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Northeastern \u2013 Museum of Fine Arts",
+    "stop_name": "Northeastern – Museum of Fine Arts",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -1048,7 +1180,9 @@
     "y": 221,
     "label_position": "none",
     "index": 66,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.338886,
+    "lon": -71.092725
   },
   {
     "line": "green",
@@ -1062,12 +1196,14 @@
     "y": 224,
     "label_position": "left",
     "index": 67,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.337875,
+    "lon": -71.09524
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Museum of Fine Arts \u2013 Longwood Medical Area",
+    "stop_name": "Museum of Fine Arts – Longwood Medical Area",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -1079,7 +1215,9 @@
     "y": 227,
     "label_position": "none",
     "index": 68,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3369775,
+    "lon": -71.09756150000001
   },
   {
     "line": "green",
@@ -1093,12 +1231,14 @@
     "y": 230,
     "label_position": "left",
     "index": 69,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.33608,
+    "lon": -71.099883
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Longwood Medical Area \u2013 Brigham Circle",
+    "stop_name": "Longwood Medical Area – Brigham Circle",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -1110,7 +1250,9 @@
     "y": 233,
     "label_position": "none",
     "index": 70,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3352055,
+    "lon": -71.102185
   },
   {
     "line": "green",
@@ -1124,12 +1266,14 @@
     "y": 236,
     "label_position": "left",
     "index": 71,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.334331,
+    "lon": -71.104487
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Brigham Circle \u2013 Fenwood Rd",
+    "stop_name": "Brigham Circle – Fenwood Rd",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -1141,7 +1285,9 @@
     "y": 239,
     "label_position": "none",
     "index": 72,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3340355,
+    "lon": -71.10510400000001
   },
   {
     "line": "green",
@@ -1155,12 +1301,14 @@
     "y": 242,
     "label_position": "left",
     "index": 73,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.33374,
+    "lon": -71.105721
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Fenwood Rd \u2013 Mission Park",
+    "stop_name": "Fenwood Rd – Mission Park",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -1172,7 +1320,9 @@
     "y": 245,
     "label_position": "none",
     "index": 74,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3335095,
+    "lon": -71.10749849999999
   },
   {
     "line": "green",
@@ -1186,12 +1336,14 @@
     "y": 248,
     "label_position": "left",
     "index": 75,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.333279,
+    "lon": -71.109276
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Mission Park \u2013 Riverway",
+    "stop_name": "Mission Park – Riverway",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -1203,7 +1355,9 @@
     "y": 251,
     "label_position": "none",
     "index": 76,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.332335,
+    "lon": -71.1106005
   },
   {
     "line": "green",
@@ -1217,12 +1371,14 @@
     "y": 254,
     "label_position": "left",
     "index": 77,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.331391,
+    "lon": -71.111925
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Riverway \u2013 Back of the Hill",
+    "stop_name": "Riverway – Back of the Hill",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -1234,7 +1390,9 @@
     "y": 257,
     "label_position": "none",
     "index": 78,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.330380000000005,
+    "lon": -71.1114855
   },
   {
     "line": "green",
@@ -1248,12 +1406,14 @@
     "y": 260,
     "label_position": "left",
     "index": 79,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.329369,
+    "lon": -71.111046
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Back of the Hill \u2013 HEATH ST",
+    "stop_name": "Back of the Hill – HEATH ST",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -1265,7 +1425,9 @@
     "y": 263,
     "label_position": "none",
     "index": 80,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3288425,
+    "lon": -71.110649
   },
   {
     "line": "green",
@@ -1279,7 +1441,9 @@
     "y": 266,
     "label_position": "left",
     "index": 81,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.328316,
+    "lon": -71.110252
   },
   {
     "line": "green",
@@ -1293,12 +1457,14 @@
     "y": 266,
     "label_position": "none",
     "index": 82,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.328316,
+    "lon": -71.110252
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "HEATH ST \u2013 Back of the Hill",
+    "stop_name": "HEATH ST – Back of the Hill",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1310,7 +1476,9 @@
     "y": 263,
     "label_position": "none",
     "index": 83,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3288575,
+    "lon": -71.1105915
   },
   {
     "line": "green",
@@ -1324,12 +1492,14 @@
     "y": 260,
     "label_position": "none",
     "index": 84,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.329399,
+    "lon": -71.110931
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Back of the Hill \u2013 Riverway",
+    "stop_name": "Back of the Hill – Riverway",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1341,7 +1511,9 @@
     "y": 257,
     "label_position": "none",
     "index": 85,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.330635,
+    "lon": -71.111446
   },
   {
     "line": "green",
@@ -1355,12 +1527,14 @@
     "y": 254,
     "label_position": "none",
     "index": 86,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.331871,
+    "lon": -71.111961
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Riverway \u2013 Mission Park",
+    "stop_name": "Riverway – Mission Park",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1372,7 +1546,9 @@
     "y": 251,
     "label_position": "none",
     "index": 87,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3324815,
+    "lon": -71.11082049999999
   },
   {
     "line": "green",
@@ -1386,12 +1562,14 @@
     "y": 248,
     "label_position": "none",
     "index": 88,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.333092,
+    "lon": -71.10968
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Mission Park \u2013 Fenwood Rd",
+    "stop_name": "Mission Park – Fenwood Rd",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1403,7 +1581,9 @@
     "y": 245,
     "label_position": "none",
     "index": 89,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.333399,
+    "lon": -71.1076315
   },
   {
     "line": "green",
@@ -1417,12 +1597,14 @@
     "y": 242,
     "label_position": "none",
     "index": 90,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.333706,
+    "lon": -71.105583
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Fenwood Rd \u2013 Brigham Circle",
+    "stop_name": "Fenwood Rd – Brigham Circle",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1434,7 +1616,9 @@
     "y": 239,
     "label_position": "none",
     "index": 91,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.334276,
+    "lon": -71.1043
   },
   {
     "line": "green",
@@ -1448,12 +1632,14 @@
     "y": 236,
     "label_position": "none",
     "index": 92,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.334846,
+    "lon": -71.103017
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Brigham Circle \u2013 Longwood Medical Area",
+    "stop_name": "Brigham Circle – Longwood Medical Area",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1465,7 +1651,9 @@
     "y": 233,
     "label_position": "none",
     "index": 93,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3355315,
+    "lon": -71.10117249999999
   },
   {
     "line": "green",
@@ -1479,12 +1667,14 @@
     "y": 230,
     "label_position": "none",
     "index": 94,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.336217,
+    "lon": -71.099328
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Longwood Medical Area \u2013 Museum of Fine Arts",
+    "stop_name": "Longwood Medical Area – Museum of Fine Arts",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1496,7 +1686,9 @@
     "y": 227,
     "label_position": "none",
     "index": 95,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.337117,
+    "lon": -71.097005
   },
   {
     "line": "green",
@@ -1510,12 +1702,14 @@
     "y": 224,
     "label_position": "none",
     "index": 96,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.338017,
+    "lon": -71.094682
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Museum of Fine Arts \u2013 Northeastern",
+    "stop_name": "Museum of Fine Arts – Northeastern",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1527,7 +1721,9 @@
     "y": 221,
     "label_position": "none",
     "index": 97,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.339119499999995,
+    "lon": -71.091941
   },
   {
     "line": "green",
@@ -1541,12 +1737,14 @@
     "y": 218,
     "label_position": "none",
     "index": 98,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.340222,
+    "lon": -71.0892
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Northeastern \u2013 Symphony",
+    "stop_name": "Northeastern – Symphony",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1558,7 +1756,9 @@
     "y": 215,
     "label_position": "none",
     "index": 99,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3414545,
+    "lon": -71.087128
   },
   {
     "line": "green",
@@ -1572,12 +1772,14 @@
     "y": 212,
     "label_position": "none",
     "index": 100,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.342687,
+    "lon": -71.085056
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Symphony \u2013 Prudential",
+    "stop_name": "Symphony – Prudential",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1589,7 +1791,9 @@
     "y": 206,
     "label_position": "none",
     "index": 101,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3441285,
+    "lon": -71.08337599999999
   },
   {
     "line": "green",
@@ -1603,12 +1807,14 @@
     "y": 199,
     "label_position": "none",
     "index": 102,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.34557,
+    "lon": -71.081696
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Prudential \u2013 Copley",
+    "stop_name": "Prudential – Copley",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1620,12 +1826,14 @@
     "y": 193,
     "label_position": "none",
     "index": 103,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3477205,
+    "lon": -71.0798725
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Copley \u2013 Hynes Convention Center",
+    "stop_name": "Copley – Hynes Convention Center",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -1637,7 +1845,9 @@
     "y": 180,
     "label_position": "none",
     "index": 104,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.349007,
+    "lon": -71.0826395
   },
   {
     "line": "green",
@@ -1653,12 +1863,14 @@
     "index": 105,
     "label_alignment": "left",
     "label_y_offset": -2,
-    "label_x_offset": -2
+    "label_x_offset": -2,
+    "lat": 42.347888,
+    "lon": -71.087903
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Hynes Convention Center \u2013 Kenmore",
+    "stop_name": "Hynes Convention Center – Kenmore",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -1670,7 +1882,9 @@
     "y": 180,
     "label_position": "none",
     "index": 106,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.348418499999994,
+    "lon": -71.09153599999999
   },
   {
     "line": "green",
@@ -1686,12 +1900,14 @@
     "index": 107,
     "label_alignment": "left",
     "label_y_offset": -2,
-    "label_x_offset": -2
+    "label_x_offset": -2,
+    "lat": 42.348949,
+    "lon": -71.095169
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Kenmore \u2013 Fenway",
+    "stop_name": "Kenmore – Fenway",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -1703,7 +1919,9 @@
     "y": 186,
     "label_position": "none",
     "index": 108,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.34698899999999,
+    "lon": -71.10006849999999
   },
   {
     "line": "green",
@@ -1717,12 +1935,14 @@
     "y": 192,
     "label_position": "left",
     "index": 109,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.345029,
+    "lon": -71.104968
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Fenway \u2013 Longwood",
+    "stop_name": "Fenway – Longwood",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -1734,7 +1954,9 @@
     "y": 195,
     "label_position": "none",
     "index": 110,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3433,
+    "lon": -71.1075575
   },
   {
     "line": "green",
@@ -1748,12 +1970,14 @@
     "y": 198,
     "label_position": "left",
     "index": 111,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.341571,
+    "lon": -71.110147
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Longwood \u2013 Brookline Village",
+    "stop_name": "Longwood – Brookline Village",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -1765,7 +1989,9 @@
     "y": 201,
     "label_position": "none",
     "index": 112,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.337070499999996,
+    "lon": -71.113594
   },
   {
     "line": "green",
@@ -1779,12 +2005,14 @@
     "y": 205,
     "label_position": "left",
     "index": 113,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.33257,
+    "lon": -71.117041
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Brookline Village \u2013 Brookline Hills",
+    "stop_name": "Brookline Village – Brookline Hills",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -1796,7 +2024,9 @@
     "y": 208,
     "label_position": "none",
     "index": 114,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3319915,
+    "lon": -71.122033
   },
   {
     "line": "green",
@@ -1810,12 +2040,14 @@
     "y": 211,
     "label_position": "left",
     "index": 115,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.331413,
+    "lon": -71.127025
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Brookline Hills \u2013 Beaconsfield",
+    "stop_name": "Brookline Hills – Beaconsfield",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -1827,7 +2059,9 @@
     "y": 214,
     "label_position": "none",
     "index": 116,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3336625,
+    "lon": -71.13396399999999
   },
   {
     "line": "green",
@@ -1841,12 +2075,14 @@
     "y": 217,
     "label_position": "left",
     "index": 117,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.335912,
+    "lon": -71.140903
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Beaconsfield \u2013 Reservoir",
+    "stop_name": "Beaconsfield – Reservoir",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -1858,7 +2094,9 @@
     "y": 220,
     "label_position": "none",
     "index": 118,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3355375,
+    "lon": -71.144752
   },
   {
     "line": "green",
@@ -1872,12 +2110,14 @@
     "y": 224,
     "label_position": "left",
     "index": 119,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.335163,
+    "lon": -71.148601
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Reservoir \u2013 Chestnut Hill",
+    "stop_name": "Reservoir – Chestnut Hill",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -1889,7 +2129,9 @@
     "y": 227,
     "label_position": "none",
     "index": 120,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3309725,
+    "lon": -71.1566905
   },
   {
     "line": "green",
@@ -1903,12 +2145,14 @@
     "y": 230,
     "label_position": "left",
     "index": 121,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.326782,
+    "lon": -71.16478
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Chestnut Hill \u2013 Newton Centre",
+    "stop_name": "Chestnut Hill – Newton Centre",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -1920,7 +2164,9 @@
     "y": 233,
     "label_position": "none",
     "index": 122,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.328091,
+    "lon": -71.17870099999999
   },
   {
     "line": "green",
@@ -1934,12 +2180,14 @@
     "y": 236,
     "label_position": "left",
     "index": 123,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.3294,
+    "lon": -71.192622
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Newton Centre \u2013 Newton Highlands",
+    "stop_name": "Newton Centre – Newton Highlands",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -1951,7 +2199,9 @@
     "y": 240,
     "label_position": "none",
     "index": 124,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.325965,
+    "lon": -71.1990215
   },
   {
     "line": "green",
@@ -1965,12 +2215,14 @@
     "y": 243,
     "label_position": "left",
     "index": 125,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.32253,
+    "lon": -71.205421
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Newton Highlands \u2013 Eliot",
+    "stop_name": "Newton Highlands – Eliot",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -1982,7 +2234,9 @@
     "y": 246,
     "label_position": "none",
     "index": 126,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.320872,
+    "lon": -71.211185
   },
   {
     "line": "green",
@@ -1996,12 +2250,14 @@
     "y": 249,
     "label_position": "left",
     "index": 127,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.319214,
+    "lon": -71.216949
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Eliot \u2013 Waban",
+    "stop_name": "Eliot – Waban",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2013,7 +2269,9 @@
     "y": 252,
     "label_position": "none",
     "index": 128,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.322590500000004,
+    "lon": -71.2238315
   },
   {
     "line": "green",
@@ -2027,12 +2285,14 @@
     "y": 255,
     "label_position": "left",
     "index": 129,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.325967,
+    "lon": -71.230714
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Waban \u2013 Woodland",
+    "stop_name": "Waban – Woodland",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2044,7 +2304,9 @@
     "y": 259,
     "label_position": "none",
     "index": 130,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.329530500000004,
+    "lon": -71.2371865
   },
   {
     "line": "green",
@@ -2058,12 +2320,14 @@
     "y": 262,
     "label_position": "left",
     "index": 131,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.333094,
+    "lon": -71.243659
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Woodland \u2013 RIVERSIDE",
+    "stop_name": "Woodland – RIVERSIDE",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2075,7 +2339,9 @@
     "y": 265,
     "label_position": "none",
     "index": 132,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.335221000000004,
+    "lon": -71.2479475
   },
   {
     "line": "green",
@@ -2089,7 +2355,9 @@
     "y": 268,
     "label_position": "left",
     "index": 133,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.337348,
+    "lon": -71.252236
   },
   {
     "line": "green",
@@ -2103,12 +2371,14 @@
     "y": 268,
     "label_position": "none",
     "index": 134,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.337317,
+    "lon": -71.252256
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "RIVERSIDE \u2013 Woodland",
+    "stop_name": "RIVERSIDE – Woodland",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -2120,7 +2390,9 @@
     "y": 265,
     "label_position": "none",
     "index": 135,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.33501,
+    "lon": -71.24765550000001
   },
   {
     "line": "green",
@@ -2134,12 +2406,14 @@
     "y": 262,
     "label_position": "none",
     "index": 136,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.332703,
+    "lon": -71.243055
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Woodland \u2013 Waban",
+    "stop_name": "Woodland – Waban",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -2151,7 +2425,9 @@
     "y": 259,
     "label_position": "none",
     "index": 137,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.329199,
+    "lon": -71.23676549999999
   },
   {
     "line": "green",
@@ -2165,12 +2441,14 @@
     "y": 255,
     "label_position": "none",
     "index": 138,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.325695,
+    "lon": -71.230476
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Waban \u2013 Eliot",
+    "stop_name": "Waban – Eliot",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -2182,7 +2460,9 @@
     "y": 252,
     "label_position": "none",
     "index": 139,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.322283,
+    "lon": -71.22344799999999
   },
   {
     "line": "green",
@@ -2196,12 +2476,14 @@
     "y": 249,
     "label_position": "none",
     "index": 140,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.318871,
+    "lon": -71.21642
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Eliot \u2013 Newton Highlands",
+    "stop_name": "Eliot – Newton Highlands",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -2213,7 +2495,9 @@
     "y": 246,
     "label_position": "none",
     "index": 141,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3208045,
+    "lon": -71.210751
   },
   {
     "line": "green",
@@ -2227,12 +2511,14 @@
     "y": 243,
     "label_position": "none",
     "index": 142,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.322738,
+    "lon": -71.205082
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Newton Highlands \u2013 Newton Centre",
+    "stop_name": "Newton Highlands – Newton Centre",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -2244,7 +2530,9 @@
     "y": 240,
     "label_position": "none",
     "index": 143,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.326145,
+    "lon": -71.198553
   },
   {
     "line": "green",
@@ -2258,12 +2546,14 @@
     "y": 236,
     "label_position": "none",
     "index": 144,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.329552,
+    "lon": -71.192024
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Newton Centre \u2013 Chestnut Hill",
+    "stop_name": "Newton Centre – Chestnut Hill",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -2275,7 +2565,9 @@
     "y": 233,
     "label_position": "none",
     "index": 145,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3281755,
+    "lon": -71.17808500000001
   },
   {
     "line": "green",
@@ -2289,12 +2581,14 @@
     "y": 230,
     "label_position": "none",
     "index": 146,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.326799,
+    "lon": -71.164146
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Chestnut Hill \u2013 Reservoir",
+    "stop_name": "Chestnut Hill – Reservoir",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -2306,7 +2600,9 @@
     "y": 227,
     "label_position": "none",
     "index": 147,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.33099,
+    "lon": -71.1560125
   },
   {
     "line": "green",
@@ -2320,12 +2616,14 @@
     "y": 224,
     "label_position": "none",
     "index": 148,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.335181,
+    "lon": -71.147879
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Reservoir \u2013 Beaconsfield",
+    "stop_name": "Reservoir – Beaconsfield",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -2337,7 +2635,9 @@
     "y": 220,
     "label_position": "none",
     "index": 149,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.335403,
+    "lon": -71.1439955
   },
   {
     "line": "green",
@@ -2351,12 +2651,14 @@
     "y": 217,
     "label_position": "none",
     "index": 150,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.335625,
+    "lon": -71.140112
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Beaconsfield \u2013 Brookline Hills",
+    "stop_name": "Beaconsfield – Brookline Hills",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -2368,7 +2670,9 @@
     "y": 214,
     "label_position": "none",
     "index": 151,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.333459000000005,
+    "lon": -71.13325900000001
   },
   {
     "line": "green",
@@ -2382,12 +2686,14 @@
     "y": 211,
     "label_position": "none",
     "index": 152,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.331293,
+    "lon": -71.126406
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Brookline Hills \u2013 Brookline Village",
+    "stop_name": "Brookline Hills – Brookline Village",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -2399,7 +2705,9 @@
     "y": 208,
     "label_position": "none",
     "index": 153,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3319535,
+    "lon": -71.1215785
   },
   {
     "line": "green",
@@ -2413,12 +2721,14 @@
     "y": 205,
     "label_position": "none",
     "index": 154,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.332614,
+    "lon": -71.116751
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Brookline Village \u2013 Longwood",
+    "stop_name": "Brookline Village – Longwood",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -2430,7 +2740,9 @@
     "y": 201,
     "label_position": "none",
     "index": 155,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.337210999999996,
+    "lon": -71.11326399999999
   },
   {
     "line": "green",
@@ -2444,12 +2756,14 @@
     "y": 198,
     "label_position": "none",
     "index": 156,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.341808,
+    "lon": -71.109777
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Longwood \u2013 Fenway",
+    "stop_name": "Longwood – Fenway",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -2461,7 +2775,9 @@
     "y": 195,
     "label_position": "none",
     "index": 157,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.343568000000005,
+    "lon": -71.107023
   },
   {
     "line": "green",
@@ -2475,12 +2791,14 @@
     "y": 192,
     "label_position": "none",
     "index": 158,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.345328,
+    "lon": -71.104269
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Fenway \u2013 Kenmore",
+    "stop_name": "Fenway – Kenmore",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -2492,7 +2810,9 @@
     "y": 186,
     "label_position": "none",
     "index": 159,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3471385,
+    "lon": -71.099719
   },
   {
     "line": "green",
@@ -2506,12 +2826,14 @@
     "y": 191,
     "label_position": "none",
     "index": 160,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.348949,
+    "lon": -71.095169
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Kenmore \u2013 Hynes Convention Center",
+    "stop_name": "Kenmore – Hynes Convention Center",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -2523,7 +2845,9 @@
     "y": 186,
     "label_position": "none",
     "index": 161,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.348418499999994,
+    "lon": -71.09153599999999
   },
   {
     "line": "green",
@@ -2537,12 +2861,14 @@
     "y": 186,
     "label_position": "none",
     "index": 162,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.347888,
+    "lon": -71.087903
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Hynes Convention Center \u2013 Copley",
+    "stop_name": "Hynes Convention Center – Copley",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -2554,7 +2880,9 @@
     "y": 186,
     "label_position": "none",
     "index": 163,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.348879499999995,
+    "lon": -71.082976
   },
   {
     "index": 164,
@@ -2568,7 +2896,9 @@
     "x": 155,
     "y": 180,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.348949,
+    "lon": -71.095169
   },
   {
     "index": 165,
@@ -2582,12 +2912,14 @@
     "x": 155,
     "y": 186,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.348949,
+    "lon": -71.095169
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Kenmore \u2013 Saint Mary's St",
+    "stop_name": "Kenmore – Saint Mary's St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2599,7 +2931,9 @@
     "y": 180,
     "label_position": "none",
     "index": 166,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.347416499999994,
+    "lon": -71.101433
   },
   {
     "line": "green",
@@ -2613,12 +2947,14 @@
     "y": 174,
     "label_position": "below-left",
     "index": 167,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.345884,
+    "lon": -71.107697
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Saint Mary's St \u2013 Hawes St",
+    "stop_name": "Saint Mary's St – Hawes St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2630,7 +2966,9 @@
     "y": 171,
     "label_position": "none",
     "index": 168,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.345321,
+    "lon": -71.109729
   },
   {
     "line": "green",
@@ -2644,12 +2982,14 @@
     "y": 168,
     "label_position": "below-left",
     "index": 169,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.344758,
+    "lon": -71.111761
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Hawes St \u2013 Kent St",
+    "stop_name": "Hawes St – Kent St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2661,7 +3001,9 @@
     "y": 165,
     "label_position": "none",
     "index": 170,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3444375,
+    "lon": -71.11292900000001
   },
   {
     "line": "green",
@@ -2675,12 +3017,14 @@
     "y": 161,
     "label_position": "left",
     "index": 171,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.344117,
+    "lon": -71.114097
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Kent St \u2013 Saint Paul St",
+    "stop_name": "Kent St – Saint Paul St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2692,7 +3036,9 @@
     "y": 165,
     "label_position": "none",
     "index": 172,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3437285,
+    "lon": -71.115512
   },
   {
     "line": "green",
@@ -2706,12 +3052,14 @@
     "y": 168,
     "label_position": "left",
     "index": 173,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.34334,
+    "lon": -71.116927
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Saint Paul St \u2013 Coolidge Corner",
+    "stop_name": "Saint Paul St – Coolidge Corner",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2723,7 +3071,9 @@
     "y": 172,
     "label_position": "none",
     "index": 174,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.342807,
+    "lon": -71.118921
   },
   {
     "line": "green",
@@ -2737,12 +3087,14 @@
     "y": 175,
     "label_position": "left",
     "index": 175,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.342274,
+    "lon": -71.120915
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Coolidge Corner \u2013 Summit Ave",
+    "stop_name": "Coolidge Corner – Summit Ave",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2754,7 +3106,9 @@
     "y": 178,
     "label_position": "none",
     "index": 176,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.341696999999996,
+    "lon": -71.1232835
   },
   {
     "line": "green",
@@ -2768,12 +3122,14 @@
     "y": 181,
     "label_position": "left",
     "index": 177,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.34112,
+    "lon": -71.125652
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Summit Ave \u2013 Brandon Hall",
+    "stop_name": "Summit Ave – Brandon Hall",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2785,7 +3141,9 @@
     "y": 184,
     "label_position": "none",
     "index": 178,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3405865,
+    "lon": -71.1272605
   },
   {
     "line": "green",
@@ -2799,12 +3157,14 @@
     "y": 187,
     "label_position": "left",
     "index": 179,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.340053,
+    "lon": -71.128869
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Brandon Hall \u2013 Fairbanks St",
+    "stop_name": "Brandon Hall – Fairbanks St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2816,7 +3176,9 @@
     "y": 191,
     "label_position": "none",
     "index": 180,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3398715,
+    "lon": -71.13004849999999
   },
   {
     "line": "green",
@@ -2830,12 +3192,14 @@
     "y": 194,
     "label_position": "left",
     "index": 181,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.33969,
+    "lon": -71.131228
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Fairbanks St \u2013 Washington Square",
+    "stop_name": "Fairbanks St – Washington Square",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2847,7 +3211,9 @@
     "y": 197,
     "label_position": "none",
     "index": 182,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3395805,
+    "lon": -71.1331835
   },
   {
     "line": "green",
@@ -2861,12 +3227,14 @@
     "y": 200,
     "label_position": "left",
     "index": 183,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.339471,
+    "lon": -71.135139
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Washington Square \u2013 Tappan St",
+    "stop_name": "Washington Square – Tappan St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2878,7 +3246,9 @@
     "y": 203,
     "label_position": "none",
     "index": 184,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3389845,
+    "lon": -71.136935
   },
   {
     "line": "green",
@@ -2892,12 +3262,14 @@
     "y": 206,
     "label_position": "left",
     "index": 185,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.338498,
+    "lon": -71.138731
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Tappan St \u2013 Dean Rd",
+    "stop_name": "Tappan St – Dean Rd",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2909,7 +3281,9 @@
     "y": 210,
     "label_position": "none",
     "index": 186,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3381525,
+    "lon": -71.140242
   },
   {
     "line": "green",
@@ -2923,12 +3297,14 @@
     "y": 213,
     "label_position": "left",
     "index": 187,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.337807,
+    "lon": -71.141753
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Dean Rd \u2013 Englewood Ave",
+    "stop_name": "Dean Rd – Englewood Ave",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2940,7 +3316,9 @@
     "y": 216,
     "label_position": "none",
     "index": 188,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.337385499999996,
+    "lon": -71.14381
   },
   {
     "line": "green",
@@ -2954,12 +3332,14 @@
     "y": 219,
     "label_position": "left",
     "index": 189,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.336964,
+    "lon": -71.145867
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Englewood Ave \u2013 CLEVELAND CIRCLE",
+    "stop_name": "Englewood Ave – CLEVELAND CIRCLE",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -2971,7 +3351,9 @@
     "y": 222,
     "label_position": "none",
     "index": 190,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.33659,
+    "lon": -71.14753400000001
   },
   {
     "line": "green",
@@ -2985,7 +3367,9 @@
     "y": 226,
     "label_position": "left",
     "index": 191,
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.336216,
+    "lon": -71.149201
   },
   {
     "line": "green",
@@ -2999,12 +3383,14 @@
     "y": 226,
     "label_position": "none",
     "index": 192,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.336252,
+    "lon": -71.148774
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "CLEVELAND CIRCLE \u2013 Englewood Ave",
+    "stop_name": "CLEVELAND CIRCLE – Englewood Ave",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3016,7 +3402,9 @@
     "y": 222,
     "label_position": "none",
     "index": 193,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.336631499999996,
+    "lon": -71.14707100000001
   },
   {
     "line": "green",
@@ -3030,12 +3418,14 @@
     "y": 219,
     "label_position": "none",
     "index": 194,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.337011,
+    "lon": -71.145368
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Englewood Ave \u2013 Dean Rd",
+    "stop_name": "Englewood Ave – Dean Rd",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3047,7 +3437,9 @@
     "y": 216,
     "label_position": "none",
     "index": 195,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3373195,
+    "lon": -71.1438385
   },
   {
     "line": "green",
@@ -3061,12 +3453,14 @@
     "y": 213,
     "label_position": "none",
     "index": 196,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.337628,
+    "lon": -71.142309
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Dean Rd \u2013 Tappan St",
+    "stop_name": "Dean Rd – Tappan St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3078,7 +3472,9 @@
     "y": 210,
     "label_position": "none",
     "index": 197,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3380975,
+    "lon": -71.1402495
   },
   {
     "line": "green",
@@ -3092,12 +3488,14 @@
     "y": 206,
     "label_position": "none",
     "index": 198,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.338567,
+    "lon": -71.13819
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Tappan St \u2013 Washington Square",
+    "stop_name": "Tappan St – Washington Square",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3109,7 +3507,9 @@
     "y": 203,
     "label_position": "none",
     "index": 199,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.339043000000004,
+    "lon": -71.1363885
   },
   {
     "line": "green",
@@ -3123,12 +3523,14 @@
     "y": 200,
     "label_position": "none",
     "index": 200,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.339519,
+    "lon": -71.134587
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Washington Square \u2013 Fairbanks St",
+    "stop_name": "Washington Square – Fairbanks St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3140,7 +3542,9 @@
     "y": 197,
     "label_position": "none",
     "index": 201,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3395815,
+    "lon": -71.1328325
   },
   {
     "line": "green",
@@ -3154,12 +3558,14 @@
     "y": 194,
     "label_position": "none",
     "index": 202,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.339644,
+    "lon": -71.131078
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Fairbanks St \u2013 Brandon Hall",
+    "stop_name": "Fairbanks St – Brandon Hall",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3171,7 +3577,9 @@
     "y": 191,
     "label_position": "none",
     "index": 203,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.339841,
+    "lon": -71.129869
   },
   {
     "line": "green",
@@ -3185,12 +3593,14 @@
     "y": 187,
     "label_position": "none",
     "index": 204,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.340038,
+    "lon": -71.12866
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Brandon Hall \u2013 Summit Ave",
+    "stop_name": "Brandon Hall – Summit Ave",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3202,7 +3612,9 @@
     "y": 184,
     "label_position": "none",
     "index": 205,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.340532499999995,
+    "lon": -71.12720949999999
   },
   {
     "line": "green",
@@ -3216,12 +3628,14 @@
     "y": 181,
     "label_position": "none",
     "index": 206,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.341027,
+    "lon": -71.125759
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Summit Ave \u2013 Coolidge Corner",
+    "stop_name": "Summit Ave – Coolidge Corner",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3233,7 +3647,9 @@
     "y": 178,
     "label_position": "none",
     "index": 207,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3415275,
+    "lon": -71.123722
   },
   {
     "line": "green",
@@ -3247,12 +3663,14 @@
     "y": 175,
     "label_position": "none",
     "index": 208,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.342028,
+    "lon": -71.121685
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Coolidge Corner \u2013 Saint Paul St",
+    "stop_name": "Coolidge Corner – Saint Paul St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3264,7 +3682,9 @@
     "y": 172,
     "label_position": "none",
     "index": 209,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.342573,
+    "lon": -71.1195915
   },
   {
     "line": "green",
@@ -3278,12 +3698,14 @@
     "y": 168,
     "label_position": "none",
     "index": 210,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.343118,
+    "lon": -71.117498
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Saint Paul St \u2013 Kent St",
+    "stop_name": "Saint Paul St – Kent St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3295,7 +3717,9 @@
     "y": 165,
     "label_position": "none",
     "index": 211,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3435225,
+    "lon": -71.1160335
   },
   {
     "line": "green",
@@ -3309,12 +3733,14 @@
     "y": 161,
     "label_position": "none",
     "index": 212,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.343927,
+    "lon": -71.114569
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Kent St \u2013 Hawes St",
+    "stop_name": "Kent St – Hawes St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3326,7 +3752,9 @@
     "y": 165,
     "label_position": "none",
     "index": 213,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.344397,
+    "lon": -71.112863
   },
   {
     "line": "green",
@@ -3340,12 +3768,14 @@
     "y": 168,
     "label_position": "none",
     "index": 214,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.344867,
+    "lon": -71.111157
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Hawes St \u2013 Saint Mary's St",
+    "stop_name": "Hawes St – Saint Mary's St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3357,7 +3787,9 @@
     "y": 171,
     "label_position": "none",
     "index": 215,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.345437000000004,
+    "lon": -71.1091615
   },
   {
     "line": "green",
@@ -3371,12 +3803,14 @@
     "y": 174,
     "label_position": "none",
     "index": 216,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.346007,
+    "lon": -71.107166
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Saint Mary's St \u2013 Kenmore",
+    "stop_name": "Saint Mary's St – Kenmore",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3388,12 +3822,14 @@
     "y": 180,
     "label_position": "none",
     "index": 217,
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.347477999999995,
+    "lon": -71.1011675
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Kenmore \u2013 Blandford St",
+    "stop_name": "Kenmore – Blandford St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3405,7 +3841,9 @@
     "y": 174,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 218
+    "index": 218,
+    "lat": 42.349112500000004,
+    "lon": -71.097691
   },
   {
     "line": "green",
@@ -3419,12 +3857,14 @@
     "y": 168,
     "label_position": "right",
     "label_alignment": "left",
-    "index": 219
+    "index": 219,
+    "lat": 42.349276,
+    "lon": -71.100213
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Blandford St \u2013 BU East",
+    "stop_name": "Blandford St – BU East",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3436,7 +3876,9 @@
     "y": 165,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 220
+    "index": 220,
+    "lat": 42.3495435,
+    "lon": -71.102435
   },
   {
     "line": "green",
@@ -3450,12 +3892,14 @@
     "y": 161,
     "label_position": "right",
     "label_alignment": "left",
-    "index": 221
+    "index": 221,
+    "lat": 42.349811,
+    "lon": -71.104657
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "BU East \u2013 BU Central",
+    "stop_name": "BU East – BU Central",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3467,7 +3911,9 @@
     "y": 158,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 222
+    "index": 222,
+    "lat": 42.3499795,
+    "lon": -71.106056
   },
   {
     "line": "green",
@@ -3481,12 +3927,14 @@
     "y": 155,
     "label_position": "right",
     "label_alignment": "left",
-    "index": 223
+    "index": 223,
+    "lat": 42.350148,
+    "lon": -71.107455
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "BU Central \u2013 Amory St",
+    "stop_name": "BU Central – Amory St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3498,7 +3946,9 @@
     "y": 152,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 224
+    "index": 224,
+    "lat": 42.350607,
+    "lon": -71.111241
   },
   {
     "line": "green",
@@ -3512,12 +3962,14 @@
     "y": 148,
     "label_position": "right",
     "label_alignment": "left",
-    "index": 225
+    "index": 225,
+    "lat": 42.351066,
+    "lon": -71.115027
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Amory St \u2013 Babcock St",
+    "stop_name": "Amory St – Babcock St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3529,7 +3981,9 @@
     "y": 145,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 226
+    "index": 226,
+    "lat": 42.351380500000005,
+    "lon": -71.11764199999999
   },
   {
     "line": "green",
@@ -3543,12 +3997,14 @@
     "y": 142,
     "label_position": "right",
     "label_alignment": "left",
-    "index": 227
+    "index": 227,
+    "lat": 42.351695,
+    "lon": -71.120257
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Babcock St \u2013 Packard's Corner",
+    "stop_name": "Babcock St – Packard's Corner",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3560,7 +4016,9 @@
     "y": 139,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 228
+    "index": 228,
+    "lat": 42.351673,
+    "lon": -71.1228835
   },
   {
     "line": "green",
@@ -3574,12 +4032,14 @@
     "y": 136,
     "label_position": "right",
     "label_alignment": "left",
-    "index": 229
+    "index": 229,
+    "lat": 42.351651,
+    "lon": -71.12551
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Packard's Corner \u2013 Harvard Ave",
+    "stop_name": "Packard's Corner – Harvard Ave",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3591,7 +4051,9 @@
     "y": 132,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 230
+    "index": 230,
+    "lat": 42.3511265,
+    "lon": -71.1281185
   },
   {
     "line": "green",
@@ -3605,12 +4067,14 @@
     "y": 128,
     "label_position": "left",
     "label_alignment": "left",
-    "index": 231
+    "index": 231,
+    "lat": 42.350602,
+    "lon": -71.130727
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Harvard Ave \u2013 Griggs St",
+    "stop_name": "Harvard Ave – Griggs St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3622,7 +4086,9 @@
     "y": 132,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 232
+    "index": 232,
+    "lat": 42.3497605,
+    "lon": -71.132516
   },
   {
     "line": "green",
@@ -3636,12 +4102,14 @@
     "y": 136,
     "label_position": "left",
     "label_alignment": "left",
-    "index": 233
+    "index": 233,
+    "lat": 42.348919,
+    "lon": -71.134305
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Griggs St \u2013 Allston St",
+    "stop_name": "Griggs St – Allston St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3653,7 +4121,9 @@
     "y": 139,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 234
+    "index": 234,
+    "lat": 42.3487325,
+    "lon": -71.13583349999999
   },
   {
     "line": "green",
@@ -3667,12 +4137,14 @@
     "y": 142,
     "label_position": "left",
     "label_alignment": "left",
-    "index": 235
+    "index": 235,
+    "lat": 42.348546,
+    "lon": -71.137362
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Allston St \u2013 Warren St",
+    "stop_name": "Allston St – Warren St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3684,7 +4156,9 @@
     "y": 145,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 236
+    "index": 236,
+    "lat": 42.348682499999995,
+    "lon": -71.1387065
   },
   {
     "line": "green",
@@ -3698,12 +4172,14 @@
     "y": 148,
     "label_position": "left",
     "label_alignment": "left",
-    "index": 237
+    "index": 237,
+    "lat": 42.348819,
+    "lon": -71.140051
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Warren St \u2013 Washington St",
+    "stop_name": "Warren St – Washington St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3715,7 +4191,9 @@
     "y": 152,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 238
+    "index": 238,
+    "lat": 42.3463965,
+    "lon": -71.141391
   },
   {
     "line": "green",
@@ -3729,12 +4207,14 @@
     "y": 155,
     "label_position": "left",
     "label_alignment": "left",
-    "index": 239
+    "index": 239,
+    "lat": 42.343974,
+    "lon": -71.142731
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Washington St \u2013 Sutherland Rd",
+    "stop_name": "Washington St – Sutherland Rd",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3746,7 +4226,9 @@
     "y": 158,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 240
+    "index": 240,
+    "lat": 42.3427755,
+    "lon": -71.144669
   },
   {
     "line": "green",
@@ -3760,12 +4242,14 @@
     "y": 161,
     "label_position": "left",
     "label_alignment": "left",
-    "index": 241
+    "index": 241,
+    "lat": 42.341577,
+    "lon": -71.146607
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Sutherland Rd \u2013 Chiswick Rd",
+    "stop_name": "Sutherland Rd – Chiswick Rd",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3777,7 +4261,9 @@
     "y": 164,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 242
+    "index": 242,
+    "lat": 42.3410585,
+    "lon": -71.14887350000001
   },
   {
     "line": "green",
@@ -3791,12 +4277,14 @@
     "y": 168,
     "label_position": "left",
     "label_alignment": "left",
-    "index": 243
+    "index": 243,
+    "lat": 42.34054,
+    "lon": -71.15114
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Chiswick Rd \u2013 Chestnut Hill Ave",
+    "stop_name": "Chiswick Rd – Chestnut Hill Ave",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3808,7 +4296,9 @@
     "y": 171,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 244
+    "index": 244,
+    "lat": 42.339415,
+    "lon": -71.1520825
   },
   {
     "line": "green",
@@ -3822,12 +4312,14 @@
     "y": 174,
     "label_position": "left",
     "label_alignment": "left",
-    "index": 245
+    "index": 245,
+    "lat": 42.33829,
+    "lon": -71.153025
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Chestnut Hill Ave \u2013 South St",
+    "stop_name": "Chestnut Hill Ave – South St",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3839,7 +4331,9 @@
     "y": 177,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 246
+    "index": 246,
+    "lat": 42.338935500000005,
+    "lon": -71.155262
   },
   {
     "line": "green",
@@ -3853,12 +4347,14 @@
     "y": 180,
     "label_position": "left",
     "label_alignment": "left",
-    "index": 247
+    "index": 247,
+    "lat": 42.339581,
+    "lon": -71.157499
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "South St \u2013 BOSTON COLLEGE",
+    "stop_name": "South St – BOSTON COLLEGE",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -3870,7 +4366,9 @@
     "y": 184,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 248
+    "index": 248,
+    "lat": 42.3399105,
+    "lon": -71.162174
   },
   {
     "line": "green",
@@ -3884,7 +4382,9 @@
     "y": 187,
     "label_position": "left",
     "label_alignment": "right",
-    "index": 249
+    "index": 249,
+    "lat": 42.34024,
+    "lon": -71.166849
   },
   {
     "line": "green",
@@ -3898,12 +4398,14 @@
     "y": 187,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 250
+    "index": 250,
+    "lat": 42.340149,
+    "lon": -71.167029
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "BOSTON COLLEGE \u2013 South St",
+    "stop_name": "BOSTON COLLEGE – South St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3915,7 +4417,9 @@
     "y": 184,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 251
+    "index": 251,
+    "lat": 42.33976,
+    "lon": -71.162043
   },
   {
     "line": "green",
@@ -3929,12 +4433,14 @@
     "y": 180,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 252
+    "index": 252,
+    "lat": 42.339371,
+    "lon": -71.157057
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "South St \u2013 Chestnut Hill Ave",
+    "stop_name": "South St – Chestnut Hill Ave",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3946,7 +4452,9 @@
     "y": 177,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 253
+    "index": 253,
+    "lat": 42.3390505,
+    "lon": -71.15479149999999
   },
   {
     "line": "green",
@@ -3960,12 +4468,14 @@
     "y": 174,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 254
+    "index": 254,
+    "lat": 42.33873,
+    "lon": -71.152526
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Chestnut Hill Ave \u2013 Chiswick Rd",
+    "stop_name": "Chestnut Hill Ave – Chiswick Rd",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -3977,7 +4487,9 @@
     "y": 171,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 255
+    "index": 255,
+    "lat": 42.339769000000004,
+    "lon": -71.1515795
   },
   {
     "line": "green",
@@ -3991,12 +4503,14 @@
     "y": 168,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 256
+    "index": 256,
+    "lat": 42.340808,
+    "lon": -71.150633
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Chiswick Rd \u2013 Sutherland Rd",
+    "stop_name": "Chiswick Rd – Sutherland Rd",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -4008,7 +4522,9 @@
     "y": 164,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 257
+    "index": 257,
+    "lat": 42.341198500000004,
+    "lon": -71.148361
   },
   {
     "line": "green",
@@ -4022,12 +4538,14 @@
     "y": 161,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 258
+    "index": 258,
+    "lat": 42.341589,
+    "lon": -71.146089
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Sutherland Rd \u2013 Washington St",
+    "stop_name": "Sutherland Rd – Washington St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -4039,7 +4557,9 @@
     "y": 158,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 259
+    "index": 259,
+    "lat": 42.342959,
+    "lon": -71.144237
   },
   {
     "line": "green",
@@ -4053,12 +4573,14 @@
     "y": 155,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 260
+    "index": 260,
+    "lat": 42.344329,
+    "lon": -71.142385
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Washington St \u2013 Warren St",
+    "stop_name": "Washington St – Warren St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -4070,7 +4592,9 @@
     "y": 152,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 261
+    "index": 261,
+    "lat": 42.346306999999996,
+    "lon": -71.1414105
   },
   {
     "line": "green",
@@ -4084,12 +4608,14 @@
     "y": 148,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 262
+    "index": 262,
+    "lat": 42.348285,
+    "lon": -71.140436
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Warren St \u2013 Allston St",
+    "stop_name": "Warren St – Allston St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -4101,7 +4627,9 @@
     "y": 145,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 263
+    "index": 263,
+    "lat": 42.348467,
+    "lon": -71.1391585
   },
   {
     "line": "green",
@@ -4115,12 +4643,14 @@
     "y": 142,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 264
+    "index": 264,
+    "lat": 42.348649,
+    "lon": -71.137881
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Allston St \u2013 Griggs St",
+    "stop_name": "Allston St – Griggs St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -4132,7 +4662,9 @@
     "y": 139,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 265
+    "index": 265,
+    "lat": 42.348698,
+    "lon": -71.1361905
   },
   {
     "line": "green",
@@ -4146,12 +4678,14 @@
     "y": 136,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 266
+    "index": 266,
+    "lat": 42.348747,
+    "lon": -71.1345
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Griggs St \u2013 Harvard Ave",
+    "stop_name": "Griggs St – Harvard Ave",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -4163,7 +4697,9 @@
     "y": 132,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 267
+    "index": 267,
+    "lat": 42.349505,
+    "lon": -71.13289900000001
   },
   {
     "line": "green",
@@ -4177,12 +4713,14 @@
     "y": 128,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 268
+    "index": 268,
+    "lat": 42.350263,
+    "lon": -71.131298
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Harvard Ave \u2013 Packard's Corner",
+    "stop_name": "Harvard Ave – Packard's Corner",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -4194,7 +4732,9 @@
     "y": 132,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 269
+    "index": 269,
+    "lat": 42.351077000000004,
+    "lon": -71.12818250000001
   },
   {
     "line": "green",
@@ -4208,12 +4748,14 @@
     "y": 136,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 270
+    "index": 270,
+    "lat": 42.351891,
+    "lon": -71.125067
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Packard's Corner \u2013 Babcock St",
+    "stop_name": "Packard's Corner – Babcock St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -4225,7 +4767,9 @@
     "y": 139,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 271
+    "index": 271,
+    "lat": 42.3517145,
+    "lon": -71.12231
   },
   {
     "line": "green",
@@ -4239,12 +4783,14 @@
     "y": 142,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 272
+    "index": 272,
+    "lat": 42.351538,
+    "lon": -71.119553
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Babcock St \u2013 Amory St",
+    "stop_name": "Babcock St – Amory St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -4256,7 +4802,9 @@
     "y": 145,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 273
+    "index": 273,
+    "lat": 42.3512195,
+    "lon": -71.1169355
   },
   {
     "line": "green",
@@ -4270,12 +4818,14 @@
     "y": 148,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 274
+    "index": 274,
+    "lat": 42.350901,
+    "lon": -71.114318
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Amory St \u2013 BU Central",
+    "stop_name": "Amory St – BU Central",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -4287,7 +4837,9 @@
     "y": 152,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 275
+    "index": 275,
+    "lat": 42.350457,
+    "lon": -71.11061000000001
   },
   {
     "line": "green",
@@ -4301,12 +4853,14 @@
     "y": 155,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 276
+    "index": 276,
+    "lat": 42.350013,
+    "lon": -71.106902
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "BU Central \u2013 BU East",
+    "stop_name": "BU Central – BU East",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -4318,7 +4872,9 @@
     "y": 158,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 277
+    "index": 277,
+    "lat": 42.349835999999996,
+    "lon": -71.1054455
   },
   {
     "line": "green",
@@ -4332,12 +4888,14 @@
     "y": 161,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 278
+    "index": 278,
+    "lat": 42.349659,
+    "lon": -71.103989
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "BU East \u2013 Blandford St",
+    "stop_name": "BU East – Blandford St",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -4349,7 +4907,9 @@
     "y": 165,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 279
+    "index": 279,
+    "lat": 42.349412,
+    "lon": -71.101905
   },
   {
     "line": "green",
@@ -4363,12 +4923,14 @@
     "y": 168,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 280
+    "index": 280,
+    "lat": 42.349165,
+    "lon": -71.099821
   },
   {
     "line": "green",
     "stop_id": null,
-    "stop_name": "Blandford St \u2013 Kenmore",
+    "stop_name": "Blandford St – Kenmore",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -4380,13 +4942,15 @@
     "y": 174,
     "label_position": "none",
     "label_alignment": "left",
-    "index": 281
+    "index": 281,
+    "lat": 42.349057,
+    "lon": -71.09749500000001
   },
   {
     "index": 282,
     "line": "green",
     "stop_id": null,
-    "stop_name": "Boylston \u2013 Park Street (loop)",
+    "stop_name": "Boylston – Park Street (loop)",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -4394,7 +4958,9 @@
     "x": 234,
     "y": 173,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3545,
+    "lon": -71.0636
   },
   {
     "index": 283,
@@ -4408,7 +4974,9 @@
     "x": 250,
     "y": 162,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3564,
+    "lon": -71.0624
   },
   {
     "index": 284,
@@ -4422,6 +4990,8 @@
     "x": 266,
     "y": 147,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.358,
+    "lon": -71.0608
   }
 ]

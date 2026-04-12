@@ -11,13 +11,15 @@
     "x": 139,
     "y": 62,
     "label_position": "left",
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.396148,
+    "lon": -71.140698
   },
   {
     "index": 1,
     "line": "red",
     "stop_id": null,
-    "stop_name": "ALEWIFE \u2013 Davis",
+    "stop_name": "ALEWIFE – Davis",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -28,7 +30,9 @@
     "x": 146,
     "y": 70,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.396444,
+    "lon": -71.1312565
   },
   {
     "index": 2,
@@ -42,13 +46,15 @@
     "x": 154,
     "y": 77,
     "label_position": "left",
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.39674,
+    "lon": -71.121815
   },
   {
     "index": 3,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Davis \u2013 Porter",
+    "stop_name": "Davis – Porter",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -59,7 +65,9 @@
     "x": 160,
     "y": 84,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.39257,
+    "lon": -71.120482
   },
   {
     "index": 4,
@@ -73,13 +81,15 @@
     "x": 167,
     "y": 91,
     "label_position": "left",
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.3884,
+    "lon": -71.119149
   },
   {
     "index": 5,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Porter \u2013 Harvard",
+    "stop_name": "Porter – Harvard",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -90,7 +100,9 @@
     "x": 174,
     "y": 98,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.381531499999994,
+    "lon": -71.11898149999999
   },
   {
     "index": 6,
@@ -104,13 +116,15 @@
     "x": 182,
     "y": 106,
     "label_position": "left",
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.374663,
+    "lon": -71.118814
   },
   {
     "index": 7,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Harvard \u2013 Central",
+    "stop_name": "Harvard – Central",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -121,7 +135,9 @@
     "x": 187,
     "y": 112,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.369983500000004,
+    "lon": -71.11121750000001
   },
   {
     "index": 8,
@@ -135,13 +151,15 @@
     "x": 196,
     "y": 120,
     "label_position": "left",
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.365304,
+    "lon": -71.103621
   },
   {
     "index": 9,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Central \u2013 Kendall/MIT",
+    "stop_name": "Central – Kendall/MIT",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -152,7 +170,9 @@
     "x": 202,
     "y": 127,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3638295,
+    "lon": -71.09461300000001
   },
   {
     "index": 10,
@@ -166,13 +186,15 @@
     "x": 209,
     "y": 134,
     "label_position": "left",
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.362355,
+    "lon": -71.085605
   },
   {
     "index": 11,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Kendall/MIT \u2013 Charles/MGH",
+    "stop_name": "Kendall/MIT – Charles/MGH",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -183,7 +205,9 @@
     "x": 217,
     "y": 142,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.361771000000005,
+    "lon": -71.078555
   },
   {
     "index": 12,
@@ -197,13 +221,15 @@
     "x": 226,
     "y": 151,
     "label_position": "left",
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.361187,
+    "lon": -71.071505
   },
   {
     "index": 13,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Charles/MGH \u2013 Park Street",
+    "stop_name": "Charles/MGH – Park Street",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -214,7 +240,9 @@
     "x": 233,
     "y": 158,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3587908,
+    "lon": -71.0669646
   },
   {
     "index": 14,
@@ -228,13 +256,15 @@
     "x": 239,
     "y": 162,
     "label_position": "none",
-    "label_alignment": "right"
+    "label_alignment": "right",
+    "lat": 42.3563946,
+    "lon": -71.0624242
   },
   {
     "index": 15,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Park Street \u2013 Downtown Crossing",
+    "stop_name": "Park Street – Downtown Crossing",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -245,7 +275,9 @@
     "x": 248,
     "y": 173,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3559563,
+    "lon": -71.0613246
   },
   {
     "index": 16,
@@ -259,13 +291,15 @@
     "x": 257,
     "y": 181,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.355518,
+    "lon": -71.060225
   },
   {
     "index": 17,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Downtown Crossing \u2013 South Station",
+    "stop_name": "Downtown Crossing – South Station",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -276,7 +310,9 @@
     "x": 265,
     "y": 190,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.353894499999996,
+    "lon": -71.05773350000001
   },
   {
     "index": 18,
@@ -290,13 +326,15 @@
     "x": 273,
     "y": 199,
     "label_position": "above-right",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.352271,
+    "lon": -71.055242
   },
   {
     "index": 19,
     "line": "red",
     "stop_id": null,
-    "stop_name": "South Station \u2013 Broadway",
+    "stop_name": "South Station – Broadway",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -307,7 +345,9 @@
     "x": 287,
     "y": 215,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.347446500000004,
+    "lon": -71.0561045
   },
   {
     "index": 20,
@@ -321,13 +361,15 @@
     "x": 287,
     "y": 236,
     "label_position": "right",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.342622,
+    "lon": -71.056967
   },
   {
     "index": 21,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Broadway \u2013 Andrew",
+    "stop_name": "Broadway – Andrew",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -338,7 +380,9 @@
     "x": 287,
     "y": 244,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.336388,
+    "lon": -71.057311
   },
   {
     "index": 22,
@@ -352,13 +396,15 @@
     "x": 287,
     "y": 252,
     "label_position": "right",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.330154,
+    "lon": -71.057655
   },
   {
     "index": 23,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Andrew \u2013 JFK/UMass",
+    "stop_name": "Andrew – JFK/UMass",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -369,7 +415,9 @@
     "x": 287,
     "y": 260,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.325393000000005,
+    "lon": -71.05508449999999
   },
   {
     "index": 24,
@@ -383,13 +431,15 @@
     "x": 282,
     "y": 268,
     "label_position": "right",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.320632,
+    "lon": -71.052514
   },
   {
     "index": 25,
     "line": "red",
     "stop_id": null,
-    "stop_name": "JFK/UMass \u2013 Savin Hill",
+    "stop_name": "JFK/UMass – Savin Hill",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -400,7 +450,9 @@
     "x": 278,
     "y": 301,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3156175,
+    "lon": -71.05309600000001
   },
   {
     "index": 26,
@@ -414,13 +466,15 @@
     "x": 269,
     "y": 312,
     "label_position": "right",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.310603,
+    "lon": -71.053678
   },
   {
     "index": 27,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Savin Hill \u2013 Fields Corner",
+    "stop_name": "Savin Hill – Fields Corner",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -431,7 +485,9 @@
     "x": 269,
     "y": 316,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.305298,
+    "lon": -71.0578495
   },
   {
     "index": 28,
@@ -445,13 +501,15 @@
     "x": 269,
     "y": 319,
     "label_position": "right",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.299993,
+    "lon": -71.062021
   },
   {
     "index": 29,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Fields Corner \u2013 Shawmut",
+    "stop_name": "Fields Corner – Shawmut",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -462,7 +520,9 @@
     "x": 269,
     "y": 323,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.2965594,
+    "lon": -71.0638795
   },
   {
     "index": 30,
@@ -476,13 +536,15 @@
     "x": 269,
     "y": 327,
     "label_position": "right",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.2931258,
+    "lon": -71.065738
   },
   {
     "index": 31,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Shawmut \u2013 ASHMONT",
+    "stop_name": "Shawmut – ASHMONT",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -493,7 +555,9 @@
     "x": 269,
     "y": 331,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.2888169,
+    "lon": -71.0647855
   },
   {
     "index": 32,
@@ -507,7 +571,9 @@
     "x": 269,
     "y": 335,
     "label_position": "center",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.284508,
+    "lon": -71.063833
   },
   {
     "index": 33,
@@ -521,13 +587,15 @@
     "x": 287,
     "y": 268,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.320418,
+    "lon": -71.052287
   },
   {
     "index": 34,
     "line": "red",
     "stop_id": null,
-    "stop_name": "JFK/UMass \u2013 North Quincy",
+    "stop_name": "JFK/UMass – North Quincy",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -538,7 +606,9 @@
     "x": 299,
     "y": 302,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.298094,
+    "lon": -71.0412405
   },
   {
     "index": 35,
@@ -552,13 +622,15 @@
     "x": 312,
     "y": 315,
     "label_position": "right",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.27577,
+    "lon": -71.030194
   },
   {
     "index": 36,
     "line": "red",
     "stop_id": null,
-    "stop_name": "North Quincy \u2013 Wollaston",
+    "stop_name": "North Quincy – Wollaston",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -569,7 +641,9 @@
     "x": 318,
     "y": 321,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.271266,
+    "lon": -71.025368
   },
   {
     "index": 37,
@@ -583,13 +657,15 @@
     "x": 323,
     "y": 326,
     "label_position": "right",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.266762,
+    "lon": -71.020542
   },
   {
     "index": 38,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Wollaston \u2013 Quincy Center",
+    "stop_name": "Wollaston – Quincy Center",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -600,7 +676,9 @@
     "x": 329,
     "y": 332,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.259285500000004,
+    "lon": -71.01297550000001
   },
   {
     "index": 39,
@@ -614,13 +692,15 @@
     "x": 335,
     "y": 338,
     "label_position": "right",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.251809,
+    "lon": -71.005409
   },
   {
     "index": 40,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Quincy Center \u2013 Quincy Adams",
+    "stop_name": "Quincy Center – Quincy Adams",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -631,7 +711,9 @@
     "x": 340,
     "y": 343,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.242599999999996,
+    "lon": -71.006281
   },
   {
     "index": 41,
@@ -645,13 +727,15 @@
     "x": 343,
     "y": 350,
     "label_position": "right",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.233391,
+    "lon": -71.007153
   },
   {
     "index": 42,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Quincy Adams \u2013 BRAINTREE",
+    "stop_name": "Quincy Adams – BRAINTREE",
     "direction": "southbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -662,7 +746,9 @@
     "x": 343,
     "y": 358,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.2204075,
+    "lon": -71.004399
   },
   {
     "index": 43,
@@ -676,7 +762,9 @@
     "x": 343,
     "y": 367,
     "label_position": "right",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.207424,
+    "lon": -71.001645
   },
   {
     "index": 44,
@@ -690,13 +778,15 @@
     "x": 348,
     "y": 367,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.207424,
+    "lon": -71.001645
   },
   {
     "index": 45,
     "line": "red",
     "stop_id": null,
-    "stop_name": "BRAINTREE \u2013 Quincy Adams",
+    "stop_name": "BRAINTREE – Quincy Adams",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -707,7 +797,9 @@
     "x": 349,
     "y": 358,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.2204075,
+    "lon": -71.004399
   },
   {
     "index": 46,
@@ -721,13 +813,15 @@
     "x": 348,
     "y": 350,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.233391,
+    "lon": -71.007153
   },
   {
     "index": 47,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Quincy Adams \u2013 Quincy Center",
+    "stop_name": "Quincy Adams – Quincy Center",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -738,7 +832,9 @@
     "x": 346,
     "y": 343,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.242599999999996,
+    "lon": -71.006281
   },
   {
     "index": 48,
@@ -752,13 +848,15 @@
     "x": 340,
     "y": 338,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.251809,
+    "lon": -71.005409
   },
   {
     "index": 49,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Quincy Center \u2013 Wollaston",
+    "stop_name": "Quincy Center – Wollaston",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -769,7 +867,9 @@
     "x": 335,
     "y": 332,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.2592985,
+    "lon": -71.012933
   },
   {
     "index": 50,
@@ -783,13 +883,15 @@
     "x": 328,
     "y": 326,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.266788,
+    "lon": -71.020457
   },
   {
     "index": 51,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Wollaston \u2013 North Quincy",
+    "stop_name": "Wollaston – North Quincy",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -800,7 +902,9 @@
     "x": 324,
     "y": 321,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.271294999999995,
+    "lon": -71.0253005
   },
   {
     "index": 52,
@@ -814,13 +918,15 @@
     "x": 317,
     "y": 315,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.275802,
+    "lon": -71.030144
   },
   {
     "index": 53,
     "line": "red",
     "stop_id": null,
-    "stop_name": "North Quincy \u2013 JFK/UMass",
+    "stop_name": "North Quincy – JFK/UMass",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -831,7 +937,9 @@
     "x": 305,
     "y": 302,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.298118,
+    "lon": -71.0411795
   },
   {
     "index": 54,
@@ -845,7 +953,9 @@
     "x": 298,
     "y": 268,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.320434,
+    "lon": -71.052215
   },
   {
     "index": 55,
@@ -859,13 +969,15 @@
     "x": 274,
     "y": 335,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.28453,
+    "lon": -71.063725
   },
   {
     "index": 56,
     "line": "red",
     "stop_id": null,
-    "stop_name": "ASHMONT \u2013 Shawmut",
+    "stop_name": "ASHMONT – Shawmut",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -876,7 +988,9 @@
     "x": 275,
     "y": 331,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.2888279,
+    "lon": -71.0647315
   },
   {
     "index": 57,
@@ -890,13 +1004,15 @@
     "x": 274,
     "y": 327,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.2931258,
+    "lon": -71.065738
   },
   {
     "index": 58,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Shawmut \u2013 Fields Corner",
+    "stop_name": "Shawmut – Fields Corner",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -907,7 +1023,9 @@
     "x": 275,
     "y": 323,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.296530399999995,
+    "lon": -71.0638415
   },
   {
     "index": 59,
@@ -921,13 +1039,15 @@
     "x": 274,
     "y": 319,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.299935,
+    "lon": -71.061945
   },
   {
     "index": 60,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Fields Corner \u2013 Savin Hill",
+    "stop_name": "Fields Corner – Savin Hill",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -938,7 +1058,9 @@
     "x": 275,
     "y": 316,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.305263,
+    "lon": -71.0577785
   },
   {
     "index": 61,
@@ -952,13 +1074,15 @@
     "x": 274,
     "y": 312,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.310591,
+    "lon": -71.053612
   },
   {
     "index": 62,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Savin Hill \u2013 JFK/UMass",
+    "stop_name": "Savin Hill – JFK/UMass",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -969,7 +1093,9 @@
     "x": 283,
     "y": 301,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.315614,
+    "lon": -71.0530425
   },
   {
     "index": 63,
@@ -983,13 +1109,15 @@
     "x": 293,
     "y": 268,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.320637,
+    "lon": -71.052473
   },
   {
     "index": 64,
     "line": "red",
     "stop_id": null,
-    "stop_name": "JFK/UMass \u2013 Andrew",
+    "stop_name": "JFK/UMass – Andrew",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1000,7 +1128,9 @@
     "x": 293,
     "y": 260,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3253955,
+    "lon": -71.055064
   },
   {
     "index": 65,
@@ -1014,13 +1144,15 @@
     "x": 292,
     "y": 252,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.330154,
+    "lon": -71.057655
   },
   {
     "index": 66,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Andrew \u2013 Broadway",
+    "stop_name": "Andrew – Broadway",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1031,7 +1163,9 @@
     "x": 293,
     "y": 244,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.336388,
+    "lon": -71.057311
   },
   {
     "index": 67,
@@ -1045,13 +1179,15 @@
     "x": 292,
     "y": 236,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.342622,
+    "lon": -71.056967
   },
   {
     "index": 68,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Broadway \u2013 South Station",
+    "stop_name": "Broadway – South Station",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1062,7 +1198,9 @@
     "x": 293,
     "y": 215,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.347446500000004,
+    "lon": -71.0561045
   },
   {
     "index": 69,
@@ -1076,13 +1214,15 @@
     "x": 278,
     "y": 199,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.352271,
+    "lon": -71.055242
   },
   {
     "index": 70,
     "line": "red",
     "stop_id": null,
-    "stop_name": "South Station \u2013 Downtown Crossing",
+    "stop_name": "South Station – Downtown Crossing",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1093,7 +1233,9 @@
     "x": 271,
     "y": 190,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.353894499999996,
+    "lon": -71.05773350000001
   },
   {
     "index": 71,
@@ -1107,13 +1249,15 @@
     "x": 263,
     "y": 181,
     "label_position": "center",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.355518,
+    "lon": -71.060225
   },
   {
     "index": 72,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Downtown Crossing \u2013 Park Street",
+    "stop_name": "Downtown Crossing – Park Street",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1124,7 +1268,9 @@
     "x": 254,
     "y": 173,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3559563,
+    "lon": -71.0613246
   },
   {
     "index": 73,
@@ -1138,13 +1284,15 @@
     "x": 244,
     "y": 162,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3563946,
+    "lon": -71.0624242
   },
   {
     "index": 74,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Park Street \u2013 Charles/MGH",
+    "stop_name": "Park Street – Charles/MGH",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1155,7 +1303,9 @@
     "x": 238,
     "y": 158,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3588288,
+    "lon": -71.0670131
   },
   {
     "index": 75,
@@ -1169,13 +1319,15 @@
     "x": 231,
     "y": 151,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.361263,
+    "lon": -71.071602
   },
   {
     "index": 76,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Charles/MGH \u2013 Kendall/MIT",
+    "stop_name": "Charles/MGH – Kendall/MIT",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1186,7 +1338,9 @@
     "x": 223,
     "y": 142,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3618485,
+    "lon": -71.0785965
   },
   {
     "index": 77,
@@ -1200,13 +1354,15 @@
     "x": 215,
     "y": 134,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.362434,
+    "lon": -71.085591
   },
   {
     "index": 78,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Kendall/MIT \u2013 Central",
+    "stop_name": "Kendall/MIT – Central",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1217,7 +1373,9 @@
     "x": 208,
     "y": 127,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3639065,
+    "lon": -71.0945725
   },
   {
     "index": 79,
@@ -1231,13 +1389,15 @@
     "x": 201,
     "y": 120,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.365379,
+    "lon": -71.103554
   },
   {
     "index": 80,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Central \u2013 Harvard",
+    "stop_name": "Central – Harvard",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1248,7 +1408,9 @@
     "x": 194,
     "y": 112,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.370020999999994,
+    "lon": -71.11118400000001
   },
   {
     "index": 81,
@@ -1262,13 +1424,15 @@
     "x": 187,
     "y": 106,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.374663,
+    "lon": -71.118814
   },
   {
     "index": 82,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Harvard \u2013 Porter",
+    "stop_name": "Harvard – Porter",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1279,7 +1443,9 @@
     "x": 180,
     "y": 98,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.381531499999994,
+    "lon": -71.11898149999999
   },
   {
     "index": 83,
@@ -1293,13 +1459,15 @@
     "x": 173,
     "y": 91,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.3884,
+    "lon": -71.119149
   },
   {
     "index": 84,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Porter \u2013 Davis",
+    "stop_name": "Porter – Davis",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1310,7 +1478,9 @@
     "x": 166,
     "y": 84,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.39257,
+    "lon": -71.120482
   },
   {
     "index": 85,
@@ -1324,13 +1494,15 @@
     "x": 158,
     "y": 77,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.39674,
+    "lon": -71.121815
   },
   {
     "index": 86,
     "line": "red",
     "stop_id": null,
-    "stop_name": "Davis \u2013 ALEWIFE",
+    "stop_name": "Davis – ALEWIFE",
     "direction": "northbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -1341,7 +1513,9 @@
     "x": 153,
     "y": 70,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.396444,
+    "lon": -71.1312565
   },
   {
     "index": 87,
@@ -1355,6 +1529,8 @@
     "x": 144,
     "y": 62,
     "label_position": "none",
-    "label_alignment": "left"
+    "label_alignment": "left",
+    "lat": 42.396148,
+    "lon": -71.140698
   }
 ]
