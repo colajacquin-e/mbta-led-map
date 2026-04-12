@@ -132,20 +132,27 @@
   let panMm       = { x: 0, y: 0 }; // top-left of visible area in board-mm
 
   function clampPan() {
-    const baseScale = canvas.height / BOARD_SIZE;
-    const effScale  = baseScale * zoomLevel;
-    const visW = canvas.width  / effScale - PANEL_WIDTH;  // visible board width in mm
-    const visH = canvas.height / effScale;                // visible board height in mm
+    const es   = effScale();
+    const cssW = canvas.width  / DPR;
+    const cssH = canvas.height / DPR;
+    const visW = cssW / es - PANEL_WIDTH;
+    const visH = cssH / es;
     panMm.x = Math.max(0, Math.min(BOARD_SIZE - visW, panMm.x));
     panMm.y = Math.max(0, Math.min(BOARD_SIZE - visH, panMm.y));
   }
 
   // -----------------------------------------------------------------------
-  // Fit canvas to window
+  // Fit canvas to window — render at full device resolution (retina-safe)
   // -----------------------------------------------------------------------
+  const DPR = window.devicePixelRatio || 1;
+
   function resizeCanvas() {
-    canvas.height = window.innerHeight;
-    canvas.width  = window.innerWidth;
+    // CSS size = window size; internal buffer = CSS size × DPR for crisp text
+    canvas.style.width  = window.innerWidth  + 'px';
+    canvas.style.height = window.innerHeight + 'px';
+    canvas.width  = Math.round(window.innerWidth  * DPR);
+    canvas.height = Math.round(window.innerHeight * DPR);
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);  // scale all drawing by DPR
     render();
   }
 
@@ -154,7 +161,9 @@
   // -----------------------------------------------------------------------
   // Coordinate transform: board mm -> canvas px
   // -----------------------------------------------------------------------
-  function baseScale() { return canvas.height / BOARD_SIZE; }
+  // canvas.height is in physical pixels; divide by DPR to get CSS pixels,
+  // which is the coordinate space ctx operates in after setTransform(DPR,…).
+  function baseScale() { return (canvas.height / DPR) / BOARD_SIZE; }
   function effScale()  { return baseScale() * zoomLevel; }
   function panelPx()   { return PANEL_WIDTH * baseScale(); }
 
@@ -328,19 +337,23 @@
   // Render
   // -----------------------------------------------------------------------
   function render() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    // Clear in CSS-pixel space (ctx transform already accounts for DPR)
+    ctx.clearRect(0, 0, canvas.width / DPR, canvas.height / DPR);
 
     const scale    = baseScale();
     const pp       = panelPx();
     const mapPx    = BOARD_SIZE * scale;
 
+    const cssW = canvas.width  / DPR;
+    const cssH = canvas.height / DPR;
+
     // Right overflow — light grey
     ctx.fillStyle = '#d9d9d9';
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillRect(0, 0, cssW, cssH);
 
     // Left info panel — white
     ctx.fillStyle = '#fff';
-    ctx.fillRect(0, 0, pp, canvas.height);
+    ctx.fillRect(0, 0, pp, cssH);
 
     // Map area — white base then image
     ctx.fillStyle = '#fff';
@@ -369,7 +382,7 @@
     // Clip all map drawing to the map area so nothing bleeds into the panel
     ctx.save();
     ctx.beginPath();
-    ctx.rect(pp, 0, canvas.width - pp, canvas.height);
+    ctx.rect(pp, 0, cssW - pp, cssH);
     ctx.clip();
 
     // Subway lines
@@ -515,11 +528,13 @@
   // Scale bar
   // -----------------------------------------------------------------------
   function drawScaleBar() {
-    const es = effScale();
-    const pp = panelPx();
+    const es   = effScale();
+    const pp   = panelPx();
+    const cssW = canvas.width  / DPR;
+    const cssH = canvas.height / DPR;
 
     // Pick a "nice" bar length in mm that's roughly 15% of map canvas width
-    const targetMm   = (canvas.width - pp) * 0.15 / es;
+    const targetMm   = (cssW - pp) * 0.15 / es;
     const niceSteps  = [1, 2, 5, 10, 20, 25, 50, 100, 200];
     const niceMm     = niceSteps.reduce((a, b) =>
       Math.abs(b - targetMm) < Math.abs(a - targetMm) ? b : a);
@@ -528,7 +543,7 @@
     // Position: bottom-left of map area
     const margin = 12;
     const x  = pp + margin;
-    const y  = canvas.height - margin;
+    const y  = cssH - margin;
     const th = 13;   // text height
     const tk = 5;    // tick height half
     const pad = 4;
@@ -565,10 +580,10 @@
       ctx.textBaseline = 'top';
       const tw = ctx.measureText(zoomText).width;
       ctx.fillStyle = 'rgba(20,20,20,0.72)';
-      roundRect(ctx, canvas.width - margin - tw - pad * 2, margin, tw + pad * 2, 18, 4);
+      roundRect(ctx, cssW - margin - tw - pad * 2, margin, tw + pad * 2, 18, 4);
       ctx.fill();
       ctx.fillStyle = '#ffffff';
-      ctx.fillText(zoomText, canvas.width - margin - pad, margin + pad);
+      ctx.fillText(zoomText, cssW - margin - pad, margin + pad);
     }
 
     ctx.restore();
@@ -674,8 +689,9 @@
   canvas.addEventListener('wheel', (e) => {
     e.preventDefault();
     const rect   = canvas.getBoundingClientRect();
-    const mouseX = (e.clientX - rect.left) * (canvas.width  / rect.width);
-    const mouseY = (e.clientY - rect.top)  * (canvas.height / rect.height);
+    // Convert client coords → CSS canvas coords (rect size = CSS size)
+    const mouseX = (e.clientX - rect.left);
+    const mouseY = (e.clientY - rect.top);
 
     const pp = panelPx();
     if (mouseX < pp) return;   // cursor is over the info panel — ignore
@@ -703,11 +719,10 @@
   });
   canvas.addEventListener('mousemove', (e) => {
     if (!drag) return;
-    const rect  = canvas.getBoundingClientRect();
-    const scale = canvas.width / rect.width;
-    const dx    = (e.clientX - drag.startX) * scale;
-    const dy    = (e.clientY - drag.startY) * scale;
-    const es    = effScale();
+    // clientX/Y are already in CSS pixels — no DPR scaling needed
+    const dx = e.clientX - drag.startX;
+    const dy = e.clientY - drag.startY;
+    const es = effScale();
     panMm.x = drag.panX - dx / es;
     panMm.y = drag.panY - dy / es;
     clampPan();
