@@ -3,19 +3,21 @@
     "index": 0,
     "line": "blue",
     "stop_id": "70059",
-    "stop_name": "Wonderland",
+    "stop_name": "WONDERLAND",
     "direction": "westbound",
     "direction_id": 0,
     "type": "station",
     "adjacent_stops": null,
     "x": 383,
-    "y": 51
+    "y": 51,
+    "label_position": "left",
+    "label_alignment": "right"
   },
   {
     "index": 1,
     "line": "blue",
     "stop_id": null,
-    "stop_name": "Wonderland \u2013 Revere Beach",
+    "stop_name": "WONDERLAND \u2013 Revere Beach",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -24,19 +26,23 @@
       "70057"
     ],
     "x": 378,
-    "y": 57
+    "y": 57,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 2,
     "line": "blue",
     "stop_id": "70057",
-    "stop_name": "Revere Beach",
+    "stop_name": "Revere\nBeach",
     "direction": "westbound",
     "direction_id": 0,
     "type": "station",
     "adjacent_stops": null,
     "x": 372,
-    "y": 62
+    "y": 62,
+    "label_position": "right",
+    "label_alignment": "left"
   },
   {
     "index": 3,
@@ -51,7 +57,9 @@
       "70055"
     ],
     "x": 367,
-    "y": 68
+    "y": 68,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 4,
@@ -63,7 +71,9 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 361,
-    "y": 73
+    "y": 73,
+    "label_position": "right",
+    "label_alignment": "left"
   },
   {
     "index": 5,
@@ -78,7 +88,9 @@
       "70053"
     ],
     "x": 356,
-    "y": 78
+    "y": 78,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 6,
@@ -90,7 +102,9 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 351,
-    "y": 84
+    "y": 84,
+    "label_position": "right",
+    "label_alignment": "left"
   },
   {
     "index": 7,
@@ -105,7 +119,9 @@
       "70051"
     ],
     "x": 345,
-    "y": 89
+    "y": 89,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 8,
@@ -117,7 +133,9 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 340,
-    "y": 95
+    "y": 95,
+    "label_position": "right",
+    "label_alignment": "left"
   },
   {
     "index": 9,
@@ -132,7 +150,9 @@
       "70049"
     ],
     "x": 334,
-    "y": 100
+    "y": 100,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 10,
@@ -144,7 +164,9 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 329,
-    "y": 106
+    "y": 106,
+    "label_position": "right",
+    "label_alignment": "left"
   },
   {
     "index": 11,
@@ -159,7 +181,9 @@
       "70047"
     ],
     "x": 323,
-    "y": 111
+    "y": 111,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 12,
@@ -171,7 +195,9 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 318,
-    "y": 117
+    "y": 117,
+    "label_position": "right",
+    "label_alignment": "left"
   },
   {
     "index": 13,
@@ -186,7 +212,9 @@
       "70045"
     ],
     "x": 312,
-    "y": 122
+    "y": 122,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 14,
@@ -198,7 +226,9 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 307,
-    "y": 128
+    "y": 128,
+    "label_position": "right",
+    "label_alignment": "left"
   },
   {
     "index": 15,
@@ -213,7 +243,9 @@
       "70043"
     ],
     "x": 296,
-    "y": 138
+    "y": 138,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 16,
@@ -225,7 +257,9 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 286,
-    "y": 149
+    "y": 149,
+    "label_position": "right",
+    "label_alignment": "left"
   },
   {
     "index": 17,
@@ -240,7 +274,9 @@
       "70041"
     ],
     "x": 279,
-    "y": 155
+    "y": 156,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 18,
@@ -252,7 +288,9 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 270,
-    "y": 160
+    "y": 160,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 19,
@@ -266,26 +304,32 @@
       "70041",
       "70039"
     ],
-    "x": 261,
-    "y": 155
+    "x": 260,
+    "y": 156,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 20,
     "line": "blue",
     "stop_id": "70039",
-    "stop_name": "Government Center",
+    "stop_name": "Gov't\nCenter",
     "direction": "westbound",
     "direction_id": 0,
     "type": "station",
     "adjacent_stops": null,
     "x": 254,
-    "y": 149
+    "y": 147,
+    "label_position": "left",
+    "label_alignment": "right",
+    "label_y_offset": 2,
+    "label_x_offset": -1
   },
   {
     "index": 21,
     "line": "blue",
     "stop_id": null,
-    "stop_name": "Government Center \u2013 Bowdoin",
+    "stop_name": "Government Center \u2013 BOWDOIN",
     "direction": "westbound",
     "direction_id": 0,
     "type": "midpoint",
@@ -293,38 +337,44 @@
       "70039",
       "70038"
     ],
-    "x": 249,
-    "y": 144
+    "x": 248,
+    "y": 143,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 22,
     "line": "blue",
     "stop_id": "70038",
-    "stop_name": "Bowdoin",
+    "stop_name": "BOWDOIN",
     "direction": "westbound",
     "direction_id": 0,
     "type": "station",
     "adjacent_stops": null,
     "x": 244,
-    "y": 139
+    "y": 139,
+    "label_position": "left",
+    "label_alignment": "right"
   },
   {
     "index": 23,
     "line": "blue",
     "stop_id": "70838",
-    "stop_name": "Bowdoin",
+    "stop_name": "BOWDOIN",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
     "adjacent_stops": null,
     "x": 250,
-    "y": 139
+    "y": 139,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 24,
     "line": "blue",
     "stop_id": null,
-    "stop_name": "Bowdoin \u2013 Government Center",
+    "stop_name": "BOWDOIN \u2013 Government Center",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -332,8 +382,10 @@
       "70838",
       "70040"
     ],
-    "x": 255,
-    "y": 144
+    "x": 254,
+    "y": 143,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 25,
@@ -345,7 +397,9 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 260,
-    "y": 149
+    "y": 147,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 26,
@@ -359,8 +413,10 @@
       "70040",
       "70042"
     ],
-    "x": 267,
-    "y": 155
+    "x": 266,
+    "y": 156,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 27,
@@ -372,7 +428,9 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 276,
-    "y": 160
+    "y": 160,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 28,
@@ -387,7 +445,9 @@
       "70044"
     ],
     "x": 285,
-    "y": 155
+    "y": 156,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 29,
@@ -399,7 +459,9 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 292,
-    "y": 149
+    "y": 149,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 30,
@@ -414,7 +476,9 @@
       "70046"
     ],
     "x": 302,
-    "y": 138
+    "y": 138,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 31,
@@ -426,7 +490,9 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 313,
-    "y": 128
+    "y": 128,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 32,
@@ -441,7 +507,9 @@
       "70048"
     ],
     "x": 318,
-    "y": 122
+    "y": 122,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 33,
@@ -453,7 +521,9 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 324,
-    "y": 117
+    "y": 117,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 34,
@@ -468,7 +538,9 @@
       "70050"
     ],
     "x": 329,
-    "y": 111
+    "y": 111,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 35,
@@ -480,7 +552,9 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 335,
-    "y": 106
+    "y": 106,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 36,
@@ -495,7 +569,9 @@
       "70052"
     ],
     "x": 340,
-    "y": 100
+    "y": 100,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 37,
@@ -507,7 +583,9 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 346,
-    "y": 95
+    "y": 95,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 38,
@@ -522,7 +600,9 @@
       "70054"
     ],
     "x": 351,
-    "y": 89
+    "y": 89,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 39,
@@ -534,7 +614,9 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 357,
-    "y": 84
+    "y": 84,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 40,
@@ -549,7 +631,9 @@
       "70056"
     ],
     "x": 362,
-    "y": 78
+    "y": 78,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 41,
@@ -561,7 +645,9 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 367,
-    "y": 73
+    "y": 73,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 42,
@@ -576,7 +662,9 @@
       "70058"
     ],
     "x": 373,
-    "y": 68
+    "y": 68,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 43,
@@ -588,13 +676,15 @@
     "type": "station",
     "adjacent_stops": null,
     "x": 378,
-    "y": 62
+    "y": 62,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 44,
     "line": "blue",
     "stop_id": null,
-    "stop_name": "Revere Beach \u2013 Wonderland",
+    "stop_name": "Revere Beach \u2013 WONDERLAND",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "midpoint",
@@ -603,18 +693,22 @@
       "70060"
     ],
     "x": 384,
-    "y": 57
+    "y": 57,
+    "label_position": "none",
+    "label_alignment": "left"
   },
   {
     "index": 45,
     "line": "blue",
     "stop_id": "70060",
-    "stop_name": "Wonderland",
+    "stop_name": "WONDERLAND",
     "direction": "eastbound",
     "direction_id": 1,
     "type": "station",
     "adjacent_stops": null,
     "x": 389,
-    "y": 51
+    "y": 51,
+    "label_position": "none",
+    "label_alignment": "left"
   }
 ]

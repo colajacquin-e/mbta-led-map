@@ -43,6 +43,7 @@ Each file is a JSON array of LED entry objects. One file per line.
 | `adjacent_stops` | [string, string] \| null | For midpoints: the two stop IDs flanking this LED. `null` for stations |
 | `x` | number | Visual x-coordinate for map rendering |
 | `y` | number | Visual y-coordinate for map rendering |
+| `label_position` | enum | `"left"`, `"right"`, `"below"`, `"above-right"`, `"below-left"`, or `"none"` — where to render the label |
 
 ## Constraints
 
