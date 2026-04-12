@@ -67,6 +67,10 @@ class LedRecord:
     y: float
     lat: Optional[float] = None
     lon: Optional[float] = None
+    label_position: Optional[str] = None   # "left", "right", "below", "none"
+    label_alignment: Optional[str] = None  # "left", "center", "right"
+    label_x_offset: Optional[float] = None
+    label_y_offset: Optional[float] = None
 
 
 @dataclass
@@ -193,6 +197,10 @@ class LedMapper:
                     y=float(raw.get("y", 0)),
                     lat=raw.get("lat"),
                     lon=raw.get("lon"),
+                    label_position=raw.get("label_position"),
+                    label_alignment=raw.get("label_alignment"),
+                    label_x_offset=raw.get("label_x_offset"),
+                    label_y_offset=raw.get("label_y_offset"),
                 )
                 records.append(rec)
             self._all_leds[line] = records
